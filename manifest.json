@@ -1,6 +1,7 @@
 {
   "schema_version": "1",
   "projects": [
-    "agent-email-development"
+    "agent-email-development",
+    "agent-landing-page-ab-testing"
   ]
 }

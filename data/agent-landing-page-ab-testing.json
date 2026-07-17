@@ -1,0 +1,42 @@
+{
+  "schema_version": "1",
+  "slug": "agent-landing-page-ab-testing",
+  "name": "Agent: Landing Page A/B Testing",
+  "type": "agent",
+  "status": "on hold",
+  "summary": "A portable agent that runs landing-page testing as a continuous loop: propose, test, pick the winner, reuse what won — and ask a human at the four points where judgment beats automation.",
+  "last_updated": "2026-07-17",
+  "objectives": [
+    "Run landing-page testing as a loop rather than a project: every finished test proposes the next one.",
+    "Keep the human where judgment matters — the hypothesis, the creative, and the winner — and automate everything between.",
+    "Keep it portable: the testing tool, the hosting and the metrics are declared per deployment, never wired into the agent.",
+    "Reuse what wins — a message that proved itself on a page should not stay on that page."
+  ],
+  "outcomes": [
+    {
+      "text": "The whole loop is written down and operable by someone who did not build it: eight steps from hypothesis to reusing the winner, with the points marked where a person decides rather than the agent.",
+      "evidence": [
+        { "label": "The operations guide", "url": "https://oegit.github.io/oe-docs/landing-page-ab-testing-ops-guide.html" }
+      ]
+    },
+    {
+      "text": "The loop was walked end to end on a sandbox run before it was pointed at anything real: every artifact produced, every human gate enforced, and not one external call made."
+    },
+    {
+      "text": "Meeting the real testing tool changed the design, and the corrections were written back into the agent rather than noted for later. Publishing a test by hand is now a first-class path with its own runbook, instead of the case the agent assumed away."
+    },
+    {
+      "text": "The winner rule now follows the statistics the testing tool actually reports, rather than the confidence threshold the plan had borrowed from a different method — a number that would have looked authoritative and meant nothing."
+    }
+  ],
+  "milestones": [
+    { "title": "Write the eight-step loop, from hypothesis to reusing the winner", "state": "done" },
+    { "title": "Make every environment value a per-deployment config, so the agent stays portable", "state": "done" },
+    { "title": "Build the dashboard where a person approves the hypothesis, the creative and the winner", "state": "done" },
+    { "title": "Walk the whole loop on a sandbox run, with no external calls", "state": "done" },
+    { "title": "Write the runbook for publishing and reading a test by hand", "state": "done" },
+    { "title": "Publish the operations guide, so someone who did not build the agent can run it", "state": "done" },
+    { "title": "Get access to the analytics property that will report the results — what the project is waiting on, and the last piece before a real test can run", "state": "next" },
+    { "title": "Run the first real test on a live page", "state": "next" }
+  ]
+}
