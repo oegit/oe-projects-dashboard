@@ -8,7 +8,6 @@
   "last_updated": "2026-07-17",
   "objectives": [
     "Turn a Figma design into an email that looks right in every inbox — including the ones that break everything.",
-    "Work in any Claude account, for any brand, with nothing tied to the workspace it came from.",
     "Stop a broken email before it sends, with a check that runs as code instead of a person squinting at it."
   ],
   "outcomes": [

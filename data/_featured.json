@@ -1,0 +1,44 @@
+{
+  "kicker": "See it live",
+  "title": "The pilots, in the open",
+  "note": "The work behind these cards is public — real pages, real files, no login. Open any of them.",
+  "pilots": [
+    {
+      "name": "Landing page",
+      "tag": "Live",
+      "blurb": "One Figma frame became a live page in two languages — each one a real page a search engine can find.",
+      "accent": "blue",
+      "links": [
+        { "label": "Español", "url": "https://oegit.github.io/oe-web-agent-pilot/es/" },
+        { "label": "Português", "url": "https://oegit.github.io/oe-web-agent-pilot/pt/" },
+        { "label": "How it's built", "url": "https://github.com/oegit/oe-web-agent-pilot" }
+      ]
+    },
+    {
+      "name": "SEO, generated",
+      "blurb": "The search index the agent writes by itself. Nobody hand-codes it.",
+      "accent": "orange",
+      "links": [
+        { "label": "Sitemap — the SEO index", "url": "https://oegit.github.io/oe-web-agent-pilot/sitemap.xml" },
+        { "label": "Robots", "url": "https://oegit.github.io/oe-web-agent-pilot/robots.txt" }
+      ]
+    },
+    {
+      "name": "Email agent",
+      "blurb": "A Figma design turned into an email that holds up in Outlook and dark mode — with a step-by-step guide anyone can follow.",
+      "accent": "blue",
+      "links": [
+        { "label": "The guide", "url": "https://oegit.github.io/oe-docs/email-development-agent-guide.html" },
+        { "label": "The agent", "url": "https://github.com/oegit/agent-email-development" }
+      ]
+    },
+    {
+      "name": "A/B testing",
+      "blurb": "The operations guide for running the test-and-learn loop from hypothesis to winner.",
+      "accent": "orange",
+      "links": [
+        { "label": "Ops guide", "url": "https://oegit.github.io/oe-docs/landing-page-ab-testing-ops-guide.html" }
+      ]
+    }
+  ]
+}

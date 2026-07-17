@@ -8,7 +8,6 @@
   "last_updated": "2026-07-17",
   "objectives": [
     "Turn a Figma design into a real page that matches it — and prove the match, instead of eyeballing it.",
-    "Work in any Claude account, for any client. The brand lives in the project, never in the agent.",
     "A page that misses the quality bar does not ship. The gate decides, not an opinion.",
     "Every language is its own real page that Google can find — not text swapped in by a script."
   ],
@@ -43,9 +42,6 @@
     },
     {
       "text": "Matching the design is measured three ways instead of one. A single \"percent different\" score never reaches zero once there are photographs on the page — and a bar nobody can clear is a bar everybody ignores."
-    },
-    {
-      "text": "The agent carries no brand of its own. Copy the folder and it runs for a different client, unchanged."
     }
   ],
   "milestones": [

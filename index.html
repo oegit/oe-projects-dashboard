@@ -22,6 +22,15 @@
     --line: #DEDEE8;
     --card: #FFFFFF;
 
+    /* Open English brand, used only in the showcase band and only where it can
+       be read. Sunny Orange is a strong accent but a weak text colour: #FF6600
+       lands at 2.9:1 on white, so it never carries copy or a hairline border.
+       It appears as a 4px decorative rule (meaning never rests on it alone) and
+       as a solid pill behind dark ink — #1C2140 on #FF6600 is 5.33:1, AA. */
+    --orange: #FF6600;
+    --orange-deep: #CC5200;
+    --orange-tint: #FFEDD5;
+
     --display: 'Wix Madefor Display', system-ui, sans-serif;
     --text: 'Wix Madefor Text', system-ui, sans-serif;
     --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -96,6 +105,73 @@
   .masthead h1 { font-size: clamp(27px, 4vw, 36px); line-height: 1.1; }
   .masthead h1 span { color: var(--blue); }
   .masthead .lede { margin-top: 8px; color: var(--ink-soft); max-width: 620px; font-size: 16px; }
+
+  /* --- Showcase band ----------------------------------------------------- */
+
+  /* An optional highlight strip for the live pilots, styled to match the sibling
+     docs site: the same kicker pill, the same section-heading scale, the same
+     card vocabulary. It is fed by data/_featured.json and fetched on its own; if
+     that file is absent (a fork that removed it), the band simply never appears.
+     No account-specific URL lives in this file — the links are all in the data. */
+  .showcase { padding: 6px 0 4px; margin-bottom: 26px; border-bottom: 1px solid var(--line); }
+  .showcase__head { margin-bottom: 16px; }
+  .showcase__title { font-size: 25px; line-height: 1.15; margin-top: 10px; }
+  .showcase__title span { color: var(--blue); }
+  .showcase__note { margin-top: 6px; color: var(--ink-soft); font-size: 16px; max-width: 620px; }
+
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding-bottom: 22px; }
+
+  /* A tile per pilot. The top rule is the only brand accent that changes per
+     tile — blue or orange — so both brand colours are present without either
+     one ever carrying text. */
+  .shot {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--blue);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .shot--orange { border-top-color: var(--orange); }
+
+  .shot__head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .shot__name { font-size: 17.5px; line-height: 1.2; }
+
+  /* Solid Sunny Orange behind dark ink — 5.33:1, the one place brand orange
+     carries text and stays AA. */
+  .shot__tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--orange);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .shot__blurb { margin-top: 6px; color: var(--ink-soft); font-size: 15px; }
+
+  .shot__links { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 7px; }
+  .shot__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--blue-deep);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .shot__link::after { content: "↗"; font-size: 11px; color: var(--ink-soft); }
+  .shot__link:hover { border-color: var(--blue); background: var(--blue-soft); }
+  .shot--orange .shot__link:hover { border-color: var(--orange-deep); background: var(--orange-tint); }
+
+  @media (max-width: 620px) { .shots { grid-template-columns: 1fr; } }
 
   /* --- Page-level failure ------------------------------------------------ */
 
@@ -361,6 +437,9 @@
     <p class="noscript">This dashboard reads its data with JavaScript. Enable it to see the projects, or read the files in <code>data/</code> directly.</p>
   </noscript>
 
+  <!-- Filled from data/_featured.json, or left hidden if that file is absent. -->
+  <section class="showcase" id="showcase" aria-labelledby="showcase-title" hidden></section>
+
   <main>
     <div id="banner" hidden></div>
     <div class="board" id="board"></div>
@@ -621,6 +700,65 @@ function showAsOf(dates) {
   node.hidden = false;
 }
 
+/* --- Showcase band ------------------------------------------------------- */
+
+/**
+ * One pilot tile: a name, an optional brand-orange tag, a line of what it is,
+ * and its public links. Same https guard as the evidence links — a non-public
+ * URL is dropped rather than linked.
+ */
+function renderPilot(pilot) {
+  var tile = el('article', 'shot' + (pilot.accent === 'orange' ? ' shot--orange' : ''));
+
+  var head = el('div', 'shot__head');
+  head.appendChild(el('h3', 'shot__name', pilot.name));
+  if (pilot.tag) head.appendChild(el('span', 'shot__tag', pilot.tag));
+  tile.appendChild(head);
+
+  if (pilot.blurb) tile.appendChild(el('p', 'shot__blurb', pilot.blurb));
+
+  var links = el('div', 'shot__links');
+  (Array.isArray(pilot.links) ? pilot.links : []).forEach(function (link) {
+    if (typeof link.url === 'string' && link.url.indexOf('https://') === 0) {
+      var a = el('a', 'shot__link', link.label);
+      a.href = link.url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      links.appendChild(a);
+    }
+  });
+  tile.appendChild(links);
+  return tile;
+}
+
+/**
+ * The band is optional chrome, not data the page depends on: it loads on its
+ * own and a missing or malformed data/_featured.json leaves the section hidden
+ * without disturbing the board or raising the failure banner.
+ */
+function loadShowcase() {
+  getJson('./data/_featured.json').then(function (data) {
+    if (!data || !Array.isArray(data.pilots) || data.pilots.length === 0) return;
+
+    var section = document.getElementById('showcase');
+
+    var head = el('div', 'showcase__head');
+    head.appendChild(el('span', 'kicker', data.kicker || 'See it live'));
+    var title = el('h2', 'showcase__title');
+    title.id = 'showcase-title';
+    title.textContent = data.title || 'The pilots, in the open';
+    head.appendChild(title);
+    if (data.note) head.appendChild(el('p', 'showcase__note', data.note));
+    section.appendChild(head);
+
+    var grid = el('div', 'shots');
+    data.pilots.forEach(function (pilot) { grid.appendChild(renderPilot(pilot)); });
+    section.appendChild(grid);
+
+    section.hidden = false;
+  }).catch(function () { /* no showcase file, or unreadable — leave it hidden. */ });
+}
+
 /* --- Boot ---------------------------------------------------------------- */
 
 function main() {
@@ -659,6 +797,7 @@ function main() {
   });
 }
 
+loadShowcase();
 main();
 </script>
 </body>
