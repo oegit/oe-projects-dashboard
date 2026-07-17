@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project card",
+  "description": "One project's status, as shown on the dashboard. One file per project, in data/<slug>.json. See docs/SCHEMA.md for the reasoning behind each field.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "slug",
+    "name",
+    "type",
+    "status",
+    "summary",
+    "last_updated",
+    "objectives",
+    "milestones"
+  ],
+  "properties": {
+    "schema_version": {
+      "description": "Version of this contract the file was written against. Lets the schema change later without breaking forks pinned to an older shape.",
+      "const": "1"
+    },
+    "slug": {
+      "description": "Stable identifier. Must match the filename (data/<slug>.json) and the entry in manifest.json.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 60
+    },
+    "name": {
+      "description": "Display name, as a stakeholder would say it out loud.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "type": {
+      "description": "What kind of thing this is. Drives the label on the card, nothing else.",
+      "enum": ["agent", "campaign", "system"]
+    },
+    "status": {
+      "description": "The writer's judgment call. Never computed from milestones — see docs/SCHEMA.md.",
+      "enum": ["on track", "at risk", "blocked", "on hold", "done"]
+    },
+    "summary": {
+      "description": "One line telling a stakeholder what this project is. No jargon, no internal names.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "last_updated": {
+      "description": "The day a human last reviewed this file, YYYY-MM-DD. The header's 'Data as of' is the latest of these across all projects.",
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "objectives": {
+      "description": "What this project set out to do. Written once; they rarely change.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "outcomes": {
+      "description": "What the project actually produced, each ideally backed by something a reader can open.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text"],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "evidence": {
+            "description": "Public links only. If a reader cannot open it without logging in, it does not belong here.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["label", "url"],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "url": {
+                  "description": "Must be https. Local paths and private URLs are rejected by design.",
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "milestones": {
+      "description": "The path, in order. Carries no dates — order is the only sequence signal. The page derives the progress bar from these.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "state"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "state": {
+            "enum": ["done", "in progress", "next"]
+          }
+        }
+      }
+    }
+  }
+}
