@@ -3,3 +3,7 @@ node_modules/
 
 # OS noise
 .DS_Store
+
+# Local editor/agent config. The dashboard is a public, portable page — whatever
+# one contributor's tooling needs is not part of what a fork receives.
+.claude/
