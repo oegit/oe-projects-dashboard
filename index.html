@@ -26,20 +26,26 @@
     --text: 'Wix Madefor Text', system-ui, sans-serif;
     --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-    /* Status palette. Each pair carries text dark enough to clear WCAG AA on
-       its own background — the badge is often the only colour cue on a card,
-       so it cannot rely on hue alone to be read. The docs site's own green pair
-       lands at 3.01:1 and is not reused here; this green is that green, darkened
-       until it passes. */
-    --done-fg: #1B7A4B;        --done-bg: #E7F5EE;        /* 4.75:1 */
-    --on-track-fg: #0052CC;    --on-track-bg: #E6F0FF;    /* 5.93:1 */
-    --on-hold-fg: #8A5A10;     --on-hold-bg: #FDF4E4;     /* 5.42:1 */
-    --at-risk-fg: #9A4A07;     --at-risk-bg: #FCEBDD;     /* 5.38:1 */
-    --blocked-fg: #A31B14;     --blocked-bg: #FCE4E2;     /* 6.36:1 */
-    --unknown-fg: #565C7A;     --unknown-bg: #EFEFF3;
+    /* Status palette — semantic, not brand. A badge's whole job is to be read
+       and understood at a glance, so the colour has to mean the thing (green
+       finished, blue moving, yellow paused, orange slipping, red stopped) and
+       has to be legible. The brand palette above owes nothing to either job,
+       and forcing it here served the logo at the reader's expense: its own
+       green-on-green lands at 3.01:1, which no amount of it being the right
+       green can fix.
 
-    --error-fg: #A31B14;
-    --error-bg: #FCE4E2;
+       Each pair's measured contrast is next to it. The floor is 4.5:1 — AA for
+       text this size — and nothing here sits on the floor. */
+    --done-fg: #166534;        --done-bg: #DCFCE7;        /* 6.49:1 */
+    --on-track-fg: #1D4ED8;    --on-track-bg: #DBEAFE;    /* 5.49:1 */
+    --on-hold-fg: #854D0E;     --on-hold-bg: #FEF9C3;     /* 6.38:1 */
+    --at-risk-fg: #9A3412;     --at-risk-bg: #FFEDD5;     /* 6.38:1 */
+    --blocked-fg: #B91C1C;     --blocked-bg: #FEE2E2;     /* 5.30:1 */
+    --unknown-fg: #44403C;     --unknown-bg: #EFEFF3;     /* 8.96:1 */
+
+    /* A card that failed to load and a project that is blocked are different
+       things, but both are "stopped, look here" — one red, used for both. */
+    --error-fg: #B91C1C;       /* 6.47:1 on the card surface */
     --error-line: #F2C0BC;
   }
 
@@ -189,8 +195,14 @@
     background: var(--line);
     overflow: hidden;
   }
-  .progress__fill { height: 100%; border-radius: 999px; background: var(--blue); }
-  .card--done .progress__fill { background: var(--done-fg); }
+  /* Neutral on purpose, and never tinted by status. The bar is a count of
+     milestones done; the badge is the writer's judgment. The contract keeps
+     those two strictly apart — one is derived, the other is typed and never
+     computed — so colouring the bar with the badge's colour would merge, to the
+     eye, exactly what the design separates. It also stops the bar from ever
+     contradicting the badge: blue means "on track" here, and a blue bar under
+     an "on hold" badge said both at once. 4.90:1 against the track. */
+  .progress__fill { height: 100%; border-radius: 999px; background: var(--ink-soft); }
   .progress__label {
     flex: none;
     font-family: var(--mono);
