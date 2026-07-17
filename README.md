@@ -52,3 +52,7 @@ Fork the repository and enable GitHub Pages on the `main` branch, root folder. T
 This is deliberate rather than incidental: no account name, workspace path, or organisation string appears anywhere outside `data/`. It is held to by grepping the core files for those strings before a change lands — a review habit, not a CI job, so it is worth knowing it exists. `data/` is exempt so a project can name itself and link its own public artifacts.
 
 Then replace the contents of `data/`, list your slugs in `manifest.json`, and the dashboard is yours.
+
+## License
+
+MIT — see [LICENSE](./LICENSE). Fork it, change it, ship it; keep the copyright notice.
