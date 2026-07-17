@@ -1,0 +1,43 @@
+{
+  "schema_version": "1",
+  "slug": "agent-video-production",
+  "name": "Agent: Video Production",
+  "type": "agent",
+  "status": "done",
+  "summary": "A portable agent that takes a brief to finished social video — generation, assembly, voice-over and captions per language — with a human approving before anything that costs money runs.",
+  "last_updated": "2026-07-17",
+  "objectives": [
+    "Take a brief to a finished, approved social video without a hand-off between five tools along the way.",
+    "Keep spend deliberate: nothing paid runs without a human saying go, and every cost is recorded against the campaign that caused it.",
+    "Keep it portable: brand, voice, glossary and music rights are declared per project, never wired into the agent.",
+    "Deliver every format and language a campaign needs from one approved master."
+  ],
+  "outcomes": [
+    {
+      "text": "The agent produced a full campaign end to end: a master and three themed variations, each in two languages and three aspect ratios, with captions burned in and a subtitle file per language. A human signed every gate."
+    },
+    {
+      "text": "The cheap gate caught the expensive mistake. A generated still came back with broken English on it — in an ad for an English school. It was rejected at the storyboard stage, at the price of a still image rather than the price of the finished clip."
+    },
+    {
+      "text": "Cost is checked before each paid step, recorded per job, and reconciled afterwards against the provider's own record. A campaign's spend is a number someone can verify, not an estimate — and a cost the provider never reports is marked as missing rather than quietly counted as zero."
+    },
+    {
+      "text": "Running the agent on a real campaign found four defects in the agent itself — a music bed that was never actually mixed in, a variation that inherited the wrong voice-over — and each one became a fix plus a test that fails if it comes back."
+    },
+    {
+      "text": "The quality gate now checks its own coverage. It used to report a clean pass while running one of the four checks it promised; a run that inspects less than the campaign declares is now a failure instead of a green light."
+    }
+  ],
+  "milestones": [
+    { "title": "Write the portable agent: what it produces, in what order, and where a human decides", "state": "done" },
+    { "title": "Pin the model catalogue to one file, so changing a model is a config change and not a code change", "state": "done" },
+    { "title": "Build the assembly template and the export presets", "state": "done" },
+    { "title": "Make cost a preflight and a ledger rather than a surprise", "state": "done" },
+    { "title": "Prove the pipeline end to end on a throwaway brand, with nothing paid", "state": "done" },
+    { "title": "Debug it on a real dry run and fix what that exposed", "state": "done" },
+    { "title": "Add the voice-over and captions path, per language", "state": "done" },
+    { "title": "Run the acceptance campaign end to end and have it approved", "state": "done" },
+    { "title": "Turn the gate's own coverage into tests, so a gate that checks nothing fails loudly", "state": "done" }
+  ]
+}

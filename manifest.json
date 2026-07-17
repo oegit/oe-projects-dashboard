@@ -2,6 +2,7 @@
   "schema_version": "1",
   "projects": [
     "agent-email-development",
-    "agent-landing-page-ab-testing"
+    "agent-landing-page-ab-testing",
+    "agent-video-production"
   ]
 }
