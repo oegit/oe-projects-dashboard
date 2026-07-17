@@ -4,40 +4,41 @@
   "name": "Agent: Video Production",
   "type": "agent",
   "status": "done",
-  "summary": "A portable agent that takes a brief to finished social video — generation, assembly, voice-over and captions per language — with a human approving before anything that costs money runs.",
+  "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
   "last_updated": "2026-07-17",
   "objectives": [
-    "Take a brief to a finished, approved social video without a hand-off between five tools along the way.",
-    "Keep spend deliberate: nothing paid runs without a human saying go, and every cost is recorded against the campaign that caused it.",
-    "Keep it portable: brand, voice, glossary and music rights are declared per project, never wired into the agent.",
-    "Deliver every format and language a campaign needs from one approved master."
+    "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
+    "The best quality for the lowest cost.",
+    "Ten to thirty social videos per campaign, as themed versions of one main video.",
+    "Add a new brand by adding a folder. The agent itself never changes.",
+    "Nothing that costs money runs until a person says go."
   ],
   "outcomes": [
     {
-      "text": "The agent produced a full campaign end to end: a master and three themed variations, each in two languages and three aspect ratios, with captions burned in and a subtitle file per language. A human signed every gate."
+      "text": "It made a full campaign: one main video and three themed versions, each in two languages and three shapes, with captions burned in and a subtitle file per language. A person approved every step."
     },
     {
-      "text": "The cheap gate caught the expensive mistake. A generated still came back with broken English on it — in an ad for an English school. It was rejected at the storyboard stage, at the price of a still image rather than the price of the finished clip."
+      "text": "The cheap check caught the expensive mistake. A generated image came back with broken English written on it — in an ad for an English school. It was thrown out at the sketch stage, for the price of a picture instead of the price of a finished video."
     },
     {
-      "text": "Cost is checked before each paid step, recorded per job, and reconciled afterwards against the provider's own record. A campaign's spend is a number someone can verify, not an estimate — and a cost the provider never reports is marked as missing rather than quietly counted as zero."
+      "text": "Every cost is checked before it is spent, recorded job by job, and matched afterwards against the provider's own receipt. A cost the provider never reports gets marked as missing, instead of quietly counted as zero."
     },
     {
-      "text": "Running the agent on a real campaign found four defects in the agent itself — a music bed that was never actually mixed in, a variation that inherited the wrong voice-over — and each one became a fix plus a test that fails if it comes back."
+      "text": "Using it for real found four faults in the agent itself — music that never actually got mixed in, a version that inherited the wrong voice-over. Each one became a fix, plus a test that fails if it ever comes back."
     },
     {
-      "text": "The quality gate now checks its own coverage. It used to report a clean pass while running one of the four checks it promised; a run that inspects less than the campaign declares is now a failure instead of a green light."
+      "text": "The quality check now checks itself. It used to report all-clear while running one of the four checks it promised. The videos were fine; the all-clear was not worth much until this was fixed."
     }
   ],
   "milestones": [
-    { "title": "Write the portable agent: what it produces, in what order, and where a human decides", "state": "done" },
-    { "title": "Pin the model catalogue to one file, so changing a model is a config change and not a code change", "state": "done" },
-    { "title": "Build the assembly template and the export presets", "state": "done" },
-    { "title": "Make cost a preflight and a ledger rather than a surprise", "state": "done" },
-    { "title": "Prove the pipeline end to end on a throwaway brand, with nothing paid", "state": "done" },
-    { "title": "Debug it on a real dry run and fix what that exposed", "state": "done" },
-    { "title": "Add the voice-over and captions path, per language", "state": "done" },
-    { "title": "Run the acceptance campaign end to end and have it approved", "state": "done" },
-    { "title": "Turn the gate's own coverage into tests, so a gate that checks nothing fails loudly", "state": "done" }
+    { "title": "Write the agent: what it makes, in what order, and where a person decides", "state": "done" },
+    { "title": "Keep every model choice in one file, so switching models is not a code change", "state": "done" },
+    { "title": "Build the edit template and the export formats", "state": "done" },
+    { "title": "Make cost something you check before spending, not after", "state": "done" },
+    { "title": "Prove the whole pipeline on a throwaway brand, spending nothing", "state": "done" },
+    { "title": "Debug it on a real run and fix what that broke", "state": "done" },
+    { "title": "Add the voice-over and the captions, in every language", "state": "done" },
+    { "title": "Make a real campaign end to end and get it approved", "state": "done" },
+    { "title": "Turn the quality check's own blind spots into tests", "state": "done" }
   ]
 }

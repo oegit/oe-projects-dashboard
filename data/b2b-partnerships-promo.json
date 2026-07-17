@@ -4,39 +4,39 @@
   "name": "B2B Partnerships Promo",
   "type": "system",
   "status": "on track",
-  "summary": "A spreadsheet row becomes a finished, personalized asset set for a partner agent — flyer, messaging image and email — generated and filed without anyone opening a design file.",
+  "summary": "A row in a spreadsheet comes out as a finished, personalized set of assets for a partner — flyer, messaging image and email — without anyone opening a design file.",
   "last_updated": "2026-07-17",
   "objectives": [
-    "Produce one personalized asset set per partner agent per campaign, without anyone rebuilding a file by hand.",
-    "Keep one partner roster as the single source of truth, so a campaign is built from it rather than re-typed into it.",
-    "Let partner agents register and edit their own details, instead of routing every change through one person.",
-    "Serve every market the partnership runs in, in its own language."
+    "One personalized set of assets per partner, per campaign — without anyone rebuilding a file by hand.",
+    "One partner list that campaigns are built from, instead of re-typing people into each one.",
+    "Partners keep their own details up to date, themselves.",
+    "Every market in its own language."
   ],
   "outcomes": [
     {
-      "text": "A spreadsheet row becomes a finished asset set — a co-branded PDF flyer, a messaging image and an HTML email — filed automatically into the right folder for its region, campaign and agent. The assets for shipped campaigns come out of this pipeline."
+      "text": "A row in a spreadsheet comes out the other end as a finished flyer, a messaging image and an email — co-branded, personalized, and filed in the right folder for its region, campaign and partner. Real campaigns ship out of this."
     },
     {
-      "text": "Partner agents register and edit themselves through a web form, and the roster they populate is what campaigns are built from. Adding a campaign no longer means re-entering the people in it."
+      "text": "Partners register and update themselves through a form, and that list is what campaigns are built from. Setting up a campaign no longer means re-typing the people in it."
     },
     {
-      "text": "The form is hardened against the failures that actually cost data: concurrent edits are locked, submissions are validated on the server rather than trusted from the browser, and user input is rendered as text instead of markup."
+      "text": "The form is built for what actually goes wrong: two people editing at once, bad data typed in, and text that tries to behave like code. All three are handled."
     },
     {
-      "text": "Nothing is published by hand. The email is built and passed through a blocking quality check before release, and the spreadsheet's own scripts are deployed from version control rather than pasted into a console."
+      "text": "Nothing goes out by hand. The email passes a check that can stop it, and the spreadsheet's own code is deployed from version control instead of pasted into a window."
     },
     {
-      "text": "It runs on live campaigns, not in rehearsal — the registration form has been used against the real roster, and the fixes since then came from watching people use it rather than from a plan."
+      "text": "It runs on real campaigns. Every fix since it launched came from watching people use it, not from a plan written beforehand."
     }
   ],
   "milestones": [
-    { "title": "Establish one spreadsheet schema and one placeholder contract for every asset", "state": "done" },
-    { "title": "Make the partner roster the source that campaigns are built from", "state": "done" },
-    { "title": "Ship the self-service registration form for partner agents", "state": "done" },
-    { "title": "Harden the form against concurrent edits, bad input and data loss", "state": "done" },
-    { "title": "Deploy the spreadsheet's scripts from version control instead of by hand", "state": "done" },
-    { "title": "Unify on one email pipeline, built and checked before anything is published", "state": "done" },
-    { "title": "Run it on live campaigns and fix what real use exposed", "state": "done" },
-    { "title": "Decide whether the registration form needs its own Spanish, Portuguese and Turkish versions, now that the team is using it", "state": "next" }
+    { "title": "Agree one spreadsheet layout, and one set of placeholders for every asset", "state": "done" },
+    { "title": "Make the partner list the thing campaigns are built from", "state": "done" },
+    { "title": "Ship the form partners use to register themselves", "state": "done" },
+    { "title": "Handle what real use breaks: two editors at once, bad input, lost rows", "state": "done" },
+    { "title": "Deploy the spreadsheet's code from version control instead of by hand", "state": "done" },
+    { "title": "One email pipeline, checked before anything goes out", "state": "done" },
+    { "title": "Run it on real campaigns and fix what that exposed", "state": "done" },
+    { "title": "Decide if the form needs its own Spanish, Portuguese and Turkish versions, now that the team uses it", "state": "next" }
   ]
 }
