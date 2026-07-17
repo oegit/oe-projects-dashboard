@@ -112,6 +112,11 @@ function main() {
   // configuration the page reads for itself (data/_featured.json powers the
   // optional "live pilots" band). It carries no slug, belongs in no manifest,
   // and is not held to the card schema, so it is skipped on both counts here.
+  //
+  // One deployment catch: GitHub Pages runs Jekyll, which drops any path that
+  // begins with "_" — so an underscore file 404s in production unless the repo
+  // root carries a .nojekyll marker. It does; if it is ever removed, the band
+  // silently stops loading while every other card keeps working.
   const onDisk = fs.existsSync(DATA_DIR)
     ? fs.readdirSync(DATA_DIR)
         .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
