@@ -1,4 +1,6 @@
 {
   "schema_version": "1",
-  "projects": []
+  "projects": [
+    "agent-email-development"
+  ]
 }

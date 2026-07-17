@@ -1,0 +1,59 @@
+{
+  "schema_version": "1",
+  "slug": "agent-email-development",
+  "name": "Agent: Email Development",
+  "type": "agent",
+  "status": "on track",
+  "summary": "A portable agent that turns a Figma design into an HTML email which renders correctly everywhere — including the clients that break everything.",
+  "last_updated": "2026-07-16",
+  "objectives": [
+    "Turn a Figma design into a production-ready HTML email that renders correctly across every major email client.",
+    "Keep the knowledge portable: the same agent works on any machine, for any brand, with nothing wired to the workspace that hosts it.",
+    "Make the pre-send quality checks executable, so a bad build is rejected rather than reviewed."
+  ],
+  "outcomes": [
+    {
+      "text": "The agent is published and documented — anyone can download the folder and build an email with it, following a step-by-step guide.",
+      "evidence": [
+        { "label": "Public repository", "url": "https://github.com/oegit/agent-email-development" },
+        { "label": "Step-by-step guide", "url": "https://oegit.github.io/oe-docs/email-development-agent-guide.html" }
+      ]
+    },
+    {
+      "text": "The clients that break most — Outlook on Windows, Outlook.com, and Gmail in dark mode — now have a confirmed recipe each, tested on real renders. Every round is recorded, including the techniques that were disproven and the limitations still accepted.",
+      "evidence": [
+        { "label": "Dark mode rules and experiment log", "url": "https://github.com/oegit/agent-email-development/blob/main/DARK_MODE_RULES.md" },
+        { "label": "Outlook rules", "url": "https://github.com/oegit/agent-email-development/blob/main/OUTLOOK_RULES.md" }
+      ]
+    },
+    {
+      "text": "The pre-send checklist runs as code. It reads the compiled email, blocks the send on any hard-rule failure, and writes a report — no dependencies, so it travels with the agent.",
+      "evidence": [
+        { "label": "The automated gate", "url": "https://github.com/oegit/agent-email-development/blob/main/validate-email.js" },
+        { "label": "The full pre-send checklist", "url": "https://github.com/oegit/agent-email-development/blob/main/PRE_SEND_QA.md" }
+      ]
+    },
+    {
+      "text": "Design-to-email is a written 10-step process rather than one person's habit, so a second builder gets the same result.",
+      "evidence": [
+        { "label": "The workflow", "url": "https://github.com/oegit/agent-email-development/blob/main/FIGMA_TO_EMAIL_WORKFLOW.md" }
+      ]
+    },
+    {
+      "text": "Portability was proven, not assumed: the agent built a full newsletter for a brand it had never seen — different palette, a serif font, a different language and layout — from its generic rules alone. The build passed, and the two gaps it exposed became new rules."
+    },
+    {
+      "text": "One email pipeline instead of two. The predecessor system was retired and the agent's template became the single source for production email, ending the ambiguity of two codebases building the same asset from the same data."
+    }
+  ],
+  "milestones": [
+    { "title": "Consolidate the email knowledge into one portable rule set", "state": "done" },
+    { "title": "Retire the predecessor system so there is a single email pipeline", "state": "done" },
+    { "title": "Make the agent's template the only source of production email", "state": "done" },
+    { "title": "Turn the pre-send checklist into an automated gate", "state": "done" },
+    { "title": "Verify the pipeline end to end and resume production", "state": "done" },
+    { "title": "Prove the agent works for a brand it has never seen", "state": "done" },
+    { "title": "Publish the agent and its guide for anyone to use", "state": "done" },
+    { "title": "Set up a review surface for drafting and checking emails without running code", "state": "next" }
+  ]
+}
