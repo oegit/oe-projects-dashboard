@@ -89,6 +89,14 @@ Local file paths never appear in a data file, even though `data/` is exempt from
 
 It exists so this contract can change without breaking anyone who forked the dashboard. A fork pinned to `"1"` keeps working; when the shape changes, the version goes to `"2"` and the migration is explicit rather than a silent reinterpretation of the same field names.
 
+### Version 1 is frozen — 2026-07-17
+
+The first project was written against this contract and reviewed against it, and the shape held. Version 1 is closed as of that review.
+
+Closed means: further projects are written against it **as-is**. A project that does not fit is a finding about how that project is being described — not a reason to widen the contract so the awkward case slides through. That reflex is exactly how a schema stops meaning anything: it quietly becomes whatever the most recent writer needed, every earlier file silently changes meaning, and nothing is portable any more.
+
+Changing the shape from here is a deliberate act: `schema_version` goes to `"2"`, the migration is written down, and it is decided on purpose. It is not an edit to this file.
+
 ## Checking a file
 
 ```bash
