@@ -1,0 +1,62 @@
+{
+  "schema_version": "1",
+  "slug": "agent-web-development",
+  "name": "Agent: Web Development",
+  "type": "agent",
+  "status": "done",
+  "summary": "A portable agent that turns a Figma design into a production-ready page — faithful to the design, fast, accessible, and real in every language it ships in.",
+  "last_updated": "2026-07-17",
+  "objectives": [
+    "Turn a Figma design into a production-ready static site that matches the design and proves it, rather than being reviewed by eye.",
+    "Keep the agent client-agnostic: every brand, endpoint and language enters through the project's own config, never through the agent.",
+    "Make quality a gate rather than an opinion — a build below the bar cannot be delivered.",
+    "Ship each language as a real page a search engine can find, not a translation swapped in by script."
+  ],
+  "outcomes": [
+    {
+      "text": "The agent built a landing page end to end from a single design frame and shipped it live in two languages, each one a real crawlable page set that points at the other.",
+      "evidence": [
+        { "label": "Live page (Spanish)", "url": "https://oegit.github.io/oe-web-agent-pilot/es/" },
+        { "label": "Live page (Portuguese, Brazil)", "url": "https://oegit.github.io/oe-web-agent-pilot/pt/" },
+        { "label": "The page's source", "url": "https://github.com/oegit/oe-web-agent-pilot" }
+      ]
+    },
+    {
+      "text": "The published page scores 97 / 97 / 100 / 100 on Lighthouse — performance, accessibility, best practices, SEO — against a delivery gate set at 90 in all four. Below the bar, the build does not ship.",
+      "evidence": [
+        { "label": "The page's quality summary", "url": "https://github.com/oegit/oe-web-agent-pilot/blob/main/README.md" }
+      ]
+    },
+    {
+      "text": "SEO is generated from the project's own data rather than typed into the markup: one module renders the page head, the robots file and a multilingual sitemap, and a static console lets a non-developer review and edit it before launch.",
+      "evidence": [
+        { "label": "The generated multilingual sitemap", "url": "https://oegit.github.io/oe-web-agent-pilot/sitemap.xml" },
+        { "label": "The generated robots file", "url": "https://oegit.github.io/oe-web-agent-pilot/robots.txt" }
+      ]
+    },
+    {
+      "text": "Each language gets its own social preview card, written in that language — because the image a reader sees when the link is shared has words on it, and words are copy.",
+      "evidence": [
+        { "label": "Preview card (Spanish)", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image.jpg" },
+        { "label": "Preview card (Portuguese, Brazil)", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image-pt.jpg" }
+      ]
+    },
+    {
+      "text": "Fidelity is measured on three independent signals instead of one pixel percentage — because the raw number never reaches zero once photographs and substituted fonts are in the frame, and a threshold nobody can pass is a threshold everybody ignores."
+    },
+    {
+      "text": "The agent carries no brand of its own. A check across its core files returns zero company-specific references, so copying the folder is all it takes to run it for a different client."
+    }
+  ],
+  "milestones": [
+    { "title": "Write the portable rule set: grid, responsive, dark mode, SEO, languages, visual QA and the pre-launch gate", "state": "done" },
+    { "title": "Make an approved project config a hard gate — no build starts without one", "state": "done" },
+    { "title": "Turn structural QA, visual fidelity and performance into scripts that block delivery", "state": "done" },
+    { "title": "Build the first landing page end to end from a design frame", "state": "done" },
+    { "title": "Ship it in two languages, each a real crawlable page set", "state": "done" },
+    { "title": "Publish it live", "state": "done" },
+    { "title": "Make SEO generated rather than hand-written, with a console a non-developer can use", "state": "done" },
+    { "title": "Fold the first project's findings back into the rules, so the next one starts ahead of it", "state": "done" },
+    { "title": "Set the agent up in the shared workspace so a new project can start from it", "state": "done" }
+  ]
+}
