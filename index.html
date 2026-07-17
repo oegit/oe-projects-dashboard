@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Status of the projects listed in this repository, read straight from their data files.">
+<title>Projects Dashboard</title>
+<style>
+  :root {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+    --color-bg: #f6f7f9;
+    --color-surface: #ffffff;
+    --color-border: #e3e6ea;
+    --color-border-strong: #cdd3da;
+    --color-text: #12171d;
+    --color-text-muted: #5b6673;
+    --color-accent: #1f4fd8;
+
+    /* Status palette. Each pair is a tinted background with text dark enough
+       to clear WCAG AA on it — the badge has to survive being the only colour
+       cue on the card. */
+    --status-on-track-bg: #dff3e6;
+    --status-on-track-fg: #0f5f30;
+    --status-at-risk-bg: #fdefd4;
+    --status-at-risk-fg: #6d4605;
+    --status-blocked-bg: #fce1e1;
+    --status-blocked-fg: #8a1c1c;
+    --status-on-hold-bg: #e7eaee;
+    --status-on-hold-fg: #414b57;
+    --status-done-bg: #dfe8fd;
+    --status-done-fg: #1a3f9e;
+    --status-unknown-bg: #e7eaee;
+    --status-unknown-fg: #414b57;
+
+    --color-error-bg: #fce1e1;
+    --color-error-fg: #8a1c1c;
+    --color-error-border: #f0b4b4;
+
+    --radius: 10px;
+    --radius-sm: 5px;
+    --shadow-card: 0 1px 2px rgba(18, 23, 29, .06), 0 1px 8px rgba(18, 23, 29, .04);
+    --space: 1rem;
+    --measure: 68ch;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: clamp(1.5rem, 4vw, 3rem) var(--space) 4rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .layout { max-width: 60rem; margin: 0 auto; }
+
+  /* --- Header ------------------------------------------------------------ */
+
+  .masthead { margin-bottom: 2rem; }
+
+  .masthead__title {
+    margin: 0;
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+    line-height: 1.2;
+    letter-spacing: -.02em;
+  }
+
+  .masthead__asof {
+    margin: .4rem 0 0;
+    color: var(--color-text-muted);
+    font-size: .9rem;
+  }
+
+  /* --- Page-level failure ------------------------------------------------ */
+
+  .banner {
+    margin-bottom: 2rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--color-error-border);
+    border-radius: var(--radius);
+    background: var(--color-error-bg);
+    color: var(--color-error-fg);
+  }
+  .banner__title { margin: 0 0 .3rem; font-size: 1rem; }
+  .banner__detail { margin: 0; font-size: .9rem; }
+  .banner__detail code { font-family: var(--font-mono); font-size: .85em; }
+
+  /* --- Cards ------------------------------------------------------------- */
+
+  .board { display: grid; gap: 1.1rem; }
+
+  .card {
+    padding: 1.4rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+  }
+
+  .card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .card__name {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    letter-spacing: -.01em;
+  }
+
+  .card__type {
+    margin: .25rem 0 0;
+    color: var(--color-text-muted);
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  .badge {
+    flex: none;
+    padding: .25rem .6rem;
+    border-radius: 999px;
+    background: var(--status-unknown-bg);
+    color: var(--status-unknown-fg);
+    font-size: .78rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .badge--on-track { background: var(--status-on-track-bg); color: var(--status-on-track-fg); }
+  .badge--at-risk  { background: var(--status-at-risk-bg);  color: var(--status-at-risk-fg); }
+  .badge--blocked  { background: var(--status-blocked-bg);  color: var(--status-blocked-fg); }
+  .badge--on-hold  { background: var(--status-on-hold-bg);  color: var(--status-on-hold-fg); }
+  .badge--done     { background: var(--status-done-bg);     color: var(--status-done-fg); }
+
+  .card__summary {
+    margin: .9rem 0 0;
+    max-width: var(--measure);
+    color: var(--color-text-muted);
+  }
+
+  /* --- Derived progress -------------------------------------------------- */
+
+  .progress { margin-top: 1.2rem; }
+
+  .progress__track {
+    height: 7px;
+    border-radius: 999px;
+    background: var(--color-border);
+    overflow: hidden;
+  }
+
+  .progress__fill {
+    height: 100%;
+    border-radius: 999px;
+    background: var(--color-accent);
+  }
+
+  .progress__label {
+    margin: .45rem 0 0;
+    color: var(--color-text-muted);
+    font-size: .82rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* --- Sections ---------------------------------------------------------- */
+
+  .section { margin-top: 1.3rem; }
+
+  .section__title {
+    margin: 0 0 .5rem;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .list { margin: 0; padding-left: 1.1rem; max-width: var(--measure); }
+  .list li + li { margin-top: .35rem; }
+
+  /* --- Expandable detail ------------------------------------------------- */
+
+  .detail { margin-top: 1.3rem; border-top: 1px solid var(--color-border); }
+
+  .detail__toggle {
+    padding: .8rem 0 0;
+    color: var(--color-accent);
+    font-size: .88rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+  }
+  .detail__toggle::-webkit-details-marker { display: none; }
+  .detail__toggle::before {
+    content: "▸";
+    display: inline-block;
+    width: 1em;
+    font-size: .8em;
+  }
+  .detail[open] .detail__toggle::before { content: "▾"; }
+  .detail__toggle:hover { text-decoration: underline; }
+  .detail__toggle:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+
+  .outcome { max-width: var(--measure); }
+  .outcome + .outcome { margin-top: .9rem; }
+  .outcome__text { margin: 0; }
+
+  .evidence {
+    margin: .35rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+  }
+
+  .evidence__link {
+    display: inline-block;
+    padding: .15rem .5rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    background: var(--color-bg);
+    color: var(--color-accent);
+    font-size: .8rem;
+    text-decoration: none;
+  }
+  .evidence__link:hover { border-color: var(--color-accent); text-decoration: underline; }
+  .evidence__link:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+  /* Evidence that failed the https check renders as plain text, not a link. */
+  .evidence__void {
+    display: inline-block;
+    padding: .15rem .5rem;
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+    font-size: .8rem;
+  }
+
+  .milestones { margin: 0; padding: 0; list-style: none; max-width: var(--measure); }
+
+  .milestone {
+    display: flex;
+    align-items: baseline;
+    gap: .55rem;
+    padding: .3rem 0;
+  }
+
+  .milestone__marker {
+    flex: none;
+    width: .6rem;
+    height: .6rem;
+    margin-top: .1rem;
+    border: 1.5px solid var(--color-border-strong);
+    border-radius: 50%;
+    background: var(--color-surface);
+  }
+  .milestone--done .milestone__marker { border-color: var(--color-accent); background: var(--color-accent); }
+  .milestone--in-progress .milestone__marker { border-color: var(--color-accent); }
+
+  .milestone--next .milestone__title { color: var(--color-text-muted); }
+
+  .milestone__state {
+    flex: none;
+    margin-left: auto;
+    padding-left: .6rem;
+    color: var(--color-text-muted);
+    font-size: .75rem;
+    white-space: nowrap;
+  }
+
+  .card__updated {
+    margin: 1.2rem 0 0;
+    color: var(--color-text-muted);
+    font-size: .8rem;
+  }
+
+  /* --- Per-card failure -------------------------------------------------- */
+
+  .card--error { border-color: var(--color-error-border); background: var(--color-error-bg); }
+  .card--error .card__name { color: var(--color-error-fg); font-family: var(--font-mono); font-size: 1rem; }
+  .card__error {
+    margin: .5rem 0 0;
+    max-width: var(--measure);
+    color: var(--color-error-fg);
+    font-size: .88rem;
+  }
+
+  .empty {
+    padding: 2rem;
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius);
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+
+  .noscript {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <header class="masthead">
+    <h1 class="masthead__title">Projects Dashboard</h1>
+    <p class="masthead__asof" id="as-of" hidden></p>
+  </header>
+
+  <noscript>
+    <p class="noscript">This dashboard reads its data with JavaScript. Enable it to see the projects, or read the files in <code>data/</code> directly.</p>
+  </noscript>
+
+  <main>
+    <div id="banner" hidden></div>
+    <div class="board" id="board"></div>
+  </main>
+
+</div>
+
+<script>
+'use strict';
+
+/**
+ * Reads manifest.json, then one data/<slug>.json per project it lists, and draws
+ * a card for each. Every fetch is relative to this file, so the page runs
+ * unchanged wherever it is served from — a fork's own Pages URL included. There
+ * is nothing to configure and nothing to build.
+ *
+ * Two rules the rest of this file keeps:
+ *
+ *   1. Text out of JSON reaches the page only through textContent. The data is
+ *      hand-edited and the repository is public; innerHTML would let a typo — or
+ *      a pull request — execute.
+ *   2. A broken data file costs its own card and nothing else. Only the manifest
+ *      can take the board down, because without it there is no list to draw.
+ */
+
+var STATUS_LABELS = {
+  'on track': 'On track',
+  'at risk': 'At risk',
+  'blocked': 'Blocked',
+  'on hold': 'On hold',
+  'done': 'Done'
+};
+
+var TYPE_LABELS = {
+  agent: 'Agent',
+  campaign: 'Campaign',
+  system: 'System'
+};
+
+var MILESTONE_LABELS = {
+  done: 'Done',
+  'in progress': 'In progress',
+  next: 'Next'
+};
+
+/** Turn "on track" into "on-track" so it can key a CSS modifier. */
+function modifier(value) {
+  return String(value).toLowerCase().replace(/[^a-z0-9]+/g, '-');
+}
+
+function el(tag, className, text) {
+  var node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined && text !== null) node.textContent = String(text);
+  return node;
+}
+
+/**
+ * Fetch JSON, relative and cache-busted. Pages sits behind a CDN that will
+ * happily serve a stale file for minutes after a push; the query string is what
+ * keeps a reader from reading yesterday's status.
+ */
+function getJson(url) {
+  return fetch(url + '?v=' + Date.now(), { cache: 'no-store' }).then(function (res) {
+    if (!res.ok) throw new Error('the server answered ' + res.status + ' ' + res.statusText);
+    return res.json();
+  });
+}
+
+/* --- Pieces of a card ---------------------------------------------------- */
+
+function renderProgress(milestones) {
+  var total = milestones.length;
+  var done = milestones.filter(function (m) { return m.state === 'done'; }).length;
+  var percent = total > 0 ? Math.round((done / total) * 100) : 0;
+
+  var wrap = el('div', 'progress');
+
+  var track = el('div', 'progress__track');
+  track.setAttribute('role', 'progressbar');
+  track.setAttribute('aria-valuemin', '0');
+  track.setAttribute('aria-valuemax', '100');
+  track.setAttribute('aria-valuenow', String(percent));
+  track.setAttribute('aria-label', 'Milestones completed');
+
+  var fill = el('div', 'progress__fill');
+  fill.style.width = percent + '%';
+  track.appendChild(fill);
+
+  wrap.appendChild(track);
+  wrap.appendChild(el('p', 'progress__label',
+    percent + '% · ' + done + ' of ' + total + ' milestone' + (total === 1 ? '' : 's') + ' done'));
+  return wrap;
+}
+
+function renderList(title, items) {
+  var section = el('section', 'section');
+  section.appendChild(el('h3', 'section__title', title));
+  var ul = el('ul', 'list');
+  items.forEach(function (item) { ul.appendChild(el('li', null, item)); });
+  section.appendChild(ul);
+  return section;
+}
+
+function renderEvidence(evidence) {
+  var ul = el('ul', 'evidence');
+  evidence.forEach(function (item) {
+    var li = el('li');
+    // The schema already demands https, and CI enforces the schema. This second
+    // check is for the copy of the page that is running against data the gate
+    // never saw — a local edit, a fork's branch.
+    if (typeof item.url === 'string' && item.url.indexOf('https://') === 0) {
+      var link = el('a', 'evidence__link', item.label);
+      link.href = item.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      li.appendChild(link);
+    } else {
+      li.appendChild(el('span', 'evidence__void', item.label + ' (link is not a public https address)'));
+    }
+    ul.appendChild(li);
+  });
+  return ul;
+}
+
+function renderOutcomes(outcomes) {
+  var section = el('section', 'section');
+  section.appendChild(el('h3', 'section__title', 'Outcomes'));
+  outcomes.forEach(function (outcome) {
+    var block = el('div', 'outcome');
+    block.appendChild(el('p', 'outcome__text', outcome.text));
+    if (Array.isArray(outcome.evidence) && outcome.evidence.length > 0) {
+      block.appendChild(renderEvidence(outcome.evidence));
+    }
+    section.appendChild(block);
+  });
+  return section;
+}
+
+/** The timeline. Order is the sequence — the data carries no dates by design. */
+function renderMilestones(milestones) {
+  var section = el('section', 'section');
+  section.appendChild(el('h3', 'section__title', 'Milestones'));
+  var ul = el('ul', 'milestones');
+  milestones.forEach(function (m) {
+    var li = el('li', 'milestone milestone--' + modifier(m.state));
+    var marker = el('span', 'milestone__marker');
+    marker.setAttribute('aria-hidden', 'true');
+    li.appendChild(marker);
+    li.appendChild(el('span', 'milestone__title', m.title));
+    li.appendChild(el('span', 'milestone__state', MILESTONE_LABELS[m.state] || m.state));
+    ul.appendChild(li);
+  });
+  section.appendChild(ul);
+  return section;
+}
+
+/* --- Cards --------------------------------------------------------------- */
+
+function renderCard(card) {
+  var article = el('article', 'card');
+
+  var head = el('div', 'card__head');
+  var titles = el('div', 'card__titles');
+  titles.appendChild(el('h2', 'card__name', card.name));
+  titles.appendChild(el('p', 'card__type', TYPE_LABELS[card.type] || card.type));
+  head.appendChild(titles);
+  head.appendChild(el('span', 'badge badge--' + modifier(card.status),
+    STATUS_LABELS[card.status] || card.status));
+  article.appendChild(head);
+
+  article.appendChild(el('p', 'card__summary', card.summary));
+  article.appendChild(renderProgress(card.milestones));
+  article.appendChild(renderList('Objectives', card.objectives));
+
+  // Everything below the fold. <details> gives keyboard support and an
+  // accessible open/closed state for free — no JS, nothing to get wrong.
+  var details = el('details', 'detail');
+  details.appendChild(el('summary', 'detail__toggle', 'Outcomes and milestones'));
+  var body = el('div', 'detail__body');
+  if (Array.isArray(card.outcomes) && card.outcomes.length > 0) {
+    body.appendChild(renderOutcomes(card.outcomes));
+  }
+  body.appendChild(renderMilestones(card.milestones));
+  // Only here: a date on the card itself would read as a freshness verdict the
+  // data cannot support.
+  body.appendChild(el('p', 'card__updated', 'Last updated ' + card.last_updated));
+  details.appendChild(body);
+  article.appendChild(details);
+
+  return article;
+}
+
+function renderCardError(slug, message) {
+  var article = el('article', 'card card--error');
+  var head = el('div', 'card__head');
+  head.appendChild(el('h2', 'card__name', 'data/' + slug + '.json'));
+  head.appendChild(el('span', 'badge', 'Unavailable'));
+  article.appendChild(head);
+  article.appendChild(el('p', 'card__error',
+    'This project could not be loaded — ' + message + '. The other cards on this page are unaffected.'));
+  return article;
+}
+
+function showBanner(message) {
+  var banner = document.getElementById('banner');
+  banner.className = 'banner';
+  banner.setAttribute('role', 'alert');
+  banner.appendChild(el('h2', 'banner__title', 'The dashboard could not load its project list'));
+  var detail = el('p', 'banner__detail');
+  detail.appendChild(document.createTextNode('Reading '));
+  detail.appendChild(el('code', null, 'manifest.json'));
+  detail.appendChild(document.createTextNode(' failed — ' + message + '. Nothing can be shown until it is readable again.'));
+  banner.appendChild(detail);
+  banner.hidden = false;
+}
+
+/** "Data as of" is the newest last_updated across the cards that loaded. */
+function showAsOf(dates) {
+  if (dates.length === 0) return;
+  var latest = dates.slice().sort().pop();
+  var node = document.getElementById('as-of');
+  node.textContent = 'Data as of ' + latest;
+  node.hidden = false;
+}
+
+/* --- Boot ---------------------------------------------------------------- */
+
+function main() {
+  var board = document.getElementById('board');
+
+  getJson('./manifest.json').then(function (manifest) {
+    if (!manifest || !Array.isArray(manifest.projects)) {
+      throw new Error('it does not list a "projects" array');
+    }
+    if (manifest.projects.length === 0) {
+      board.appendChild(el('p', 'empty', 'No projects are listed yet.'));
+      return;
+    }
+
+    // A slot per project, in manifest order, before any data arrives: the cards
+    // then fill in place and the page never reorders itself as fetches land.
+    var slots = manifest.projects.map(function (slug) {
+      var slot = el('div');
+      board.appendChild(slot);
+      return slot;
+    });
+
+    var dates = [];
+    var loads = manifest.projects.map(function (slug, i) {
+      return getJson('./data/' + slug + '.json').then(function (card) {
+        slots[i].appendChild(renderCard(card));
+        if (typeof card.last_updated === 'string') dates.push(card.last_updated);
+      }).catch(function (err) {
+        slots[i].appendChild(renderCardError(slug, err.message));
+      });
+    });
+
+    return Promise.all(loads).then(function () { showAsOf(dates); });
+  }).catch(function (err) {
+    showBanner(err.message);
+  });
+}
+
+main();
+</script>
+</body>
+</html>
