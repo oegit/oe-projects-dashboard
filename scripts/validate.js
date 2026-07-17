@@ -108,8 +108,14 @@ function main() {
   }
 
   // --- Manifest vs. disk, in both directions ------------------------------
+  // A leading underscore marks a data file that is NOT a project card —
+  // configuration the page reads for itself (data/_featured.json powers the
+  // optional "live pilots" band). It carries no slug, belongs in no manifest,
+  // and is not held to the card schema, so it is skipped on both counts here.
   const onDisk = fs.existsSync(DATA_DIR)
-    ? fs.readdirSync(DATA_DIR).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, ''))
+    ? fs.readdirSync(DATA_DIR)
+        .filter((f) => f.endsWith('.json') && !f.startsWith('_'))
+        .map((f) => f.replace(/\.json$/, ''))
     : [];
 
   for (const slug of manifest.projects) {
