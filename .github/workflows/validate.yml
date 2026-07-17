@@ -1,0 +1,39 @@
+name: Validate data
+
+# The page reads data/ straight off the branch, so anything invalid that lands
+# on main is live immediately. This runs on the way in, not after.
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'manifest.json'
+      - 'schema.json'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/validate.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'manifest.json'
+      - 'schema.json'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/validate.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      # The same command a writer runs locally — green here means green there.
+      - run: node scripts/validate.js

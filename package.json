@@ -1,0 +1,14 @@
+{
+  "name": "oe-projects-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static, single-page dashboard showing the status of a set of projects.",
+  "scripts": {
+    "validate": "node scripts/validate.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  },
+  "license": "UNLICENSED"
+}
