@@ -3,7 +3,7 @@
   "slug": "agent-email-development",
   "name": "Agent: Email Development",
   "type": "agent",
-  "status": "on track",
+  "status": "done",
   "summary": "A portable agent that turns a Figma design into an HTML email which renders correctly everywhere — including the clients that break everything.",
   "last_updated": "2026-07-16",
   "objectives": [
@@ -54,6 +54,6 @@
     { "title": "Verify the pipeline end to end and resume production", "state": "done" },
     { "title": "Prove the agent works for a brand it has never seen", "state": "done" },
     { "title": "Publish the agent and its guide for anyone to use", "state": "done" },
-    { "title": "Set up a review surface for drafting and checking emails without running code", "state": "next" }
+    { "title": "Set up a review surface for drafting and checking emails without running code", "state": "done" }
   ]
 }
