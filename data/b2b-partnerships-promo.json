@@ -5,7 +5,7 @@
   "type": "system",
   "status": "on track",
   "summary": "A row in a spreadsheet comes out as a finished, personalized set of assets for a partner — flyer, messaging image and email — without anyone opening a design file.",
-  "last_updated": "2026-07-17",
+  "last_updated": "2026-07-20",
   "objectives": [
     "One personalized set of assets per partner, per campaign — without anyone rebuilding a file by hand.",
     "One partner list that campaigns are built from, instead of re-typing people into each one.",
@@ -27,6 +27,9 @@
     },
     {
       "text": "It runs on real campaigns. Every fix since it launched came from watching people use it, not from a plan written beforehand."
+    },
+    {
+      "text": "An independent review of the whole pipeline became shipped safeguards, not a document: tests block a build-breaking change before production, the button refuses to run from a partner-list tab, untrusted text can't inject markup, and every email is checked as it's made."
     }
   ],
   "milestones": [
@@ -37,6 +40,7 @@
     { "title": "Deploy the spreadsheet's code from version control instead of by hand", "state": "done" },
     { "title": "One email pipeline, checked before anything goes out", "state": "done" },
     { "title": "Run it on real campaigns and fix what that exposed", "state": "done" },
+    { "title": "Turn an independent review of the whole pipeline into shipped safeguards", "state": "done" },
     { "title": "Decide if the form needs its own Spanish, Portuguese and Turkish versions, now that the team uses it", "state": "next" }
   ]
 }
