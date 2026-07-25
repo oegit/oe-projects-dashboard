@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "done",
   "summary": "Turns a Figma design into a real page that matches it — fast, accessible, and a proper page in every language it ships in.",
-  "last_updated": "2026-07-17",
+  "last_updated": "2026-07-25",
   "objectives": [
     "Turn a Figma design into a real page that matches it — and prove the match, instead of eyeballing it.",
     "A page that misses the quality bar does not ship. The gate decides, not an opinion.",
@@ -42,6 +42,9 @@
     },
     {
       "text": "Matching the design is measured three ways instead of one. A single \"percent different\" score never reaches zero once there are photographs on the page — and a bar nobody can clear is a bar everybody ignores."
+    },
+    {
+      "text": "An independent check went looking for holes in the agent and found five. All five are closed — including a test that had been written but never actually run, so the gate that stops a below-standard page from shipping was itself unwatched. It runs on every change now."
     }
   ],
   "milestones": [
@@ -53,6 +56,7 @@
     { "title": "Put it live", "state": "done" },
     { "title": "Generate the SEO instead of hand-writing it, with a console for people who do not code", "state": "done" },
     { "title": "Feed what the first project taught back into the rules", "state": "done" },
-    { "title": "Set the agent up in the shared workspace, so anyone can start a project with it", "state": "done" }
+    { "title": "Set the agent up in the shared workspace, so anyone can start a project with it", "state": "done" },
+    { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" }
   ]
 }
