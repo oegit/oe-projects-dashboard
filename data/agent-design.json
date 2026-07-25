@@ -1,0 +1,84 @@
+{
+  "schema_version": "1",
+  "slug": "agent-design",
+  "name": "Agent: Design",
+  "type": "agent",
+  "status": "on track",
+  "summary": "A design agent for any brand: each brand's system in one checked file, and everything it makes held to a curated bar of excellent work.",
+  "last_updated": "2026-07-25",
+  "objectives": [
+    "Make art-directed design across every digital channel and TV — senior work, not something that looks templated.",
+    "Serve any brand: each brand's system lives in its own pack, and the shared engine never carries one brand's content.",
+    "Hold every piece to a curated bar of excellent work before a person is asked to look at it.",
+    "Write down what must never be designed, so one hit fails the work no matter how well it scores elsewhere."
+  ],
+  "outcomes": [
+    {
+      "text": "A brand now fits in one checked file: colours, type, spacing, logo rules, motion and imagery policy. The same file can feed design, web and video, so nobody copies brand values by hand from one tool to the next."
+    },
+    {
+      "text": "Open English is the first brand pack — its brand book rebuilt into that shape. It ships as a release candidate on purpose: six gaps are written down, three of them blocking, instead of being filled in with guesses."
+    },
+    {
+      "text": "Building the first real pack found two faults in the brand system itself: a text weight the fonts do not actually have, which silently renders heavier than intended, and a logo file that can recolour itself when embedded in a page."
+    },
+    {
+      "text": "Every font was checked against what automated rendering is actually licensed to do. The one that fails stays on the record precisely because it fails, with its approved substitute named — so nobody quietly brings it back later."
+    },
+    {
+      "text": "21 named rules for what the agent must never produce. A hit on any one of them fails the work outright, whatever the rest of the scoring says."
+    },
+    {
+      "text": "The rule that keeps brand content out of the shared engine runs on every change, and was proved by planting a violation on purpose: that change was rejected and never landed, while a clean one landed with nobody watching."
+    },
+    {
+      "text": "A missing quality bar was caught before it could bite: the agent is meant to art-direct imagery but had no imagery references to be judged against. A fifth reference set was added, raising the minimum library to 40 pieces."
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Set the agent up in its own repository, apart from the shared workspace and its brand assets",
+      "state": "done"
+    },
+    {
+      "title": "Define the file that describes a brand, and the record that travels with every deliverable",
+      "state": "done"
+    },
+    {
+      "title": "Write the rules for what must never be designed",
+      "state": "done"
+    },
+    {
+      "title": "Build the two skills that pick references and hold the work to them",
+      "state": "done"
+    },
+    {
+      "title": "Make every change prove that no brand content leaked into the shared engine",
+      "state": "done"
+    },
+    {
+      "title": "Rebuild Open English as the first brand pack, with its gaps written down instead of guessed",
+      "state": "done"
+    },
+    {
+      "title": "Collect the reference library that sets the quality bar — the last piece before the foundation closes",
+      "state": "in progress"
+    },
+    {
+      "title": "Turn a design into a finished image, and put it through the three checks it must pass",
+      "state": "next"
+    },
+    {
+      "title": "Add motion: animated pieces built from the brand's own motion rules",
+      "state": "next"
+    },
+    {
+      "title": "Prove it ports by onboarding a second brand end to end",
+      "state": "next"
+    },
+    {
+      "title": "Run the pilot: one piece per format, each through every check and human approval",
+      "state": "next"
+    }
+  ]
+}
