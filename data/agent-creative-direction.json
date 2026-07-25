@@ -3,7 +3,7 @@
   "slug": "agent-creative-direction",
   "name": "Agent: Creative Direction",
   "type": "agent",
-  "status": "on track",
+  "status": "done",
   "summary": "Reads the brief like a creative director, then writes the copy — for any brand, any market, never translated word for word.",
   "last_updated": "2026-07-25",
   "objectives": [
@@ -16,20 +16,32 @@
     {
       "text": "Anyone can download the agent and run it: a guided interview becomes copy for organic social, ads, email, landing pages and video scripts.",
       "evidence": [
-        { "label": "The agent", "url": "https://github.com/oegit/agent-creative-direction" },
-        { "label": "The steps it follows", "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/WORKFLOW.md" }
+        {
+          "label": "The agent",
+          "url": "https://github.com/oegit/agent-creative-direction"
+        },
+        {
+          "label": "The steps it follows",
+          "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/WORKFLOW.md"
+        }
       ]
     },
     {
       "text": "Copy with a claim that can't be backed does not ship. The claims check fails closed — an unverified stat or promise holds the copy until a person validates it.",
       "evidence": [
-        { "label": "The claims gate", "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/QA_GATE.md" }
+        {
+          "label": "The claims gate",
+          "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/QA_GATE.md"
+        }
       ]
     },
     {
       "text": "It never translates word for word. Copy is rebuilt for each market so it reads native — Latin America, Spain, Brazil, Turkey — with a person approving the adaptation.",
       "evidence": [
-        { "label": "How it adapts per market", "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/TRANSCREATION.md" }
+        {
+          "label": "How it adapts per market",
+          "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/TRANSCREATION.md"
+        }
       ]
     },
     {
@@ -37,18 +49,66 @@
     },
     {
       "text": "It proved itself end to end before going live: a full dry run across every channel passed, and campaign copy now routes to it."
+    },
+    {
+      "text": "It leads with strategy, not just wording: it questions the brief, builds the campaign idea, and states what each version is betting on — so a reviewer can judge the bet, not only the sentence.",
+      "evidence": [
+        {
+          "label": "How it thinks",
+          "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/CREATIVE_DIRECTION.md"
+        }
+      ]
+    },
+    {
+      "text": "It knows the writing rules of 16 channels — from WhatsApp templates to search ads to TV scripts — and refuses to guess at a platform it has no rules for.",
+      "evidence": [
+        {
+          "label": "The channel rules",
+          "url": "https://github.com/oegit/agent-creative-direction/tree/main/channels"
+        }
+      ]
     }
   ],
   "milestones": [
-    { "title": "Put the whole copy craft into one portable agent — principles, workflow, the interview", "state": "done" },
-    { "title": "Build the claims gate that fails closed, so unbacked copy can't ship", "state": "done" },
-    { "title": "Write the market modules so copy is rebuilt, never translated, for each region", "state": "done" },
-    { "title": "Set up the first brand as its own configuration, kept apart from the shared agent", "state": "done" },
-    { "title": "Prove it end to end with a full dry run across every channel", "state": "done" },
-    { "title": "Publish the agent so anyone can download and run it, with no private setup inside", "state": "done" },
-    { "title": "Route campaign copy tasks to it in the shared workspace", "state": "done" },
-    { "title": "Teach it to lead with strategy: question the brief, build the campaign idea, say what each version is betting on", "state": "done" },
-    { "title": "Give it the writing rules for every channel it is asked for, so it never guesses a platform it doesn't know", "state": "done" },
-    { "title": "Publish the upgraded agent so the downloadable version matches what it can do today", "state": "next" }
+    {
+      "title": "Put the whole copy craft into one portable agent — principles, workflow, the interview",
+      "state": "done"
+    },
+    {
+      "title": "Build the claims gate that fails closed, so unbacked copy can't ship",
+      "state": "done"
+    },
+    {
+      "title": "Write the market modules so copy is rebuilt, never translated, for each region",
+      "state": "done"
+    },
+    {
+      "title": "Set up the first brand as its own configuration, kept apart from the shared agent",
+      "state": "done"
+    },
+    {
+      "title": "Prove it end to end with a full dry run across every channel",
+      "state": "done"
+    },
+    {
+      "title": "Publish the agent so anyone can download and run it, with no private setup inside",
+      "state": "done"
+    },
+    {
+      "title": "Route campaign copy tasks to it in the shared workspace",
+      "state": "done"
+    },
+    {
+      "title": "Teach it to lead with strategy: question the brief, build the campaign idea, say what each version is betting on",
+      "state": "done"
+    },
+    {
+      "title": "Give it the writing rules for every channel it is asked for, so it never guesses a platform it doesn't know",
+      "state": "done"
+    },
+    {
+      "title": "Publish the upgraded agent so the downloadable version matches what it can do today",
+      "state": "done"
+    }
   ]
 }
