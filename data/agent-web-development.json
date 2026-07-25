@@ -48,6 +48,12 @@
     },
     {
       "text": "A second check re-examined the agent after those fixes. It re-ran the original tests to prove all five earlier findings are truly closed, and found fourteen more — including one that matters: the check meant to refuse an incomplete brief accepts an empty one."
+    },
+    {
+      "text": "All fourteen are now closed. The brief check refuses an empty brief. Two quality checks that had been named in the checklist but never actually written now exist, and one of them immediately caught a real accessibility miss on the live page that nobody had ever measured."
+    },
+    {
+      "text": "The bigger change: the checklist can no longer lie. Seven items claimed an automatic check that did not exist — and since the human reviewer walks only the manual ones, nobody checked them. Every automatic item must now name its check, or the tests refuse the change."
     }
   ],
   "milestones": [
@@ -61,6 +67,6 @@
     { "title": "Feed what the first project taught back into the rules", "state": "done" },
     { "title": "Set the agent up in the shared workspace, so anyone can start a project with it", "state": "done" },
     { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" },
-    { "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief", "state": "next" }
+    { "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief", "state": "done" }
   ]
 }
