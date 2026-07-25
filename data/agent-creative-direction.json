@@ -1,34 +1,35 @@
 {
   "schema_version": "1",
-  "slug": "agent-copywriting",
-  "name": "Agent: Copywriting",
+  "slug": "agent-creative-direction",
+  "name": "Agent: Creative Direction",
   "type": "agent",
-  "status": "done",
-  "summary": "Turns a guided interview into copy that's ready to publish — for any brand, any market, never translated word for word.",
-  "last_updated": "2026-07-20",
+  "status": "on track",
+  "summary": "Reads the brief like a creative director, then writes the copy — for any brand, any market, never translated word for word.",
+  "last_updated": "2026-07-25",
   "objectives": [
     "Turn a guided interview into channel-ready copy — for any brand, any market — instead of a blank page.",
     "Stop a copy claim that can't be backed before it ships — a check that fails closed, not one that hopes someone notices.",
-    "Re-create copy for each market so it reads native, never translate it word for word."
+    "Re-create copy for each market so it reads native, never translate it word for word.",
+    "Give an opinion before writing: question the brief, recommend the channel mix, and say what each version is betting on."
   ],
   "outcomes": [
     {
       "text": "Anyone can download the agent and run it: a guided interview becomes copy for organic social, ads, email, landing pages and video scripts.",
       "evidence": [
-        { "label": "The agent", "url": "https://github.com/oegit/agent-copywriting" },
-        { "label": "The steps it follows", "url": "https://github.com/oegit/agent-copywriting/blob/main/core/WORKFLOW.md" }
+        { "label": "The agent", "url": "https://github.com/oegit/agent-creative-direction" },
+        { "label": "The steps it follows", "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/WORKFLOW.md" }
       ]
     },
     {
       "text": "Copy with a claim that can't be backed does not ship. The claims check fails closed — an unverified stat or promise holds the copy until a person validates it.",
       "evidence": [
-        { "label": "The claims gate", "url": "https://github.com/oegit/agent-copywriting/blob/main/core/QA_GATE.md" }
+        { "label": "The claims gate", "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/QA_GATE.md" }
       ]
     },
     {
       "text": "It never translates word for word. Copy is rebuilt for each market so it reads native — Latin America, Spain, Brazil, Turkey — with a person approving the adaptation.",
       "evidence": [
-        { "label": "How it adapts per market", "url": "https://github.com/oegit/agent-copywriting/blob/main/core/TRANSCREATION.md" }
+        { "label": "How it adapts per market", "url": "https://github.com/oegit/agent-creative-direction/blob/main/core/TRANSCREATION.md" }
       ]
     },
     {
@@ -45,6 +46,9 @@
     { "title": "Set up the first brand as its own configuration, kept apart from the shared agent", "state": "done" },
     { "title": "Prove it end to end with a full dry run across every channel", "state": "done" },
     { "title": "Publish the agent so anyone can download and run it, with no private setup inside", "state": "done" },
-    { "title": "Route campaign copy tasks to it in the shared workspace", "state": "done" }
+    { "title": "Route campaign copy tasks to it in the shared workspace", "state": "done" },
+    { "title": "Teach it to lead with strategy: question the brief, build the campaign idea, say what each version is betting on", "state": "done" },
+    { "title": "Give it the writing rules for every channel it is asked for, so it never guesses a platform it doesn't know", "state": "done" },
+    { "title": "Publish the upgraded agent so the downloadable version matches what it can do today", "state": "next" }
   ]
 }
