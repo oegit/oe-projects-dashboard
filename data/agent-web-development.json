@@ -3,7 +3,7 @@
   "slug": "agent-web-development",
   "name": "Agent: Web Development",
   "type": "agent",
-  "status": "done",
+  "status": "on track",
   "summary": "Turns a Figma design into a real page that matches it — fast, accessible, and a proper page in every language it ships in.",
   "last_updated": "2026-07-25",
   "objectives": [
@@ -45,6 +45,9 @@
     },
     {
       "text": "An independent check went looking for holes in the agent and found five. All five are closed — including a test that had been written but never actually run, so the gate that stops a below-standard page from shipping was itself unwatched. It runs on every change now."
+    },
+    {
+      "text": "A second check re-examined the agent after those fixes. It re-ran the original tests to prove all five earlier findings are truly closed, and found fourteen more — including one that matters: the check meant to refuse an incomplete brief accepts an empty one."
     }
   ],
   "milestones": [
@@ -57,6 +60,7 @@
     { "title": "Generate the SEO instead of hand-writing it, with a console for people who do not code", "state": "done" },
     { "title": "Feed what the first project taught back into the rules", "state": "done" },
     { "title": "Set the agent up in the shared workspace, so anyone can start a project with it", "state": "done" },
-    { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" }
+    { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" },
+    { "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief", "state": "next" }
   ]
 }
