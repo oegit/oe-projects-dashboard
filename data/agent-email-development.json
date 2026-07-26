@@ -3,9 +3,9 @@
   "slug": "agent-email-development",
   "name": "Agent: Email Development",
   "type": "agent",
-  "status": "done",
+  "status": "on track",
   "summary": "Turns a Figma design into an email that looks right in every inbox — including the ones that break everything.",
-  "last_updated": "2026-07-17",
+  "last_updated": "2026-07-26",
   "objectives": [
     "Turn a Figma design into an email that looks right in every inbox — including the ones that break everything.",
     "Stop a broken email before it sends, with a check that runs as code instead of a person squinting at it."
@@ -43,6 +43,15 @@
     },
     {
       "text": "One email pipeline instead of two. The old system was retired and the agent's template became the only source of real email, so nobody has to ask which of the two is right."
+    },
+    {
+      "text": "An independent check went looking for holes in the agent — twice. One reader had its rules and asked whether it does what it says; a second was given only the code and asked whether what it says is right. Thirty-six findings between them, only two found by both."
+    },
+    {
+      "text": "Three of the thirty-six can send a wrong email. The sharpest: the advisor photo could fall back to a default row while their name and phone did not, so an email could go out with one person's name over another person's face. Nothing was watching. It is being fixed now."
+    },
+    {
+      "text": "The blind read also exposed a limit in the method: this agent is almost entirely written rules, and hiding the rules from that reader hides most of the agent with them. So twenty-six of the thirty-six findings are about the example project. Only ten are about the agent itself."
     }
   ],
   "milestones": [
@@ -53,6 +62,8 @@
     { "title": "Prove it end to end and turn production back on", "state": "done" },
     { "title": "Prove it works for a brand it has never seen", "state": "done" },
     { "title": "Publish the agent and its guide, so anyone can use it", "state": "done" },
-    { "title": "Give the team a way to draft and check an email without running code", "state": "done" }
+    { "title": "Give the team a way to draft and check an email without running code", "state": "done" },
+    { "title": "Have the agent independently checked twice — once against its own rules, once by a reader who never saw them", "state": "done" },
+    { "title": "Fix what the two checks found, starting with the three that can send a wrong email", "state": "next" }
   ]
 }
