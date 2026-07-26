@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a Figma design into a real page that matches it — fast, accessible, and a proper page in every language it ships in.",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-26",
   "objectives": [
     "Turn a Figma design into a real page that matches it — and prove the match, instead of eyeballing it.",
     "A page that misses the quality bar does not ship. The gate decides, not an opinion.",
@@ -15,29 +15,53 @@
     {
       "text": "It built a landing page from one design frame and put it live in two languages. Each language is a real page that points at the other, so a search engine finds both.",
       "evidence": [
-        { "label": "The page, in Spanish", "url": "https://oegit.github.io/oe-web-agent-pilot/es/" },
-        { "label": "The page, in Portuguese", "url": "https://oegit.github.io/oe-web-agent-pilot/pt/" },
-        { "label": "How it is built", "url": "https://github.com/oegit/oe-web-agent-pilot" }
+        {
+          "label": "The page, in Spanish",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/es/"
+        },
+        {
+          "label": "The page, in Portuguese",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/pt/"
+        },
+        {
+          "label": "How it is built",
+          "url": "https://github.com/oegit/oe-web-agent-pilot"
+        }
       ]
     },
     {
       "text": "The page scores 97, 97, 100 and 100 on Google's own quality test — speed, accessibility, best practice, SEO. The bar to ship is 90 on all four.",
       "evidence": [
-        { "label": "The scores", "url": "https://github.com/oegit/oe-web-agent-pilot/blob/main/README.md" }
+        {
+          "label": "The scores",
+          "url": "https://github.com/oegit/oe-web-agent-pilot/blob/main/README.md"
+        }
       ]
     },
     {
       "text": "Nobody types SEO into the code. It is generated from the project's own data, and a console lets someone who does not code review and fix it before launch.",
       "evidence": [
-        { "label": "The sitemap it generates", "url": "https://oegit.github.io/oe-web-agent-pilot/sitemap.xml" },
-        { "label": "The robots file it generates", "url": "https://oegit.github.io/oe-web-agent-pilot/robots.txt" }
+        {
+          "label": "The sitemap it generates",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/sitemap.xml"
+        },
+        {
+          "label": "The robots file it generates",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/robots.txt"
+        }
       ]
     },
     {
       "text": "Each language gets its own preview card for when someone shares the link — in that language. The picture has words on it, so the words get translated too.",
       "evidence": [
-        { "label": "Preview card, Spanish", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image.jpg" },
-        { "label": "Preview card, Portuguese", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image-pt.jpg" }
+        {
+          "label": "Preview card, Spanish",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/og-image.jpg"
+        },
+        {
+          "label": "Preview card, Portuguese",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/og-image-pt.jpg"
+        }
       ]
     },
     {
@@ -54,19 +78,65 @@
     },
     {
       "text": "The bigger change: the checklist can no longer lie. Seven items claimed an automatic check that did not exist — and since the human reviewer walks only the manual ones, nobody checked them. Every automatic item must now name its check, or the tests refuse the change."
+    },
+    {
+      "text": "A fourth check graded the third instead of taking its word for it, re-running the original test behind each of its fourteen fixes. Thirteen hold. The fourteenth was fixed here but not inside the agent folder, so anyone copying the agent elsewhere still has it."
+    },
+    {
+      "text": "It used two reviewers who could not see each other's work: one reads the agent's rules, one was handed the code with every rule document removed, so it had to judge whether the code is right rather than whether it matches. Fourteen finds, and they agreed on two."
+    },
+    {
+      "text": "The costliest find is one no rule could point at: the check that scores page quality never noticed the tool it runs had failed, and read the leftover results of the previous run. It reported four perfect scores for a page it never loaded."
     }
   ],
   "milestones": [
-    { "title": "Write the rules: layout, screen sizes, dark mode, SEO, languages and the quality gate", "state": "done" },
-    { "title": "Make an approved brief a hard gate — no build starts without one", "state": "done" },
-    { "title": "Turn the quality checks into code that can stop a delivery", "state": "done" },
-    { "title": "Build the first landing page from a real design", "state": "done" },
-    { "title": "Ship it in two languages, each a real page", "state": "done" },
-    { "title": "Put it live", "state": "done" },
-    { "title": "Generate the SEO instead of hand-writing it, with a console for people who do not code", "state": "done" },
-    { "title": "Feed what the first project taught back into the rules", "state": "done" },
-    { "title": "Set the agent up in the shared workspace, so anyone can start a project with it", "state": "done" },
-    { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" },
-    { "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief", "state": "done" }
+    {
+      "title": "Write the rules: layout, screen sizes, dark mode, SEO, languages and the quality gate",
+      "state": "done"
+    },
+    {
+      "title": "Make an approved brief a hard gate — no build starts without one",
+      "state": "done"
+    },
+    {
+      "title": "Turn the quality checks into code that can stop a delivery",
+      "state": "done"
+    },
+    {
+      "title": "Build the first landing page from a real design",
+      "state": "done"
+    },
+    {
+      "title": "Ship it in two languages, each a real page",
+      "state": "done"
+    },
+    {
+      "title": "Put it live",
+      "state": "done"
+    },
+    {
+      "title": "Generate the SEO instead of hand-writing it, with a console for people who do not code",
+      "state": "done"
+    },
+    {
+      "title": "Feed what the first project taught back into the rules",
+      "state": "done"
+    },
+    {
+      "title": "Set the agent up in the shared workspace, so anyone can start a project with it",
+      "state": "done"
+    },
+    {
+      "title": "Have the agent independently checked, and turn what it found into fixes",
+      "state": "done"
+    },
+    {
+      "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief",
+      "state": "done"
+    },
+    {
+      "title": "Fix what the third and fourth checks found, starting with the quality score that can be reported for a page that was never loaded",
+      "state": "next"
+    }
   ]
 }
