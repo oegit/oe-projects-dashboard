@@ -3,7 +3,7 @@
   "slug": "agent-web-development",
   "name": "Agent: Web Development",
   "type": "agent",
-  "status": "on track",
+  "status": "at risk",
   "summary": "Turns a Figma design into a real page that matches it — fast, accessible, and a proper page in every language it ships in.",
   "last_updated": "2026-07-26",
   "objectives": [
@@ -63,6 +63,21 @@
     },
     {
       "text": "The costliest find is one no rule could point at: the check that scores page quality never noticed the tool it runs had failed, and read the leftover results of the previous run. It reported four perfect scores for a page it never loaded."
+    },
+    {
+      "text": "All fourteen of those were fixed, and the fix was written as a rule instead of as fourteen patches: every check must now say out loud how much it actually looked at, and its own tests hold it to the number."
+    },
+    {
+      "text": "A fifth check graded those fixes by re-running the original test behind each one, rather than reading the write-up of the person who made them. All fourteen hold."
+    },
+    {
+      "text": "That same check found twenty new problems, and this is the useful part: the new rule was followed to the letter and still missed. One check reports examining 23 things out of 104 and calls it a pass, because it only asks whether the number is zero — not whether it is enough."
+    },
+    {
+      "text": "The two reviewers overlapped on one problem out of twenty, and each found a serious one the other never saw — a quality check that reads a fraction of the page and calls it clean, and a design-match check that the number printed in its own instructions switches off entirely."
+    },
+    {
+      "text": "Fixing what a check finds has created roughly as many new problems as it closed, four rounds running. That is now a measured trend rather than an impression, and breaking it is worth more than any single item on the list."
     }
   ],
   "milestones": [
@@ -77,6 +92,7 @@
     { "title": "Set the agent up in the shared workspace, so anyone can start a project with it", "state": "done" },
     { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" },
     { "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief", "state": "done" },
-    { "title": "Fix what the third and fourth checks found, starting with the quality score that can be reported for a page that was never loaded", "state": "next" }
+    { "title": "Fix what the third and fourth checks found, starting with the quality score that can be reported for a page that was never loaded", "state": "done" },
+    { "title": "Break the pattern where each round of fixes seeds the next round of problems, starting with the two checks that pass a page they barely looked at", "state": "next" }
   ]
 }
