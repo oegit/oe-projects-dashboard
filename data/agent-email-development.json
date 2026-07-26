@@ -14,28 +14,49 @@
     {
       "text": "Anyone can download the agent and build an email with it. There is a guide that walks through it, step by step.",
       "evidence": [
-        { "label": "The agent", "url": "https://github.com/oegit/agent-email-development" },
-        { "label": "The step-by-step guide", "url": "https://oegit.github.io/oe-docs/email-development-agent-guide.html" }
+        {
+          "label": "The agent",
+          "url": "https://github.com/oegit/agent-email-development"
+        },
+        {
+          "label": "The step-by-step guide",
+          "url": "https://oegit.github.io/oe-docs/email-development-agent-guide.html"
+        }
       ]
     },
     {
       "text": "The inboxes that break the most — Outlook on Windows, Outlook.com, Gmail in dark mode — now each have a recipe that works, tested on real renders. Every attempt is written down, including the ones that failed and the limits still being lived with.",
       "evidence": [
-        { "label": "Dark mode: what worked, what didn't", "url": "https://github.com/oegit/agent-email-development/blob/main/DARK_MODE_RULES.md" },
-        { "label": "Outlook: the rules", "url": "https://github.com/oegit/agent-email-development/blob/main/OUTLOOK_RULES.md" }
+        {
+          "label": "Dark mode: what worked, what didn't",
+          "url": "https://github.com/oegit/agent-email-development/blob/main/DARK_MODE_RULES.md"
+        },
+        {
+          "label": "Outlook: the rules",
+          "url": "https://github.com/oegit/agent-email-development/blob/main/OUTLOOK_RULES.md"
+        }
       ]
     },
     {
       "text": "The pre-send checklist runs as code. It reads the finished email, stops the send if a rule is broken, and writes up what it found.",
       "evidence": [
-        { "label": "The check that blocks a bad send", "url": "https://github.com/oegit/agent-email-development/blob/main/validate-email.js" },
-        { "label": "The full checklist", "url": "https://github.com/oegit/agent-email-development/blob/main/PRE_SEND_QA.md" }
+        {
+          "label": "The check that blocks a bad send",
+          "url": "https://github.com/oegit/agent-email-development/blob/main/validate-email.js"
+        },
+        {
+          "label": "The full checklist",
+          "url": "https://github.com/oegit/agent-email-development/blob/main/PRE_SEND_QA.md"
+        }
       ]
     },
     {
       "text": "Design to email is a written ten-step process, not one person's habit — so a second person gets the same result as the first.",
       "evidence": [
-        { "label": "The ten steps", "url": "https://github.com/oegit/agent-email-development/blob/main/FIGMA_TO_EMAIL_WORKFLOW.md" }
+        {
+          "label": "The ten steps",
+          "url": "https://github.com/oegit/agent-email-development/blob/main/FIGMA_TO_EMAIL_WORKFLOW.md"
+        }
       ]
     },
     {
@@ -48,22 +69,62 @@
       "text": "An independent check went looking for holes in the agent — twice. One reader had its rules and asked whether it does what it says; a second was given only the code and asked whether what it says is right. Thirty-six findings between them, only two found by both."
     },
     {
-      "text": "Three of the thirty-six can send a wrong email. The sharpest: the advisor photo could fall back to a default row while their name and phone did not, so an email could go out with one person's name over another person's face. Nothing was watching. It is being fixed now."
+      "text": "Three of the thirty-six could send a wrong email — the sharpest let an advisor's photo come from a default row while their name did not, so one person's name could go out over another's face. All three are fixed, each checked by re-running the exact failure reported."
     },
     {
       "text": "The blind read also exposed a limit in the method: this agent is almost entirely written rules, and hiding the rules from that reader hides most of the agent with them. So twenty-six of the thirty-six findings are about the example project. Only ten are about the agent itself."
+    },
+    {
+      "text": "All thirty-six are closed. The ones that mattered were not broken code but confident sentences: a rule telling you to do what the checker forbids, and two items marked \"checked automatically\" that nothing checked. A program now reads the agent's own documents and fails when they drift."
+    },
+    {
+      "text": "The generator used to finish green after failing — an error, a lost email, a broken link, and it still reported success. It now stops and says which row and why, and checks the emails that actually get sent rather than only a fixed sample. The safety net went from 13 automated checks to 160."
     }
   ],
   "milestones": [
-    { "title": "Put everything the team knew about email into one portable set of rules", "state": "done" },
-    { "title": "Retire the old system, so there is one pipeline instead of two", "state": "done" },
-    { "title": "Make the agent's template the only source of real email", "state": "done" },
-    { "title": "Turn the pre-send checklist into code that blocks a bad send", "state": "done" },
-    { "title": "Prove it end to end and turn production back on", "state": "done" },
-    { "title": "Prove it works for a brand it has never seen", "state": "done" },
-    { "title": "Publish the agent and its guide, so anyone can use it", "state": "done" },
-    { "title": "Give the team a way to draft and check an email without running code", "state": "done" },
-    { "title": "Have the agent independently checked twice — once against its own rules, once by a reader who never saw them", "state": "done" },
-    { "title": "Fix what the two checks found, starting with the three that can send a wrong email", "state": "next" }
+    {
+      "title": "Put everything the team knew about email into one portable set of rules",
+      "state": "done"
+    },
+    {
+      "title": "Retire the old system, so there is one pipeline instead of two",
+      "state": "done"
+    },
+    {
+      "title": "Make the agent's template the only source of real email",
+      "state": "done"
+    },
+    {
+      "title": "Turn the pre-send checklist into code that blocks a bad send",
+      "state": "done"
+    },
+    {
+      "title": "Prove it end to end and turn production back on",
+      "state": "done"
+    },
+    {
+      "title": "Prove it works for a brand it has never seen",
+      "state": "done"
+    },
+    {
+      "title": "Publish the agent and its guide, so anyone can use it",
+      "state": "done"
+    },
+    {
+      "title": "Give the team a way to draft and check an email without running code",
+      "state": "done"
+    },
+    {
+      "title": "Have the agent independently checked twice — once against its own rules, once by a reader who never saw them",
+      "state": "done"
+    },
+    {
+      "title": "Fix everything the two checks found, and prove each fix against the original failure",
+      "state": "done"
+    },
+    {
+      "title": "Republish the public copy of the agent, so what anyone can download is the fixed one",
+      "state": "next"
+    }
   ]
 }
