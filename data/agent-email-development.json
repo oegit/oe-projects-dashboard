@@ -79,6 +79,18 @@
     },
     {
       "text": "The generator used to finish green after failing — an error, a lost email, a broken link, and it still reported success. It now stops and says which row and why, and checks the emails that actually get sent rather than only a fixed sample. The safety net went from 13 automated checks to 160."
+    },
+    {
+      "text": "Last round's fixes were re-tested one at a time, by re-running the exact failure each one originally reported — not by reading the write-up that claimed they were fixed. Twelve of the thirteen about the agent itself genuinely hold."
+    },
+    {
+      "text": "The thirteenth is open on purpose: whether the unsubscribe line reaches the reader cannot be answered until the first real send. The agent now prints that reminder at the end of every production run, so it fires when someone can act on it."
+    },
+    {
+      "text": "The same round found seven more. The sharpest is a check written during the last round of fixes: it reports that it examined every file that travels, and it examines seven of twelve. A rule-breaking line in either file anyone downloads passes it clean."
+    },
+    {
+      "text": "Four of the seven sit in work the last round of fixes produced — which is why a session that fixes findings never grades its own. The agent and the example project inside it are now checked as two subjects: a flaw in the example cannot follow anyone who copies the agent."
     }
   ],
   "milestones": [
@@ -121,6 +133,10 @@
     {
       "title": "Fix everything the two checks found, and prove each fix against the original failure",
       "state": "done"
+    },
+    {
+      "title": "Check a second time whether the fixes held, and look again for what the first pass missed",
+      "state": "in progress"
     },
     {
       "title": "Republish the public copy of the agent, so what anyone can download is the fixed one",
