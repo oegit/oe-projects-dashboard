@@ -130,6 +130,9 @@
     },
     {
       "text": "The write-up of this round does not grade itself. It lists what changed, what each change newly exposed, and twelve starting points for the next reading — including one the fixes uncovered: the agent’s own checker cannot pass on the stripped-down copy the agent says it hands out."
+    },
+    {
+      "text": "The public copy anyone can download is the fixed one again: all nine published files match the source exactly, and the internal record, the client project and the maintainer tooling stayed out of it."
     }
   ],
   "milestones": [
@@ -183,7 +186,7 @@
     },
     {
       "title": "Republish the public copy of the agent, so what anyone can download is the fixed one",
-      "state": "next"
+      "state": "done"
     }
   ]
 }
