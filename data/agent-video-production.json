@@ -3,9 +3,9 @@
   "slug": "agent-video-production",
   "name": "Agent: Video Production",
   "type": "agent",
-  "status": "done",
+  "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-07-17",
+  "last_updated": "2026-07-27",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -28,17 +28,54 @@
     },
     {
       "text": "The quality check now checks itself. It used to report all-clear while running one of the four checks it promised. The videos were fine; the all-clear was not worth much until this was fixed."
+    },
+    {
+      "text": "One thing it has not done yet: generate its own footage. The campaign it made end to end used client material that was already shot and silent, so the AI generation, the two languages and the native-speaker review have never all run on one real job."
+    },
+    {
+      "text": "That run is the next step and it is deliberately gated: a real brief, a person's go-ahead, and a ceiling of 100 credits. Until it happens, the agent is proven as a pipeline and unproven as a producer."
     }
   ],
   "milestones": [
-    { "title": "Write the agent: what it makes, in what order, and where a person decides", "state": "done" },
-    { "title": "Keep every model choice in one file, so switching models is not a code change", "state": "done" },
-    { "title": "Build the edit template and the export formats", "state": "done" },
-    { "title": "Make cost something you check before spending, not after", "state": "done" },
-    { "title": "Prove the whole pipeline on a throwaway brand, spending nothing", "state": "done" },
-    { "title": "Debug it on a real run and fix what that broke", "state": "done" },
-    { "title": "Add the voice-over and the captions, in every language", "state": "done" },
-    { "title": "Make a real campaign end to end and get it approved", "state": "done" },
-    { "title": "Turn the quality check's own blind spots into tests", "state": "done" }
+    {
+      "title": "Write the agent: what it makes, in what order, and where a person decides",
+      "state": "done"
+    },
+    {
+      "title": "Keep every model choice in one file, so switching models is not a code change",
+      "state": "done"
+    },
+    {
+      "title": "Build the edit template and the export formats",
+      "state": "done"
+    },
+    {
+      "title": "Make cost something you check before spending, not after",
+      "state": "done"
+    },
+    {
+      "title": "Prove the whole pipeline on a throwaway brand, spending nothing",
+      "state": "done"
+    },
+    {
+      "title": "Debug it on a real run and fix what that broke",
+      "state": "done"
+    },
+    {
+      "title": "Add the voice-over and the captions, in every language",
+      "state": "done"
+    },
+    {
+      "title": "Make a real campaign end to end and get it approved",
+      "state": "done"
+    },
+    {
+      "title": "Turn the quality check's own blind spots into tests",
+      "state": "done"
+    },
+    {
+      "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
+      "state": "next"
+    }
   ]
 }
