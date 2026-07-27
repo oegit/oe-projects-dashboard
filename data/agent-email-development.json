@@ -133,6 +133,39 @@
     },
     {
       "text": "The public copy anyone can download is the fixed one again: all nine published files match the source exactly, and the internal record, the client project and the maintainer tooling stayed out of it."
+    },
+    {
+      "text": "A third check went over the agent, and it is the last one. Three rounds is now a deliberate limit: on a sister project the same checking ran seven times and each round found more than the one before, because every round ended up reading the paperwork the previous one had produced."
+    },
+    {
+      "text": "Twelve findings. Three of them could send a wrong email, and all three are fixed."
+    },
+    {
+      "text": "The sharpest was two programs making the same mistake and agreeing with each other. One adds a marker to the finished email so the Gmail dark-mode fix can work; the other confirms the marker is there. Both looked for that marker the same wrong way."
+    },
+    {
+      "text": "So on an email carrying a similarly-named setting, the marker was never added, that unrelated setting was quietly overwritten, and both programs reported success. The Gmail dark-mode fix silently did nothing, and nothing anywhere said so."
+    },
+    {
+      "text": "The check for Outlook's rounded buttons could never fail on the emails it exists for: it was satisfied by text inside a comment, which is exactly where the agent's own example puts it. It also failed every email with no rounded buttons, demanding something they have no use for."
+    },
+    {
+      "text": "Two pages promised that a real send cannot go out unchecked. Only the example project keeps that promise, and the agent ships without it — so anyone copying the agent got the sentence and not the mechanism. Both pages now say whose job it is, and a program holds them to it."
+    },
+    {
+      "text": "Every fix was proved by deleting it again and confirming a test fails. The tool refuses to report anything at all if the deletion did not actually apply — the exact failure that let three fixes on a sister project be recorded as proved when nothing had been tested."
+    },
+    {
+      "text": "That refusal caught one of this round's own fixes straight away: a safety net that cannot be reached while the code around it is correct, so no test could show it worked. It is now proved by deliberately breaking the code it guards."
+    },
+    {
+      "text": "The other nine findings are written down as a backlog instead of becoming more work. They get fixed when someone is next in those files for a real product reason. A backlog drained by a session of its own is just another round of checking under a different name."
+    },
+    {
+      "text": "The round also priced itself: the two independent readers agreed on one finding out of twelve. Reading the agent twice is now something you opt into before shipping it or handing it to someone else, rather than the default — it extends the list more than it confirms it."
+    },
+    {
+      "text": "The round-three fixes are not in the published copy yet. Republishing is a manual step, so for now the agent anyone can download is one round behind the source."
     }
   ],
   "milestones": [
@@ -187,6 +220,14 @@
     {
       "title": "Republish the public copy of the agent, so what anyone can download is the fixed one",
       "state": "done"
+    },
+    {
+      "title": "Check the agent a third and final time, fix everything that could send a wrong email, and close it to further checking",
+      "state": "done"
+    },
+    {
+      "title": "Republish the public copy again, so what anyone can download includes the third round's fixes",
+      "state": "next"
     }
   ]
 }
