@@ -103,6 +103,15 @@
     },
     {
       "text": "Checking this agent blind is not possible the usual way, and the round measured that instead of assuming it: hide the written rules and only three of its eighteen files are the agent. The rules were reviewed directly, and the report states what that cannot prove."
+    },
+    {
+      "text": "A third session merged the two readings, seeing only the two lists and never the agent itself: sixteen findings, five of them able to send a wrong email or break a promise the agent makes about itself. Five were caught by both readers; eleven by only one."
+    },
+    {
+      "text": "Four of those five came from the reader kept blind to everything already answered. None is broken code — each lives between two documents that disagree, exactly where a reader who knew the history had stopped looking."
+    },
+    {
+      "text": "The round also priced its own blind spot rather than hiding it: nobody read the code without knowing what it was meant to do. Faults where the code and the rules agree with each other and both are wrong about the world went uncovered by design, and the report says so."
     }
   ],
   "milestones": [
@@ -148,7 +157,11 @@
     },
     {
       "title": "Check a second time whether the fixes held, and look again for what the first pass missed",
-      "state": "in progress"
+      "state": "done"
+    },
+    {
+      "title": "Fix what the second round found, and prove each fix against the original failure",
+      "state": "next"
     },
     {
       "title": "Republish the public copy of the agent, so what anyone can download is the fixed one",
