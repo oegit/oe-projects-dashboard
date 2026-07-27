@@ -15,29 +15,53 @@
     {
       "text": "It built a landing page from one design frame and put it live in two languages. Each language is a real page that points at the other, so a search engine finds both.",
       "evidence": [
-        { "label": "The page, in Spanish", "url": "https://oegit.github.io/oe-web-agent-pilot/es/" },
-        { "label": "The page, in Portuguese", "url": "https://oegit.github.io/oe-web-agent-pilot/pt/" },
-        { "label": "How it is built", "url": "https://github.com/oegit/oe-web-agent-pilot" }
+        {
+          "label": "The page, in Spanish",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/es/"
+        },
+        {
+          "label": "The page, in Portuguese",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/pt/"
+        },
+        {
+          "label": "How it is built",
+          "url": "https://github.com/oegit/oe-web-agent-pilot"
+        }
       ]
     },
     {
       "text": "The page scores 97, 97, 100 and 100 on Google's own quality test — speed, accessibility, best practice, SEO. The bar to ship is 90 on all four.",
       "evidence": [
-        { "label": "The scores", "url": "https://github.com/oegit/oe-web-agent-pilot/blob/main/README.md" }
+        {
+          "label": "The scores",
+          "url": "https://github.com/oegit/oe-web-agent-pilot/blob/main/README.md"
+        }
       ]
     },
     {
       "text": "Nobody types SEO into the code. It is generated from the project's own data, and a console lets someone who does not code review and fix it before launch.",
       "evidence": [
-        { "label": "The sitemap it generates", "url": "https://oegit.github.io/oe-web-agent-pilot/sitemap.xml" },
-        { "label": "The robots file it generates", "url": "https://oegit.github.io/oe-web-agent-pilot/robots.txt" }
+        {
+          "label": "The sitemap it generates",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/sitemap.xml"
+        },
+        {
+          "label": "The robots file it generates",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/robots.txt"
+        }
       ]
     },
     {
       "text": "Each language gets its own preview card for when someone shares the link — in that language. The picture has words on it, so the words get translated too.",
       "evidence": [
-        { "label": "Preview card, Spanish", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image.jpg" },
-        { "label": "Preview card, Portuguese", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image-pt.jpg" }
+        {
+          "label": "Preview card, Spanish",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/og-image.jpg"
+        },
+        {
+          "label": "Preview card, Portuguese",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/og-image-pt.jpg"
+        }
       ]
     },
     {
@@ -88,8 +112,14 @@
     {
       "text": "The page's share-preview cards could not be rebuilt at all — the template pointed at a picture a redesign had deleted, and every check passed because they all inspect the finished card. The gate now rebuilds them, so a broken generator cannot hide behind a file that already exists.",
       "evidence": [
-        { "label": "Preview card, Spanish", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image.jpg" },
-        { "label": "Preview card, Portuguese", "url": "https://oegit.github.io/oe-web-agent-pilot/og-image-pt.jpg" }
+        {
+          "label": "Preview card, Spanish",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/og-image.jpg"
+        },
+        {
+          "label": "Preview card, Portuguese",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/og-image-pt.jpg"
+        }
       ]
     },
     {
@@ -112,24 +142,100 @@
     },
     {
       "text": "The two independent reviewers agreed on two findings out of forty-three, and on none of the ten about the example project. A single reviewer finds about a quarter of what is there, and which quarter depends on whether they may read the rules. Both serious findings came from the one who could."
+    },
+    {
+      "text": "All forty-three are closed, including both that travel to every copy of the agent: the self-test no longer breaks when you delete the previous client's work, and the check that reads a page for colour contrast no longer reports having read more of it than the page contains."
+    },
+    {
+      "text": "The rule that keeps failing was rewritten as code instead of advice. Three rounds running, \"say how much you looked at\" was followed and still missed — so now a check cannot describe its own work in a way that hides how little it did."
+    },
+    {
+      "text": "A new test reads every check in the folder and refuses any that does not use that code. It also reports how much of its own job it did — three checks run for real, nine read — because a test that hides its own reach is the thing it was written to prevent."
+    },
+    {
+      "text": "Three fixes from the previous round were graded closed and were not actually protected: undo them and every test stayed green. All three are now held by a test that goes red, verified by undoing each one."
+    },
+    {
+      "text": "A brand colour deliberately kept below the accessibility bar can now be recorded where the check can see it — with the reason required, named out loud on every run. Before, an honest project had two options: a permanently red result, or no check at all."
+    },
+    {
+      "text": "The example page shipped 456KB of icons no visitor ever downloaded, and its most important image was missing from the record meant to track every image. The record now checks in both directions, and the page it deploys is a quarter lighter."
+    },
+    {
+      "text": "One quotation mark in one translation silently killed a whole interactive section — in one language only, the one nobody clicks while testing. It fails the build now."
+    },
+    {
+      "text": "These fixes were deliberately not graded by the people who made them, and the write-up lists ten new questions they opened — including three fixes this round could not protect with a test either. Naming them is the point."
     }
   ],
   "milestones": [
-    { "title": "Write the rules: layout, screen sizes, dark mode, SEO, languages and the quality gate", "state": "done" },
-    { "title": "Make an approved brief a hard gate — no build starts without one", "state": "done" },
-    { "title": "Turn the quality checks into code that can stop a delivery", "state": "done" },
-    { "title": "Build the first landing page from a real design", "state": "done" },
-    { "title": "Ship it in two languages, each a real page", "state": "done" },
-    { "title": "Put it live", "state": "done" },
-    { "title": "Generate the SEO instead of hand-writing it, with a console for people who do not code", "state": "done" },
-    { "title": "Feed what the first project taught back into the rules", "state": "done" },
-    { "title": "Set the agent up in the shared workspace, so anyone can start a project with it", "state": "done" },
-    { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" },
-    { "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief", "state": "done" },
-    { "title": "Fix what the third and fourth checks found, starting with the quality score that can be reported for a page that was never loaded", "state": "done" },
-    { "title": "Have a sixth check grade those twenty fixes, and say whether the pattern actually broke", "state": "done" },
-    { "title": "Break the pattern where each round of fixes seeds the next round of problems — six rounds in, it has not broken yet", "state": "in progress" },
-    { "title": "Fix what the sixth check found, starting with the two problems that travel to every copy of the agent", "state": "next" },
-    { "title": "Decide how a deliberate exception — a brand colour kept below the accessibility bar — gets recorded where the check can see it", "state": "next" }
+    {
+      "title": "Write the rules: layout, screen sizes, dark mode, SEO, languages and the quality gate",
+      "state": "done"
+    },
+    {
+      "title": "Make an approved brief a hard gate — no build starts without one",
+      "state": "done"
+    },
+    {
+      "title": "Turn the quality checks into code that can stop a delivery",
+      "state": "done"
+    },
+    {
+      "title": "Build the first landing page from a real design",
+      "state": "done"
+    },
+    {
+      "title": "Ship it in two languages, each a real page",
+      "state": "done"
+    },
+    {
+      "title": "Put it live",
+      "state": "done"
+    },
+    {
+      "title": "Generate the SEO instead of hand-writing it, with a console for people who do not code",
+      "state": "done"
+    },
+    {
+      "title": "Feed what the first project taught back into the rules",
+      "state": "done"
+    },
+    {
+      "title": "Set the agent up in the shared workspace, so anyone can start a project with it",
+      "state": "done"
+    },
+    {
+      "title": "Have the agent independently checked, and turn what it found into fixes",
+      "state": "done"
+    },
+    {
+      "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief",
+      "state": "done"
+    },
+    {
+      "title": "Fix what the third and fourth checks found, starting with the quality score that can be reported for a page that was never loaded",
+      "state": "done"
+    },
+    {
+      "title": "Have a sixth check grade those twenty fixes, and say whether the pattern actually broke",
+      "state": "done"
+    },
+    {
+      "title": "Fix what the sixth check found, starting with the two problems that travel to every copy of the agent",
+      "state": "done"
+    },
+    {
+      "title": "Decide how a deliberate exception — a brand colour kept below the accessibility bar — gets recorded where the check can see it",
+      "state": "done"
+    },
+    {
+      "title": "Break the pattern where each round of fixes seeds the next round of problems — six rounds in, it has not broken yet",
+      "state": "in progress"
+    },
+    {
+      "title": "Have a seventh check grade these forty-three fixes, and the ten questions they opened",
+      "state": "next"
+    }
   ]
 }
