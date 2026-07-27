@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on hold",
   "summary": "Tests the landing page over and over so it keeps learning what works — and stops to ask a person at the points where judgment beats a rule.",
-  "last_updated": "2026-07-17",
+  "last_updated": "2026-07-27",
   "objectives": [
     "Keep testing the landing page, non-stop, so it keeps learning what works.",
     "Learn two things separately: what brings leads, and what brings sales.",
@@ -27,6 +27,9 @@
     },
     {
       "text": "The rule for picking a winner now follows the math the testing tool actually reports, instead of a number the plan had borrowed from a different kind of test. That number would have looked official and meant nothing."
+    },
+    {
+      "text": "The correction reached the screen people actually read. The approval screen had kept printing the old word beside the number — the one place a colleague not doing the math would believe it. The wording is no longer typed in by hand: the screen derives it from the kind of test the tool runs."
     }
   ],
   "milestones": [
