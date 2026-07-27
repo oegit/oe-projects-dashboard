@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a Figma design into an email that looks right in every inbox — including the ones that break everything.",
-  "last_updated": "2026-07-26",
+  "last_updated": "2026-07-27",
   "objectives": [
     "Turn a Figma design into an email that looks right in every inbox — including the ones that break everything.",
     "Stop a broken email before it sends, with a check that runs as code instead of a person squinting at it."
@@ -112,6 +112,24 @@
     },
     {
       "text": "The round also priced its own blind spot rather than hiding it: nobody read the code without knowing what it was meant to do. Faults where the code and the rules agree with each other and both are wrong about the world went uncovered by design, and the report says so."
+    },
+    {
+      "text": "All sixteen findings are fixed, one change per finding. Each fix was proved by re-running the exact failure it was reported against, and each new automatic check by deliberately breaking what it is meant to catch — because this round found two checks reporting success while examining nothing."
+    },
+    {
+      "text": "The worst was one of those: a check reporting it covered every file that travels covered seven of twelve, measuring itself against that same short list. A rule-breaking line planted in either file anyone downloads passed it clean. The count now comes from the folder."
+    },
+    {
+      "text": "The send checker also under-enforced its own promise. It claimed to stop any unfilled placeholder and quietly ignored every one containing a digit, so a half-finished email could go out with the check green and the box ticked."
+    },
+    {
+      "text": "Three contradictions between documents were resolved in favour of the page proved right in a real inbox, and each is now held together by a program: where a rule has an exception, every page stating the rule must state the exception too."
+    },
+    {
+      "text": "The commands in the last step before a real send did not work from any directory — the checker sits in one place and the files it checks in another. They now say where to run them from, and a program refuses a command that cannot find its own script."
+    },
+    {
+      "text": "The write-up of this round does not grade itself. It lists what changed, what each change newly exposed, and twelve starting points for the next reading — including one the fixes uncovered: the agent’s own checker cannot pass on the stripped-down copy the agent says it hands out."
     }
   ],
   "milestones": [
@@ -161,7 +179,7 @@
     },
     {
       "title": "Fix what the second round found, and prove each fix against the original failure",
-      "state": "next"
+      "state": "done"
     },
     {
       "title": "Republish the public copy of the agent, so what anyone can download is the fixed one",
