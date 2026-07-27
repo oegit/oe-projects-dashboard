@@ -1,0 +1,119 @@
+{
+  "schema_version": "1",
+  "slug": "skill-auditor",
+  "name": "Skill: Auditor",
+  "type": "system",
+  "status": "on track",
+  "summary": "An independent reader that goes looking for the faults a passing test suite hides — and, since this month, one that knows when to stop looking.",
+  "last_updated": "2026-07-27",
+  "objectives": [
+    "Give every finished agent an adversarial second reader: someone who checks it against its own written promises rather than against a test it wrote for itself.",
+    "Find only what can be proved — every fault points at an exact line, or it is thrown away rather than softened into a maybe.",
+    "Cost less than the work it protects. A check that consumes the capacity it was built to defend has failed, however correct each finding was."
+  ],
+  "outcomes": [
+    {
+      "text": "It reads an agent against its own documents and reports the faults a green test suite cannot show: a written rule the code never implements, a setting that promises something and switches nothing on, work that finishes green while being wrong."
+    },
+    {
+      "text": "It also catches a customer's name left inside files meant to be handed to someone else, and a tool that silently drops data it does not recognise on the way through."
+    },
+    {
+      "text": "It never fixes anything. Checking your own repair is a conflict of interest, so it suggests and a separate session repairs — and every repair is proved against the failure originally reported, not against the write-up claiming it was fixed."
+    },
+    {
+      "text": "The strongest version reads an agent twice: once by someone holding its rulebook, asking whether it does what it says, and once by someone handed only the code, asking whether what it says is even right. The value is in what only one of them found."
+    },
+    {
+      "text": "That second reader is kept blind by procedure, not by promise. The copy it reads is built by a program and checked by another afterwards — because the first time it was trusted, a notes file carried the whole rulebook into the \"blind\" reading."
+    },
+    {
+      "text": "When blinding is impossible it says so instead of passing. Some agents are almost entirely written rules, so hiding the rules hides the agent; that reading is recorded as abstained, with the measurement proving it."
+    },
+    {
+      "text": "It found real faults in real agents, including several that could have sent a wrong email or shipped a broken page. Two agents have been through it, and every fault is either fixed or written down with the reason it was not."
+    },
+    {
+      "text": "It kept finding faults in itself too — sixteen in eight days, each surfaced by using the tool rather than by reviewing it. All sixteen are closed."
+    },
+    {
+      "text": "The last four were a different kind, and they are the ones worth telling. Nothing was broken. Every reading it produced was correct, evidenced and carefully argued. It simply never said when an agent was finished being checked."
+    },
+    {
+      "text": "So one agent was read seven times. The faults per reading went 5, 20, 14, 14, 23, 43, 45 — the seventh found more than the sixth, and there was no version of this that ended."
+    },
+    {
+      "text": "It grew instead of shrinking because each reading turned its own paperwork into the next reading's subject: one finding in the seventh round was about the sixth round's repair report."
+    },
+    {
+      "text": "The checking apparatus around that agent reached 8,680 lines against the 7,029-line thing it was checking — the scaffolding had outgrown the building."
+    },
+    {
+      "text": "The cost was real and paid for the wrong thing: over eight days, 130 of 289 changes across the workspace were checking work. Of the six that touched the actual product, all six were ordered by a check — none by someone wanting to improve it."
+    },
+    {
+      "text": "A reading is now something to be paid for rather than always on offer. One per agent. A second only if the agent itself materially changed — and a new version of the reader explicitly does not count. There is no fourth reading, ever."
+    },
+    {
+      "text": "That exclusion is the important one: the old loop was the tool improving, so the reading re-ran, which improved the tool."
+    },
+    {
+      "text": "It can no longer read its own paperwork. Repair reports, past readings and session notes are off limits as the subject of a finding — the exact mechanism by which each round manufactured the next round's work."
+    },
+    {
+      "text": "Only faults that can actually break something earn a repair session. The middle tier goes to a backlog, fixed next time somebody opens that file for a real reason; the smallest is recorded and never becomes a task."
+    },
+    {
+      "text": "Before that was written down, a note about a hardcoded number cost exactly what a broken page cost."
+    },
+    {
+      "text": "The two-reader version became opt-in, reserved for an agent about to be handed to someone else. Its own numbers are the reason: across two real readings the readers agreed on 1 finding of 45, and 2 of 43."
+    },
+    {
+      "text": "Near-zero agreement means the second reader was lengthening the list rather than confirming it — worth paying for at a handover, and not much else."
+    },
+    {
+      "text": "All of that is enforced by a program rather than written in a document, because this project's own history is the argument: a repair round here found three checks that could not fail and two too lax to catch anything."
+    },
+    {
+      "text": "Every new check was proved by deliberately breaking what it is meant to catch. One was tightened during that exercise, when breaking it showed it had been passing for the wrong reason."
+    },
+    {
+      "text": "The ban on reading its own paperwork was tested against the real seventh report: it correctly refuses that report while leaving every legitimate finding in the same file alone."
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Write down what a check should look for, and what counts as proof",
+      "state": "done"
+    },
+    {
+      "title": "Build it as one portable reader that works on any agent, not one per agent",
+      "state": "done"
+    },
+    {
+      "title": "Prove it catches faults planted on purpose, and wire that proof into an automatic gate",
+      "state": "done"
+    },
+    {
+      "title": "Use it on two real finished agents and fix what it found",
+      "state": "done"
+    },
+    {
+      "title": "Stop it from grading the wrong subject — an agent and the example project inside it are two different things",
+      "state": "done"
+    },
+    {
+      "title": "Make the blind reading verifiably blind, and honest when it cannot be",
+      "state": "done"
+    },
+    {
+      "title": "Give a reading a budget and an end, so checking cannot outgrow the work it protects",
+      "state": "done"
+    },
+    {
+      "title": "Leave the two agents already read alone, and put the freed capacity back into the products",
+      "state": "in progress"
+    }
+  ]
+}
