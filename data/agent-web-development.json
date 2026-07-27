@@ -190,6 +190,36 @@
     },
     {
       "text": "Two independent reviewers agreed on one finding out of forty-five. That number cannot be read alone: one of them was not allowed to see the agent’s written rules at all, and the other two-thirds of the agent is exactly those rules."
+    },
+    {
+      "text": "All forty-five problems the seventh check found are closed — and every fix is held by a test that fails if the fix is undone. The previous round closed forty-three and left thirteen held by nothing at all."
+    },
+    {
+      "text": "How fixes get graded changed, and that is the real result: each one was undone in a scratch copy to see whether anything actually broke. Three that looked finished were not, and two new safeguards were too loose to ever fail. Reading the change shows none of that."
+    },
+    {
+      "text": "The ten unprotected fixes were not patched one at a time. One new test reads every setting each check accepts and tries each with the value missing — twenty-nine settings across nine checks. The thirtieth, added next month, is covered without anyone remembering."
+    },
+    {
+      "text": "The page checker was blind to ordinary valid markup: an attribute written without quotation marks silenced three checks at once — image formats, hardcoded colours, missing files. The same fault also flagged a correct page as broken, so it failed both ways."
+    },
+    {
+      "text": "One line of markup — the redirect instruction — switched off eight of the nine page checks. A page with two hardcoded colours went from four blocking failures to a clean pass. That shortcut must now earn itself, and excuses only the five checks that truly do not apply."
+    },
+    {
+      "text": "The example page invited a visitor to fill four fields and press a button, then did nothing with them — while the project's own settings said it had no form. It keeps the design now and says plainly it is a demo, in both languages. It reaches the live page on the next publish.",
+      "evidence": [
+        {
+          "label": "The page today, before the publish",
+          "url": "https://oegit.github.io/oe-web-agent-pilot/es/"
+        }
+      ]
+    },
+    {
+      "text": "Fixing one thing broke another, caught by running rather than reading: a new rule requiring a dated reason for a deliberate accessibility exception made the example page fail its own check, because its two exceptions carried no date. Found the same day and fixed."
+    },
+    {
+      "text": "The write-up again does not grade itself. It names the eleven new questions opened, the three fixes that came back unprotected on the first attempt, and two protections that only work under conditions — one quietly does nothing outside a proper repository."
     }
   ],
   "milestones": [
@@ -258,11 +288,15 @@
       "state": "done"
     },
     {
-      "title": "Break the pattern where each round of fixes seeds the next round of problems — six rounds in, it has not broken yet",
+      "title": "Fix what the seventh check found, starting with the six that break the checks themselves — and hold every fix with a test that goes red when it is undone",
+      "state": "done"
+    },
+    {
+      "title": "Break the pattern where each round of fixes seeds the next round of problems — seven rounds in, it has not broken yet",
       "state": "in progress"
     },
     {
-      "title": "Fix what the seventh check found, starting with the six that break the checks themselves — and hold every fix with a test that goes red when it is undone",
+      "title": "Have an eighth check grade these forty-five fixes, and the eleven new questions they opened",
       "state": "next"
     }
   ]
