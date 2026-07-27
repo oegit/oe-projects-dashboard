@@ -3,7 +3,7 @@
   "slug": "agent-web-development",
   "name": "Agent: Web Development",
   "type": "agent",
-  "status": "at risk",
+  "status": "on track",
   "summary": "Turns a Figma design into a real page that matches it — fast, accessible, and a proper page in every language it ships in.",
   "last_updated": "2026-07-27",
   "objectives": [
@@ -220,6 +220,18 @@
     },
     {
       "text": "The write-up again does not grade itself. It names the eleven new questions opened, the three fixes that came back unprotected on the first attempt, and two protections that only work under conditions — one quietly does nothing outside a proper repository."
+    },
+    {
+      "text": "The pattern broke, and not by trying harder on the next round. The checker itself had no stopping rule, so a correct check could run forever — and here it ran seven times, finding 5, 20, 14, 14, 23, 43 and then 45 problems."
+    },
+    {
+      "text": "It grew because each round turned its own paperwork into the next round's subject: one seventh-round finding was about the sixth round's repair report. The checking machinery around this project reached 8,680 lines against the 7,029-line page kit it checks."
+    },
+    {
+      "text": "The checker now refuses an eighth reading of this project outright, and a new version of the checker is explicitly not a reason to reopen it. Only a real change to the project itself would be."
+    },
+    {
+      "text": "So this project is closed for checking. Its suite passes 16 of 16, its launch gate is open, and every one of the last round's forty-five fixes is held by a test that goes red when the fix is removed."
     }
   ],
   "milestones": [
@@ -292,12 +304,12 @@
       "state": "done"
     },
     {
-      "title": "Break the pattern where each round of fixes seeds the next round of problems — seven rounds in, it has not broken yet",
-      "state": "in progress"
+      "title": "Break the pattern where each round of fixes seeds the next round of problems — seven rounds in, it finally broke",
+      "state": "done"
     },
     {
-      "title": "Have an eighth check grade these forty-five fixes, and the eleven new questions they opened",
-      "state": "next"
+      "title": "Stay closed: no eighth check, and the freed effort goes back into building pages",
+      "state": "in progress"
     }
   ]
 }
