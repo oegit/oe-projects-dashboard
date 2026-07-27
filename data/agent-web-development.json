@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "at risk",
   "summary": "Turns a Figma design into a real page that matches it — fast, accessible, and a proper page in every language it ships in.",
-  "last_updated": "2026-07-26",
+  "last_updated": "2026-07-27",
   "objectives": [
     "Turn a Figma design into a real page that matches it — and prove the match, instead of eyeballing it.",
     "A page that misses the quality bar does not ship. The gate decides, not an opinion.",
@@ -166,6 +166,30 @@
     },
     {
       "text": "These fixes were deliberately not graded by the people who made them, and the write-up lists ten new questions they opened — including three fixes this round could not protect with a test either. Naming them is the point."
+    },
+    {
+      "text": "A seventh check graded all forty-three fixes by re-running the original test behind each one, rather than reading the write-up. All forty-three hold, and none reopened."
+    },
+    {
+      "text": "Thirteen of them are not held by anything: undo the fix and every test still passes. The write-up admitted three. The other ten were found by undoing each one in turn — and for two of those, the write-up names a test that would go red, and it does not."
+    },
+    {
+      "text": "One line of markup — the instruction that tells a browser to redirect — switches off eight of the nine checks the page checker runs. The same page goes from four blocking failures to a clean pass, with two hardcoded colours still sitting in it."
+    },
+    {
+      "text": "A page attribute written without quotation marks, which is ordinary valid markup, makes three blocking checks vanish at once: hardcoded colours, wrong image formats and missing files all stop being reported. The same fault also flags a correct page as broken, so it fails in both directions."
+    },
+    {
+      "text": "The rule about building a page with switchable content travels as advice — be careful with quotation marks — while the code that actually enforces it lives only inside the example project. Copy the agent for a new client and the warning arrives without the safeguard."
+    },
+    {
+      "text": "The tool people use to write a project brief reports success for a brief nobody loaded. Dropped over a real one, it quietly deletes what it never knew about — and it does the same after loading the built-in example, under the real filename."
+    },
+    {
+      "text": "The test written to stop a check from passing after seeing only a fraction of a page reports seeing a third of what it should, and passes itself. The rule was made into code last round; this is the newest place the rule is broken, in its own enforcer."
+    },
+    {
+      "text": "Two independent reviewers agreed on one finding out of forty-five. That number cannot be read alone: one of them was not allowed to see the agent’s written rules at all, and the other two-thirds of the agent is exactly those rules."
     }
   ],
   "milestones": [
@@ -230,11 +254,15 @@
       "state": "done"
     },
     {
+      "title": "Have a seventh check grade these forty-three fixes, and the ten questions they opened",
+      "state": "done"
+    },
+    {
       "title": "Break the pattern where each round of fixes seeds the next round of problems — six rounds in, it has not broken yet",
       "state": "in progress"
     },
     {
-      "title": "Have a seventh check grade these forty-three fixes, and the ten questions they opened",
+      "title": "Fix what the seventh check found, starting with the six that break the checks themselves — and hold every fix with a test that goes red when it is undone",
       "state": "next"
     }
   ]
