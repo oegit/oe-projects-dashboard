@@ -97,6 +97,21 @@
     },
     {
       "text": "These fixes were deliberately not graded by the people who made them. One of the ten questions the work opened is real: now that the accessibility check reads the whole page, it finds seven contrast misses — all the brand orange a person already chose to keep, with nowhere to record that choice."
+    },
+    {
+      "text": "A sixth check graded those twenty fixes by undoing each one in a scratch copy, to see whether the test everyone relied on actually turns red. All twenty hold. Three of the tests behind them do not: one covers half its claim, one catches only that fix's exact wording, and one does not exist."
+    },
+    {
+      "text": "The rule written to stop a check passing after seeing only a fraction of the page compares two different things. On the agent's own pages it reports examining more items than exist — 107 out of 101 — so the floor can never trigger. It looked right on the one page it was built against."
+    },
+    {
+      "text": "Copying the agent for a new client and deleting the previous client's project — the first thing anyone would do — breaks the agent's own self-test. A single line reaches into that example project, and because the tests stop at the first failure, eight of the twelve then never run at all."
+    },
+    {
+      "text": "The check was pointed at the agent's own tools for the first time. The console people use to review a page's SEO before launch fails the accessibility bar the agent enforces on everything it builds."
+    },
+    {
+      "text": "The two independent reviewers agreed on two findings out of forty-three, and on none of the ten about the example project. A single reviewer finds about a quarter of what is there, and which quarter depends on whether they may read the rules. Both serious findings came from the one who could."
     }
   ],
   "milestones": [
@@ -112,8 +127,9 @@
     { "title": "Have the agent independently checked, and turn what it found into fixes", "state": "done" },
     { "title": "Fix what the second check opened, starting with the brief check that accepts an empty brief", "state": "done" },
     { "title": "Fix what the third and fourth checks found, starting with the quality score that can be reported for a page that was never loaded", "state": "done" },
-    { "title": "Break the pattern where each round of fixes seeds the next round of problems, starting with the two checks that pass a page they barely looked at", "state": "in progress" },
-    { "title": "Have a sixth check grade these twenty fixes, and say whether the pattern actually broke", "state": "next" },
+    { "title": "Have a sixth check grade those twenty fixes, and say whether the pattern actually broke", "state": "done" },
+    { "title": "Break the pattern where each round of fixes seeds the next round of problems — six rounds in, it has not broken yet", "state": "in progress" },
+    { "title": "Fix what the sixth check found, starting with the two problems that travel to every copy of the agent", "state": "next" },
     { "title": "Decide how a deliberate exception — a brand colour kept below the accessibility bar — gets recorded where the check can see it", "state": "next" }
   ]
 }
