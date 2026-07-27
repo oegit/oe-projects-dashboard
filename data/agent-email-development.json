@@ -165,7 +165,13 @@
       "text": "The round also priced itself: the two independent readers agreed on one finding out of twelve. Reading the agent twice is now something you opt into before shipping it or handing it to someone else, rather than the default — it extends the list more than it confirms it."
     },
     {
-      "text": "The round-three fixes are not in the published copy yet. Republishing is a manual step, so for now the agent anyone can download is one round behind the source."
+      "text": "The copy anyone can download carries the third round's fixes. All nine published files were checked one by one against the source and match exactly — five changed, four were already identical."
+    },
+    {
+      "text": "That check was done on what the site actually serves, not on a local copy, because a republish is a manual step and the gap between \"I pushed it\" and \"it is there\" is exactly where a stale claim hides."
+    },
+    {
+      "text": "The two scripts were also run together inside the published copy, not only in the source tree. One of the fixes made them depend on each other for the first time, and the download is the only place that dependency could quietly fail."
     }
   ],
   "milestones": [
@@ -227,7 +233,7 @@
     },
     {
       "title": "Republish the public copy again, so what anyone can download includes the third round's fixes",
-      "state": "next"
+      "state": "done"
     }
   ]
 }
