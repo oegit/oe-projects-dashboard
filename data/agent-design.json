@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "A design agent for any brand: each brand's system in one checked file, and everything it makes held to a curated bar of excellent work.",
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-27",
   "objectives": [
     "Make art-directed design across every digital channel and TV — senior work, not something that looks templated.",
     "Serve any brand: each brand's system lives in its own pack, and the shared engine never carries one brand's content.",
@@ -63,6 +63,10 @@
     {
       "title": "Collect the reference library that sets the quality bar — the last piece before the foundation closes",
       "state": "in progress"
+    },
+    {
+      "title": "Close the three blocking gaps in the Open English pack, so it can ship as released instead of a release candidate — each one is a brand-owner call the pack refused to guess",
+      "state": "next"
     },
     {
       "title": "Turn a design into a finished image, and put it through the three checks it must pass",
