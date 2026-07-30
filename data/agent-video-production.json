@@ -64,6 +64,30 @@
     },
     {
       "text": "The form used to carry one brand's settings inside the shared agent, which meant adding a brand required editing the tool. Those settings moved out to the brand's own folder, and the shared form now refuses to open without one rather than showing an empty page that looks like it works."
+    },
+    {
+      "text": "Text now sits where the platform leaves room for it, by construction rather than by eye. Every caption, logo and on-screen line is placed from one written-down set of margins — so the layout and the check that grades it cannot disagree."
+    },
+    {
+      "text": "Three of the six layouts could not be described the old way at all. YouTube's top edge is a staircase, not a straight line, and flattening it would have thrown away about a fifth of the usable width of every wide video."
+    },
+    {
+      "text": "The social layout has a column of buttons covering only the lower half of the screen. Treating that as a permanent margin would have surrendered space that is free everywhere above it."
+    },
+    {
+      "text": "The quality gate used to answer a smaller question than people read into it: it confirmed a layout existed for the target platform, never that anything was inside it. Those are now two checks, and the second fails a batch when a caption or logo strays."
+    },
+    {
+      "text": "Square and portrait-crop layouts have no official reference yet, so they are marked provisional and every review still is stamped PROVISIONAL. A guess and a measurement should never look the same to whoever approves the work."
+    },
+    {
+      "text": "A video cut for one shape is not automatically safe in another — the square version crops the top off the tall one. Positions are now worked out against every shape a campaign ships, and checked again separately for each."
+    },
+    {
+      "text": "The tool that keeps platform specs current can no longer overwrite the official layouts; it proposes and stops. As it was, one approved refresh would have deleted forty lines explaining why those numbers are what they are."
+    },
+    {
+      "text": "Eleven safeguards were each deliberately broken on a scrap copy to confirm the tests catch them. Eleven for eleven — and the harness refuses to count a crashed test as a test that caught something, which is how its own first run turned out to be false alarms."
     }
   ],
   "milestones": [
@@ -109,6 +133,10 @@
     },
     {
       "title": "Rebuild the intake form around how a campaign is actually run, not just where it is published",
+      "state": "done"
+    },
+    {
+      "title": "Put the official safe-zone layouts to work — text placed from them, and a check that fails when it strays",
       "state": "done"
     },
     {
