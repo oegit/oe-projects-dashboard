@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-07-29",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -34,6 +34,18 @@
     },
     {
       "text": "That run is the next step and it is deliberately gated: a real brief, a person's go-ahead, and a ceiling of 100 credits. Until it happens, the agent is proven as a pipeline and unproven as a producer."
+    },
+    {
+      "text": "Every price it quotes was checked against the real account, and three were wrong. A quote is a floor, not a forecast: one job quoted at 22 credits cost 90. And a plan feature called \"unlimited\" is real only in a browser — the agent uses another door, where it still pays."
+    },
+    {
+      "text": "The music rule was strict in a way that made no sense: it refused a properly licensed track for the sole reason that a machine made it. The test is now the licence, confirmed by a person. What did not change is the part that bites: no recorded licence, no music — the video ships silent and says why."
+    },
+    {
+      "text": "Dubbing into another language was costed from a guess of about 100 credits. The two real jobs on record cost 121 and 142 — so one language alone would eat a third of the budget set aside for an entire test campaign. It is written down as priced and not yet available, rather than quietly offered."
+    },
+    {
+      "text": "The model list can now be refreshed by a command that shows what changed and waits for approval. It edits single lines instead of rewriting the file, because most of that file explains why each price is what it is — and it stops rather than guess when a model appears or disappears."
     }
   ],
   "milestones": [
@@ -72,6 +84,14 @@
     {
       "title": "Turn the quality check's own blind spots into tests",
       "state": "done"
+    },
+    {
+      "title": "Check every price against the real account and correct what was wrong",
+      "state": "done"
+    },
+    {
+      "title": "Rebuild the intake form around how a campaign is actually run, not just where it is published",
+      "state": "in progress"
     },
     {
       "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
