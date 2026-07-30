@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-07-29",
+  "last_updated": "2026-07-30",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -46,6 +46,24 @@
     },
     {
       "text": "The model list can now be refreshed by a command that shows what changed and waits for approval. It edits single lines instead of rewriting the file, because most of that file explains why each price is what it is — and it stops rather than guess when a model appears or disappears."
+    },
+    {
+      "text": "The intake form was rebuilt around how a campaign is actually run, not just where it gets published. One question — \"which channel?\" — turned out to be three: what kind of video, how it gets made, and where it ships. Nine parts of the system depend on the third meaning, so it kept its name."
+    },
+    {
+      "text": "The form now offers things the agent cannot yet do — TV ads, two editing tools, brand characters — and marks each one instead of hiding it. The request gets recorded; the run gets blocked. Asking for something we cannot build yet is useful information, not a mistake to reject."
+    },
+    {
+      "text": "It will not render a language nobody agreed to review. Open English ships to four markets and two are Spanish — Latin America and Spain are different copy read by different people, so they count as two. Spain and Turkey have no reviewer yet, so both are blocked."
+    },
+    {
+      "text": "Review texts can now be sent to the reviewer by Slack, a shared document, or email. Sending is not approving: the video stays blocked until that person's sign-off is actually written down, for every language separately."
+    },
+    {
+      "text": "Every finished file now lands in one folder named after the ticket that asked for it, so a delivery can be traced back to its request without anyone remembering a naming rule."
+    },
+    {
+      "text": "The form used to carry one brand's settings inside the shared agent, which meant adding a brand required editing the tool. Those settings moved out to the brand's own folder, and the shared form now refuses to open without one rather than showing an empty page that looks like it works."
     }
   ],
   "milestones": [
@@ -91,7 +109,7 @@
     },
     {
       "title": "Rebuild the intake form around how a campaign is actually run, not just where it is published",
-      "state": "in progress"
+      "state": "done"
     },
     {
       "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
