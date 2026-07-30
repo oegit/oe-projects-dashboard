@@ -88,6 +88,27 @@
     },
     {
       "text": "Eleven safeguards were each deliberately broken on a scrap copy to confirm the tests catch them. Eleven for eleven — and the harness refuses to count a crashed test as a test that caught something, which is how its own first run turned out to be false alarms."
+    },
+    {
+      "text": "The brief form now works from a link, so anyone can fill one in without a copy of the repo. It ships empty: you load your own project's settings in your browser, and they never leave your machine. The page has no way to send them anywhere, and the browser is what enforces that."
+    },
+    {
+      "text": "Getting it ready to publish found the form was quietly carrying things that belong to us: what two real jobs cost on our account, two supplier names, an internal chat channel, a real ticket number. Not secret exactly — and all of it would have been on a public page."
+    },
+    {
+      "text": "So there is now a check that reads the projects folder and refuses to publish if anything from it — a client name, a person's name, a shared link, a brand colour — has been typed into the shared form. Add a client and the check covers them without anyone remembering."
+    },
+    {
+      "text": "That check caught its own author twice: once flagging a comment written while explaining the rule, and once, after being committed, flagging itself."
+    },
+    {
+      "text": "The form was rebuilt around what a choice will cost. A list down the side shows what still has to be fixed and, separately, what will stop the video being made — because asking for something we cannot build yet is worth recording, not rejecting."
+    },
+    {
+      "text": "All thirty option buttons were unreachable by keyboard and invisible to a screen reader, and no field had a proper label. Both fixed. Colours are now measured for whatever brand is loaded, which found a selected option whose label had always been below the legibility line."
+    },
+    {
+      "text": "The narrow-screen check had been passing on a picture rather than a layout: the preview tool cannot go below a certain width, so a phone-sized screenshot was really a crop of a desktop one. Measured properly, the page ran 473 pixels off the side of a phone. It does not now."
     }
   ],
   "milestones": [
@@ -137,6 +158,10 @@
     },
     {
       "title": "Put the official safe-zone layouts to work — text placed from them, and a check that fails when it strays",
+      "state": "done"
+    },
+    {
+      "title": "Put the brief form on a link the team can use, without publishing anything of ours",
       "state": "done"
     },
     {
