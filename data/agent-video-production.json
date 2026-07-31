@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-07-30",
+  "last_updated": "2026-07-31",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -111,13 +111,58 @@
       "text": "The narrow-screen check had been passing on a picture rather than a layout: the preview tool cannot go below a certain width, so a phone-sized screenshot was really a crop of a desktop one. Measured properly, the page ran 473 pixels off the side of a phone. It does not now."
     },
     {
-      "text": "El formulario ya está publicado y funcionando: https://oegit.github.io/oe-campaign-intake/ — cualquiera del equipo lo abre sin tener una copia del repositorio."
+      "text": "The form is published and working — anyone on the team opens a link, with no copy of the repository.",
+      "evidence": [
+        {
+          "label": "The published form",
+          "url": "https://oegit.github.io/oe-campaign-intake/"
+        }
+      ]
     },
     {
-      "text": "Se comprobó contra la página servida, no contra la intención: lo que entrega la dirección es byte por byte el archivo revisado, sale vacío como debe, y un intento de mandar datos afuera lo bloquea el navegador."
+      "text": "It was checked against the page as served, not against the intention: what the address hands back is byte for byte the file that was reviewed, it comes up empty as it should, and an attempt to send data out is refused by the browser itself."
     },
     {
-      "text": "Antes se compartía otro archivo distinto, que sólo funcionaba dentro del chat de Claude y hoy está dos días desactualizado. Esa vía nunca sirvió para la versión publicable; el enlace la reemplaza."
+      "text": "What used to be shared was a different file that only worked inside Claude's own chat, and was already two days out of date. That route never worked for a publishable version; the link replaces it."
+    },
+    {
+      "text": "The published link was still unusable by the people it was for: it opened on a file chooser asking for a settings file that lives in a private repository. It now opens straight on the brand's own form, carrying a stripped-down copy of those settings."
+    },
+    {
+      "text": "What may be published is a list of what is allowed, not a list of what is banned — so a field added to the settings later stays off the page unless somebody adds it on purpose."
+    },
+    {
+      "text": "Reviewer names, voice-talent names, shared links and past spending are not on that page. Not as a promise: the build refuses to write itself if any of them appears, and it names everything it dropped every time it runs."
+    },
+    {
+      "text": "The form now sends itself. One button files the brief straight into a shared folder and emails whoever runs the agent, instead of downloading a file somebody has to forward. If sending fails the download button comes back, with the reason."
+    },
+    {
+      "text": "A filled-in form is never lost — the worst outcome available is the behaviour it had yesterday, plus an explanation of why."
+    },
+    {
+      "text": "Leaving out the delivery folder — correct, because a share link hands out access — quietly made the published form impossible to submit, since that same field is one the form refuses to open without. Every test passed. Only opening it in a browser showed it."
+    },
+    {
+      "text": "The fix follows a distinction the agent already had: a missing folder is unassigned, not wrong. The form accepts it, the run stays blocked until it is filled, and it gets filled from the brand's own settings when the request is taken in."
+    },
+    {
+      "text": "Chasing that also turned up an older contradiction nobody had hit: the rules promised an empty field the operator would fill, and then rejected exactly that."
+    },
+    {
+      "text": "The form now sends itself. One button files the brief straight into a shared folder and emails whoever runs the agent, instead of downloading a file somebody has to forward. If sending fails for any reason the download button comes back, with the reason — a filled-in form is never lost."
+    },
+    {
+      "text": "The shared form still cannot send anything anywhere. The sending code sits there switched off and the browser is what enforces it: only a published build for one brand gets a destination, and only the one it was built with."
+    },
+    {
+      "text": "Taking a submitted brief in is now one command: it files the campaign, fills in the delivery folder, runs every check, and says plainly whether it can run or what is blocking it. It moves no approval — every point where money is spent is still a person saying go."
+    },
+    {
+      "text": "A check written to stop the page sending data anywhere but the one approved address turned out to accept the exact trick it was written to stop. Its own test caught that the first time it ran."
+    },
+    {
+      "text": "The tool that proves the safeguards work was itself proving the wrong thing: five of its checks were passing for an unrelated reason, so they were not testing what they claimed. Fixed — and one safeguard was deleted rather than kept, because it could no longer fail at all."
     }
   ],
   "milestones": [
@@ -170,8 +215,16 @@
       "state": "done"
     },
     {
-      "title": "Publicar el formulario en un enlace que el equipo pueda usar, sin exponer nada nuestro",
+      "title": "Publish the form at a link the team can use, without exposing anything of ours",
       "state": "done"
+    },
+    {
+      "title": "Make the link usable end to end: the brand's own form on opening, and the brief filed by itself instead of emailed around",
+      "state": "done"
+    },
+    {
+      "title": "Turn the submission on — a person deploys the receiving end, checks it with one test send, and republishes the page against it",
+      "state": "next"
     },
     {
       "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
