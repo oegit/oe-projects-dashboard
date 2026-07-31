@@ -109,6 +109,15 @@
     },
     {
       "text": "The narrow-screen check had been passing on a picture rather than a layout: the preview tool cannot go below a certain width, so a phone-sized screenshot was really a crop of a desktop one. Measured properly, the page ran 473 pixels off the side of a phone. It does not now."
+    },
+    {
+      "text": "El formulario ya está publicado y funcionando: https://oegit.github.io/oe-campaign-intake/ — cualquiera del equipo lo abre sin tener una copia del repositorio."
+    },
+    {
+      "text": "Se comprobó contra la página servida, no contra la intención: lo que entrega la dirección es byte por byte el archivo revisado, sale vacío como debe, y un intento de mandar datos afuera lo bloquea el navegador."
+    },
+    {
+      "text": "Antes se compartía otro archivo distinto, que sólo funcionaba dentro del chat de Claude y hoy está dos días desactualizado. Esa vía nunca sirvió para la versión publicable; el enlace la reemplaza."
     }
   ],
   "milestones": [
@@ -161,7 +170,7 @@
       "state": "done"
     },
     {
-      "title": "Put the brief form on a link the team can use, without publishing anything of ours",
+      "title": "Publicar el formulario en un enlace que el equipo pueda usar, sin exponer nada nuestro",
       "state": "done"
     },
     {
