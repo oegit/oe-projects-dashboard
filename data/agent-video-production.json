@@ -163,6 +163,21 @@
     },
     {
       "text": "The tool that proves the safeguards work was itself proving the wrong thing: five of its checks were passing for an unrelated reason, so they were not testing what they claimed. Fixed — and one safeguard was deleted rather than kept, because it could no longer fail at all."
+    },
+    {
+      "text": "The endpoint is live. A brief filled on the public page now files itself into the team's Drive folder and emails whoever runs the agent — verified from the live page, not from a copy of it."
+    },
+    {
+      "text": "Getting there found that the design's own requirement was not on offer: the company Google account blocks apps that anyone can reach, so the option simply is not in the menu, and the restricted version refuses the form with a sign-in page."
+    },
+    {
+      "text": "So the receiving end runs from a separate account that has permission to write into one folder and nothing else. The briefs stay in the company Drive; the folder is never shared with anyone."
+    },
+    {
+      "text": "The setup guide's own test command was wrong in a way that looked exactly like a broken endpoint — it reported an error for an hour while the thing had been working the whole time. Corrected, with the reason written down."
+    },
+    {
+      "text": "Every refusal was made to refuse before trusting it: a token with one character changed, no token at all, an old document version, and a brief with no ticket number. Four for four."
     }
   ],
   "milestones": [
@@ -223,8 +238,8 @@
       "state": "done"
     },
     {
-      "title": "Turn the submission on — a person deploys the receiving end, checks it with one test send, and republishes the page against it",
-      "state": "next"
+      "title": "Turn the submission on — the receiving end deployed, tested, and the page republished against it",
+      "state": "done"
     },
     {
       "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
