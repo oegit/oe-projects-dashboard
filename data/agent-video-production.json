@@ -274,6 +274,15 @@
     },
     {
       "text": "That file had no tests at all, which is how both faults survived. It has them now, including a sweep over every campaign on record checking that each one names a voice that can actually be found."
+    },
+    {
+      "text": "The whole machine then ran end to end at zero cost, on the campaign that already shipped: twelve files rendered, voiced and mixed with today's code. The voice was bound and named, the music licence was checked, and every quality check that could run passed."
+    },
+    {
+      "text": "The quality gate still refused to sign it — the old campaign names no platform, so the layout checks could not be asked, and this gate does not turn \"never asked\" into \"approved\". New briefs name their platforms, so a real campaign gets asked everything."
+    },
+    {
+      "text": "What remains unproven is exactly one thing: generating new footage with paid AI. That is the next milestone — a real brief, a spending cap, and a person saying go."
     }
   ],
   "milestones": [
