@@ -241,6 +241,24 @@
     },
     {
       "text": "Checked in a real browser, not only in tests: the picker renders, the status changes with the languages chosen, and the warning appears and disappears with it. This form once shipped impossible to submit with every test green."
+    },
+    {
+      "text": "Open English now has its first reusable video template — and it is not a new idea: it is the campaign that already shipped, written down. Eight videos, four approvals, fifteen credits. The only structure here that is proven rather than designed."
+    },
+    {
+      "text": "Writing it down was blocked by a fault nobody could see. A beat could have footage, or it could have words and a voice, but not both — so the one campaign this thing has actually made could not be expressed as a template at all."
+    },
+    {
+      "text": "It failed silently, which is worse: you wrote a shot into the template and got a blank card back, no error, from the part whose whole job is to refuse loudly. A scene's type now says who may change it, and nothing about whether it may have a picture."
+    },
+    {
+      "text": "The template names no model. It describes the shot and lets the current price list choose — a model name written into a brand's file is a price frozen on the day someone typed it, and three of those have already turned out wrong here."
+    },
+    {
+      "text": "A template lives in two files: one the builder reads, one the brief form reads. They are now compared on every run, down to each scene's type, because that type is what the cost estimate prices."
+    },
+    {
+      "text": "That check found a test template on its first run that existed but was in nobody's picker. Nothing was broken — it just could never have been chosen."
     }
   ],
   "milestones": [
@@ -310,6 +328,10 @@
     },
     {
       "title": "Let a brief name its voice, and publish whether that voice has been heard in each language",
+      "state": "done"
+    },
+    {
+      "title": "Give Open English its first reusable template, from the campaign that already worked",
       "state": "done"
     },
     {
