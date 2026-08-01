@@ -3,7 +3,7 @@
   "slug": "agent-video-production",
   "name": "Agent: Video Production",
   "type": "agent",
-  "status": "at risk",
+  "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
   "last_updated": "2026-08-01",
   "objectives": [
@@ -205,6 +205,24 @@
     },
     {
       "text": "Two of the fifteen stop work and get their own session, each fix graded by breaking it again to prove the test notices. Eight are written down to be fixed when that area is next touched. Five are noted and nothing more. The audit suggests and never edits — not one file of the agent was changed."
+    },
+    {
+      "text": "Both are now fixed. The builder reads the newer brief format, so a brief filed through the public form can finally become a video. Declaring the older format the only supported one was rejected: there is no other way in, so it would have retired the template feature rather than drawn a line."
+    },
+    {
+      "text": "Three things a newer brief can say are now refused rather than guessed at: an unresearched platform, an unknown one, and a screen shape with no dimensions. Each guess would have made a video that looked correct, was not what was asked for, and passed every later check."
+    },
+    {
+      "text": "The rule that a voice may not speak a language nobody has heard it speak is now enforced in code, in both brief formats. It was stated in two places and implemented in none — the check that did run asks who reviewed the written text, a different question about a different person."
+    },
+    {
+      "text": "Language codes are matched exactly, on purpose. Letting a Spain request inherit a Latin-America approval would claim a voice was checked for a market where nobody has listened to it — the precise substitution the rule exists to prevent."
+    },
+    {
+      "text": "It immediately stopped a test campaign that had been passing: it names a voice, and its brand folder has no voice file at all, so nobody can say that voice was ever heard. Record the listen, or drop the voice. Writing an approval nobody earned is not an option."
+    },
+    {
+      "text": "Each fix was graded by breaking it again on a scrap copy and requiring the test to fail — and both were graded on the wiring, not the function, because both faults were correct code that nothing called. Thirty-six safeguards now prove they can go red, up from thirty-two."
     }
   ],
   "milestones": [
@@ -270,7 +288,7 @@
     },
     {
       "title": "Close the two faults the audit found: join the brief form to the video builder, and either enforce the voice rule or stop claiming it",
-      "state": "next"
+      "state": "done"
     },
     {
       "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
