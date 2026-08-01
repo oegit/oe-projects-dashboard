@@ -3,9 +3,9 @@
   "slug": "agent-video-production",
   "name": "Agent: Video Production",
   "type": "agent",
-  "status": "on track",
+  "status": "at risk",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-07-31",
+  "last_updated": "2026-08-01",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -190,6 +190,21 @@
     },
     {
       "text": "The redesign reached the link the team actually opens. That is a separate act from finishing it: the page had been serving the previous design, and publishing is a step a person takes on purpose — nothing here pushes to a public page by itself."
+    },
+    {
+      "text": "The agent was audited against its own written rules for the first time — by a separate tool that reads what the documents promise and then goes looking for the code that keeps the promise. Fifteen faults, each pinned to a line."
+    },
+    {
+      "text": "The form that takes a brief and the part that turns it into a video have stopped speaking the same language. The form now writes the newer format; the builder reads only the older one; the step that takes briefs in refuses anything else. Nothing joins them."
+    },
+    {
+      "text": "The tests did not notice, because the only test of that step feeds it a brief in the old format. A green suite over a shape the system no longer produces is the exact thing an audit is for."
+    },
+    {
+      "text": "A rule the documents state twice — that a voice may not be used in a language nobody has listened to — is enforced by nothing. The file named as doing it is called by no running part. The check that does run asks about the reviewer of the text: another question."
+    },
+    {
+      "text": "Two of the fifteen stop work and get their own session, each fix graded by breaking it again to prove the test notices. Eight are written down to be fixed when that area is next touched. Five are noted and nothing more. The audit suggests and never edits — not one file of the agent was changed."
     }
   ],
   "milestones": [
@@ -252,6 +267,10 @@
     {
       "title": "Turn the submission on — the receiving end deployed, tested, and the page republished against it",
       "state": "done"
+    },
+    {
+      "title": "Close the two faults the audit found: join the brief form to the video builder, and either enforce the voice rule or stop claiming it",
+      "state": "next"
     },
     {
       "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
