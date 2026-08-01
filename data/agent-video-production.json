@@ -223,6 +223,24 @@
     },
     {
       "text": "Each fix was graded by breaking it again on a scrap copy and requiring the test to fail — and both were graded on the wiring, not the function, because both faults were correct code that nothing called. Thirty-six safeguards now prove they can go red, up from thirty-two."
+    },
+    {
+      "text": "The brief form now asks which voice will speak the ad, and shows whether anyone has actually heard that voice in each language chosen. Before this, the rule existed in code but the form collected no voice, so nothing could ever trigger it."
+    },
+    {
+      "text": "Two separate warnings, because they are two different people: one asks whether a native speaker reviewed the written script, the other whether anyone has listened to the voice in that language. Neither answers for the other."
+    },
+    {
+      "text": "Language codes are matched exactly. A Latin-America approval does not carry over to Spain — same language, different market, different listen — and a test now breaks if that shortcut is ever taken."
+    },
+    {
+      "text": "The published form was hiding the fact that decides the outcome: the voice status was stripped out before publishing. It now travels, while the voice talent's name and the provider's id still do not."
+    },
+    {
+      "text": "Taking in a brief now refuses one that belongs to a different brand. The form is public and per-brand, so a download folder holding two brands' briefs is normal — filing the wrong one used to succeed quietly and put the files in the wrong place."
+    },
+    {
+      "text": "Checked in a real browser, not only in tests: the picker renders, the status changes with the languages chosen, and the warning appears and disappears with it. This form once shipped impossible to submit with every test green."
     }
   ],
   "milestones": [
@@ -288,6 +306,10 @@
     },
     {
       "title": "Close the two faults the audit found: join the brief form to the video builder, and either enforce the voice rule or stop claiming it",
+      "state": "done"
+    },
+    {
+      "title": "Let a brief name its voice, and publish whether that voice has been heard in each language",
       "state": "done"
     },
     {
