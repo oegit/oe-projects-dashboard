@@ -259,6 +259,21 @@
     },
     {
       "text": "That check found a test template on its first run that existed but was in nobody's picker. Nothing was broken — it just could never have been chosen."
+    },
+    {
+      "text": "A campaign that shipped named a voice that does not exist — through eight videos, four approvals and a reconciled invoice. Chasing it found why nobody noticed: the part that attaches the audio never read that field at all."
+    },
+    {
+      "text": "So the field said who speaks the ad, and nothing checked it. It does now: the voice has to be one the brand has recorded, or a stand-in the price list knows about. Anything else stops the mix, and every run names the voice it used."
+    },
+    {
+      "text": "Only one of the eleven entries on record was actually wrong. The rest were honest and stayed as they were — one campaign really was made with a stand-in voice, and renaming it would have recorded something that did not happen."
+    },
+    {
+      "text": "The same file's other safeguard, meant to stop one version's soundtrack landing on another version's picture, was matching names loosely enough to let a shorter name pass for a longer one — and to reject a correct pair whose name had a capital letter in it."
+    },
+    {
+      "text": "That file had no tests at all, which is how both faults survived. It has them now, including a sweep over every campaign on record checking that each one names a voice that can actually be found."
     }
   ],
   "milestones": [
