@@ -111,6 +111,30 @@
     },
     {
       "text": "The brand logo is in — the last of the four look settings. It travels inside the styles rather than as a separate file, because a logo that fails to load fails silently and nobody would see the gap."
+    },
+    {
+      "text": "The first producer is connected. A filled brief now becomes a real instruction to the tool that makes the picture, and one image was made end to end and named by the system rather than by a person."
+    },
+    {
+      "text": "That tool had no record of the brand at all. One was built from the website — and it came back marked finished while missing the logo entirely and carrying a brand colour that is not ours."
+    },
+    {
+      "text": "Correcting it turned out to replace the whole record rather than the one field. Anything left out of the correction disappears silently. That is now written into the instructions as the first thing anyone reads."
+    },
+    {
+      "text": "The tool offers 26 ready-made video styles. Most stage a physical product being unboxed, worn or crushed, and this is a service. Ten fit; the other sixteen each carry a written reason rather than being quietly absent."
+    },
+    {
+      "text": "The same honesty runs the other way: of 46 ways a piece can be presented, 19 have a match and the remaining 27 say why not. A piece asking for one of those stops the batch and shows the reason, instead of quietly getting something else."
+    },
+    {
+      "text": "The system refuses rather than adjusts. The tool only makes videos of twelve to fifteen seconds; a brief asking for twenty is rejected, never shortened. A shortened piece is not the one a person approved, and nothing later can tell."
+    },
+    {
+      "text": "Two faults were caught by the tests before any of this shipped: an unfamiliar label crashed instead of refusing, and the system guessed what kind of image file it would get back. The real one came back different."
+    },
+    {
+      "text": "The generated picture rendered the approved headline perfectly, accents and all — and invented gibberish text everywhere else in the scene. No automatic check can read text out of a picture, so it is now a named thing the design reviewer looks for."
     }
   ],
   "milestones": [
@@ -144,7 +168,7 @@
     },
     {
       "title": "Connect the four producers that actually make the pieces",
-      "state": "next"
+      "state": "in progress"
     },
     {
       "title": "Deliver to the shared folder, refusing any file whose name would break the loop",
