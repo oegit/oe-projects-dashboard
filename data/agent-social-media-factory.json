@@ -135,6 +135,36 @@
     },
     {
       "text": "The generated picture rendered the approved headline perfectly, accents and all — and invented gibberish text everywhere else in the scene. No automatic check can read text out of a picture, so it is now a named thing the design reviewer looks for."
+    },
+    {
+      "text": "The picture generator was being asked to write the headline. Three real tests ended that: pushing it toward the brand typeface made its text worse, not better — one attempt printed the headline twice, overlapping itself, plus a line of invented nonsense."
+    },
+    {
+      "text": "The first test looked fine and was worse. The headline came out perfect, and the model invented a fake version of our own app in the background, with gibberish on the screen. At thumbnail size it reads as finished work."
+    },
+    {
+      "text": "So the generator is now forbidden to put any text in the picture at all — not just where the headline goes, but anywhere, because the nonsense turned up where nobody had thought to look. The third test came back clean."
+    },
+    {
+      "text": "The approved words now leave separately, to be set later using the brand's real font files. They travel with a role, never a font name: the brand pack already owns which font a role means, and a second copy of that fact goes stale."
+    },
+    {
+      "text": "A new state was added for a piece that has its picture but not yet its words. Calling it finished would send a bare background to the reviewer and then to delivery — under a perfectly correct filename, which is exactly the failure the naming scheme exists to prevent."
+    },
+    {
+      "text": "And the honest consequence is written down rather than discovered later: this factory has no step that sets type, so an ad whose words carry the message cannot be finished here yet. Building a second one would split the brand system in two."
+    },
+    {
+      "text": "The brand rules for this brand are now in the project — as pointers, not copies. Writing them found that the generator's brand record had been automatically filled with a font the brand guidelines explicitly forbid, steering every picture, with no error raised."
+    },
+    {
+      "text": "The station that makes carousels turned out to have a machine-readable contract in both directions, not just one, so the hand-off need not be manual either way."
+    },
+    {
+      "text": "But neither side of that contract has room for our tracking marker, and it cannot be extended. A finished carousel would come back with no line to the batch that asked for it — a delivered asset nobody can measure."
+    },
+    {
+      "text": "One route may work: the marker fits inside the identifier both sides already use. Whether it survives the round trip is unproven, and it is written down as the first thing to test rather than assumed."
     }
   ],
   "milestones": [
