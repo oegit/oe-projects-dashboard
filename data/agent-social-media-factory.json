@@ -72,6 +72,45 @@
     },
     {
       "text": "The one check that cannot run automatically says so out loud. Confirming the vocabulary still matches the research tool needs a live connection the automatic gate does not have. Rather than let a green light imply a check it never ran, the limit is written into the instructions."
+    },
+    {
+      "text": "The brief formats are written, one per kind of asset — and checked rather than just written. A brief missing anything cannot produce a filename, and the test proves it by removing each field in turn and watching it refuse."
+    },
+    {
+      "text": "One choice stopped being a choice: whether a piece has an opening hook is worked out from what kind of asset it is. A brief that asks a person to pick one for a still image now contradicts the system, and the tests say so."
+    },
+    {
+      "text": "The paid step carries the one instruction the whole loop rests on — the marker goes at the end of the ad name. Nothing else closes the loop, and forgetting it produces no error: the ad runs and its result never comes home."
+    },
+    {
+      "text": "The video brief says plainly that the video producer will not read it, and lists exactly what it does not supply. That list is the next task’s specification instead of a surprise found while a batch waits."
+    },
+    {
+      "text": "How a batch moves is written as six stages, each with the way it fails silently: a target that moved, a renamed label, a partial batch that reads as complete, a marker that never reached the ad."
+    },
+    {
+      "text": "Both approvals stay at the batch, never the piece. At full pace, approving piece by piece would be up to 150 decisions a week — a queue somebody clears without looking. The cost is stated too: rejecting one piece rejects the batch."
+    },
+    {
+      "text": "Two things everything referred to but nobody had defined now exist: the record of what a batch intended, and the log of what worked, what tired out, and what has never been tried."
+    },
+    {
+      "text": "What we meant to make and what the tool observed are kept apart, and neither may overwrite the other. The disagreement is the useful part: it is the gap between the ad we meant and the ad people were actually shown."
+    },
+    {
+      "text": "Every entry in that log names the platform its number came from. The research tool covers one of the four in scope, so a record from any other cannot carry performance at all — the shape refuses it instead of trusting a habit."
+    },
+    {
+      "text": "Rules written down but never run are just comments. A small checker now runs every one of them, including a rule that had sat unused since the naming work, and it refuses to pass any rule it does not actually enforce itself."
+    },
+    {
+      "text": "The rule that held work back from merging on a green light was written to expire once a condition was met. The condition was met, so it was lifted deliberately and replaced with what is true now, rather than left to disagree with reality."
+    },
+    {
+      "text": "The vocabulary was checked against the live research tool again today: unchanged. That check cannot run automatically, and it is the one place a silent rename would quietly break everything already delivered."
+    },
+    {
+      "text": "The brand logo is in — the last of the four look settings. It travels inside the styles rather than as a separate file, because a logo that fails to load fails silently and nobody would see the gap."
     }
   ],
   "milestones": [
@@ -97,7 +136,11 @@
     },
     {
       "title": "Write the brief formats, one per kind of asset",
-      "state": "next"
+      "state": "done"
+    },
+    {
+      "title": "Write down how a batch moves, and where the two people have to say yes",
+      "state": "done"
     },
     {
       "title": "Connect the four producers that actually make the pieces",
