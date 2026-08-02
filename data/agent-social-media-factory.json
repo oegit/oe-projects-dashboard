@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns what worked in advertising into the next batch of social posts, and carries the result back to the idea that produced it — with two points where a person has to say yes.",
-  "last_updated": "2026-08-01",
+  "last_updated": "2026-08-02",
   "objectives": [
     "Produce social assets at real volume — roughly ten variations of one idea, across statics, carousels and video — instead of one piece at a time.",
     "Close the loop: every delivered file carries the idea it came from, so its performance can be read back and feed the next round. Producing pieces without that is just output.",
@@ -42,6 +42,36 @@
     },
     {
       "text": "The automatic gate deliberately stays modest for now. It proves the shape holds; it does not yet prove the thing the system is for, and the setting that lets work merge on a green light is switched off until it does."
+    },
+    {
+      "text": "The naming scheme is built — the part everything else depends on. Before deciding what a filename should record, the research tool was asked what it actually reports back, and three of the answers changed the design."
+    },
+    {
+      "text": "One of the labels the system was going to measure by is never returned alongside performance. It can be listed, but it never comes back attached to a result. Recording it would have produced a number nobody could ever read."
+    },
+    {
+      "text": "Another label can hold several values at once, while a filename slot holds one. Rather than pretend they match, the file now records what we intended and the difference from what the tool observed is treated as something to look at, not an error to hide."
+    },
+    {
+      "text": "The largest correction: the research tool never sees our filenames. It stores every piece under an identifier of its own, so the loop cannot close on the filename however carefully it is built."
+    },
+    {
+      "text": "So the marker now travels in the name of the ad instead, appended to the one the media team already writes rather than replacing it — and a later check flags any piece whose marker never appeared."
+    },
+    {
+      "text": "One rule was going to be a judgement call and turned out to be a measurable fact. Across 893 past pieces, whether a piece has an opening hook depends entirely on its kind of asset, with no exceptions. The system works it out instead of asking."
+    },
+    {
+      "text": "The vocabulary is written down rather than looked up each time. A renamed label would otherwise be accepted quietly under its new name, orphaning everything already delivered under the old one. Not hypothetical: one list lost a value between two days."
+    },
+    {
+      "text": "Twenty-one words mean different things in different categories — the same word is a valid answer to more than one question. Each now only counts in its own position, so a value can no longer be filed under the wrong heading and produce a filename that looks perfectly correct."
+    },
+    {
+      "text": "The shared look is now its own kit, in the open, so every future form draws from one source. Adopting it was proven to change nothing: 104 elements compared at three screen sizes, every difference tracing to one deliberate change — a single logo size."
+    },
+    {
+      "text": "The one check that cannot run automatically says so out loud. Confirming the vocabulary still matches the research tool needs a live connection the automatic gate does not have. Rather than let a green light imply a check it never ran, the limit is written into the instructions."
     }
   ],
   "milestones": [
@@ -59,7 +89,11 @@
     },
     {
       "title": "Build the naming scheme that carries performance back to the idea — the part everything else depends on",
-      "state": "in progress"
+      "state": "done"
+    },
+    {
+      "title": "Split the shared look into a kit every future form can share",
+      "state": "done"
     },
     {
       "title": "Write the brief formats, one per kind of asset",
@@ -78,7 +112,7 @@
       "state": "next"
     },
     {
-      "title": "Give the team a request form, and split its look into a kit every future form can share",
+      "title": "Give the team a request form",
       "state": "next"
     },
     {
