@@ -1,0 +1,93 @@
+{
+  "schema_version": "1",
+  "slug": "agent-social-media-factory",
+  "name": "Agent: Social Media Factory",
+  "type": "agent",
+  "status": "on track",
+  "summary": "Turns what worked in advertising into the next batch of social posts, and carries the result back to the idea that produced it — with two points where a person has to say yes.",
+  "last_updated": "2026-08-01",
+  "objectives": [
+    "Produce social assets at real volume — roughly ten variations of one idea, across statics, carousels and video — instead of one piece at a time.",
+    "Close the loop: every delivered file carries the idea it came from, so its performance can be read back and feed the next round. Producing pieces without that is just output.",
+    "Keep a person in the way. Nothing ships without an explicit human approval of the words and of the design.",
+    "Stay portable. One engine, one folder per brand it works for — adding the next one should be configuration, never code."
+  ],
+  "outcomes": [
+    {
+      "text": "The plan was checked against reality before a line of it was built, and two of the things it was built on turned out not to be true."
+    },
+    {
+      "text": "The form it planned to copy was described as shipping empty, so each team could load its own settings. It does not. It is published with the settings already inside, through a filter that refuses to publish anything on a deny list."
+    },
+    {
+      "text": "Copying the description instead of the thing would have produced a form that greets the marketing team with a file chooser, asking for a file only engineers have."
+    },
+    {
+      "text": "The mailbox those forms submit to would have rejected every message this new system sends. It checks the version stamp of what it receives, and that stamp belongs to a different form. A new copy of the same mailbox would have failed silently on the first real submission."
+    },
+    {
+      "text": "Two more problems surfaced that nobody had listed as a risk. The delivery folder lives on a shared drive rather than a personal one, which changes how the delivery step has to ask for it — the failure would have looked like a permissions error and not like a wrong setting."
+    },
+    {
+      "text": "And the research tool this depends on only covers one of the four platforms in scope. Three of them can be delivered to but cannot be measured, which means the project's own definition of success is only reachable on one. Better said out loud now than discovered at the finish line."
+    },
+    {
+      "text": "The repository exists with the shape written down, and one rule already enforced automatically: the shared half may not contain the name of any single brand it works for. That is the whole portability promise, and it is now checked on every change rather than remembered."
+    },
+    {
+      "text": "That check builds its own watch list from the folders that exist, so a brand added next year is protected the day its folder appears and nobody has to update anything."
+    },
+    {
+      "text": "Every check ships with proof it can fail: a violation is planted on purpose, the check has to catch it on the right line, and the check has to go quiet when it is removed. A check only ever run against clean work is not evidence of anything."
+    },
+    {
+      "text": "The automatic gate deliberately stays modest for now. It proves the shape holds; it does not yet prove the thing the system is for, and the setting that lets work merge on a green light is switched off until it does."
+    }
+  ],
+  "milestones": [
+    {
+      "title": "Agree what the system is for, down to zero open questions",
+      "state": "done"
+    },
+    {
+      "title": "Check the plan against reality before building, and correct it where it was wrong",
+      "state": "done"
+    },
+    {
+      "title": "Create the repository, its shape, and a gate whose green light means something",
+      "state": "done"
+    },
+    {
+      "title": "Build the naming scheme that carries performance back to the idea — the part everything else depends on",
+      "state": "in progress"
+    },
+    {
+      "title": "Write the brief formats, one per kind of asset",
+      "state": "next"
+    },
+    {
+      "title": "Connect the four producers that actually make the pieces",
+      "state": "next"
+    },
+    {
+      "title": "Deliver to the shared folder, refusing any file whose name would break the loop",
+      "state": "next"
+    },
+    {
+      "title": "Put the two human approvals in the team's chat, with a reminder if nobody answers in a day",
+      "state": "next"
+    },
+    {
+      "title": "Give the team a request form, and split its look into a kit every future form can share",
+      "state": "next"
+    },
+    {
+      "title": "Run one complete rehearsal end to end before anything real is produced",
+      "state": "next"
+    },
+    {
+      "title": "Start real production slowly, and prove one result read all the way back to its idea",
+      "state": "next"
+    }
+  ]
+}
