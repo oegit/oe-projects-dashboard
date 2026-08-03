@@ -270,6 +270,39 @@
     },
     {
       "text": "A correction never erases what it replaced. Approving and then rejecting keeps both, with the earlier one marked as overridden — and work already delivered is not undone by a later change of mind, because that is a new batch."
+    },
+    {
+      "text": "The request form is built. Sixteen fields, no accounts, no permissions: anyone on the team fills it in and the request arrives with everything the pipeline needs to start."
+    },
+    {
+      "text": "It cannot send anything. The form in the repository is forbidden by the browser itself from reaching any address, and the ability to submit is added only when it is published. That is enforced, not promised."
+    },
+    {
+      "text": "The published page carries the brand's settings inside it, through a filter that names every field allowed out. A field nobody thought about is dropped without anyone editing the filter."
+    },
+    {
+      "text": "The filter was watched refusing rather than assumed to work. A folder address hidden inside a field that IS allowed out made the build stop and write nothing at all."
+    },
+    {
+      "text": "That planted test corrected the design: 'we meant to publish this' excuses a brand name, which the page has to show, and must never excuse an address or an identifier."
+    },
+    {
+      "text": "A fingerprint of the page is published beside it, so anyone can ask whether the page being served is the page that was reviewed — and get an answer from a command rather than from trust."
+    },
+    {
+      "text": "The mailbox it submits to was forked rather than copied, and the reason was measured at the real address: a message from this system came back rejected by the existing one, exactly as predicted."
+    },
+    {
+      "text": "The delivery folder never appears on the public page. The field is there but blank, and the real address is supplied by hand when the request is taken in — checked, shown masked, and stored nowhere."
+    },
+    {
+      "text": "No frameworks, no code loaded from anyone else's servers. The form it was modelled on pulls three files from an outside service every time it opens; sixteen fields of plain HTML do not need that."
+    },
+    {
+      "text": "The form was driven in a real browser, not only in tests: a campaign name with an apostrophe, a dash and an accent turned into the right filename token, ran past the length limit, and the form refused to send."
+    },
+    {
+      "text": "One step is still by hand and is written down as such: the page has no home and no mailbox until they are created. The instructions include the two traps that cost hours last time — both look exactly like a broken setup and are not."
     }
   ],
   "milestones": [
@@ -315,7 +348,7 @@
     },
     {
       "title": "Give the team a request form",
-      "state": "next"
+      "state": "done"
     },
     {
       "title": "Run one complete rehearsal end to end before anything real is produced",
