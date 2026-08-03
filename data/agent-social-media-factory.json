@@ -243,6 +243,33 @@
     },
     {
       "text": "The credential was nearly created inside an unrelated product’s project. It would have worked, but the day somebody archives that product delivery stops and nothing says why. It now lives in a project named for what it is."
+    },
+    {
+      "text": "The two approvals now live in the team's chat. A message goes out naming the batch, a person replies with one line, and the answer is written into the record the whole loop is measured from — not left in a conversation that scrolls away."
+    },
+    {
+      "text": "The reminder is a scheduled job rather than a timer inside somebody's session, so it survives everyone going home. A batch nobody has answered is chased once a day, every day, instead of once and then silence."
+    },
+    {
+      "text": "The approval message has to show both replies already written out, so nobody retypes them. That means it contains the exact words that approve it — so the system tells its own messages apart by who sent them, never by what they say."
+    },
+    {
+      "text": "Otherwise every batch would approve itself the instant it was posted, with nobody involved. That is the single detail the whole design turns on, and it is now proven against real messages rather than reasoned about."
+    },
+    {
+      "text": "A near miss is answered instead of ignored. Someone typing the word in lower case, or with a colon after it, has not approved anything — and silence would leave them believing they had until the batch turns up a week late."
+    },
+    {
+      "text": "It was proven with a real person typing a real line, because no program can pretend to be one. Half of that check cannot be automated at all, and it says so out loud rather than passing quietly."
+    },
+    {
+      "text": "That live run found a fault the automated tests could not: reading a long conversation in pages returned the opening message once per page. A message counted twice is an approval counted twice, recorded as overruling itself."
+    },
+    {
+      "text": "Asked to type a deliberately wrong line, the person typed it in the channel rather than inside the conversation — which is what people do. Reading only the conversation would have missed it and left them watching nothing happen."
+    },
+    {
+      "text": "A correction never erases what it replaced. Approving and then rejecting keeps both, with the earlier one marked as overridden — and work already delivered is not undone by a later change of mind, because that is a new batch."
     }
   ],
   "milestones": [
@@ -284,7 +311,7 @@
     },
     {
       "title": "Put the two human approvals in the team's chat, with a reminder if nobody answers in a day",
-      "state": "next"
+      "state": "done"
     },
     {
       "title": "Give the team a request form",
