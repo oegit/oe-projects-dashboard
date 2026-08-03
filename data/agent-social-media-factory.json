@@ -192,6 +192,30 @@
     },
     {
       "text": "The other pair — the ticket link and the tracking parameters on a destination address — are already optional. Work made before they arrive is delivered and named correctly; only the reporting in a separate analytics tool is thinner, and that is easy to add later."
+    },
+    {
+      "text": "The fourth and last producer is connected. The video maker never reads a brief — it takes a strict form of its own and refuses anything else — so the system now fills that form in instead of writing prose."
+    },
+    {
+      "text": "One question had been deliberately left open: whether that producer requires a performance target the brand has never set. It does not. Answered by running its own checks, so nobody invents a number that would have read like a decision."
+    },
+    {
+      "text": "The tracking marker survives, by one route only. Everything else was tried and refused: an extra field breaks the whole form, and the delivery folder name is locked to the ticket. Only the campaign name carries it, and it comes back on every finished file."
+    },
+    {
+      "text": "A control was run beside it: an ordinary campaign name comes back carrying nothing at all, which is what makes the match on the real ones mean something."
+    },
+    {
+      "text": "The video brief was wrong about one thing and the producer said so. It records language in two letters; the producer wants the regional variant and matches it exactly. Plain Spanish was rejected outright."
+    },
+    {
+      "text": "A market with no regional variant on file is now skipped rather than guessed at. Sending Latin-American wording to Spain is exactly the mistake the producer own review step exists to catch."
+    },
+    {
+      "text": "Video can now fail without stopping anything. A piece this producer cannot take is set aside with its reason and the batch finishes with the rest — statics and carousels are never held up by it."
+    },
+    {
+      "text": "Nothing here re-checks the producer form. A second copy of somebody else rules goes stale quietly, so a separate check reads their real rules and runs their real checker by hand before each step up in volume."
     }
   ],
   "milestones": [
@@ -225,7 +249,7 @@
     },
     {
       "title": "Connect the four producers that actually make the pieces",
-      "state": "in progress"
+      "state": "done"
     },
     {
       "title": "Deliver to the shared folder, refusing any file whose name would break the loop",
