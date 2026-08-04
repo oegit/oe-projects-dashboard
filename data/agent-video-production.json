@@ -325,6 +325,39 @@
     },
     {
       "text": "The public form was rebuilt and republished with the new option live. The rebuild nearly shipped a page that could no longer send anything — the send address is not stored in the shared file and has to be passed in each time. Caught by comparing against what was already published."
+    },
+    {
+      "text": "The first video asked of it that is almost entirely product screens: a three-minute tour of the platform. The rule from the pilot holds without argument — screens get recorded, never generated. A generated one once came back with broken English written inside an advert for an English school."
+    },
+    {
+      "text": "Checking the proposed running order against the machine, rather than reading it, found three errors. It claimed one more scene and one more shot than it listed. Its timings left a two-second hole. And its recipe for a one-minute cut leaves two minutes nineteen, not one minute."
+    },
+    {
+      "text": "The most useful discovery was a limit, not a feature: a clip cannot be trimmed. It always plays from its own beginning and is cut off when the moment ends. So every recording has to arrive already cut to the exact length of the moment it fills, and that one fact is the first line of the shot list."
+    },
+    {
+      "text": "That limit then designed the one-minute version. Its recorded moments keep the exact lengths they have in the long one, so the same three files serve both videos and nothing is filmed twice. Only the drawn parts are re-timed, because those are code and cost nothing to change."
+    },
+    {
+      "text": "Only one of the six animated pieces can be drawn over moving footage; the other five replace the picture entirely. So every on-screen label sits on that one, rather than as a full-width headline across the middle of the screen the tour exists to show."
+    },
+    {
+      "text": "A statistics piece reads its number out of its own wording. Written as first proposed, the counter would have ticked up to 24 and left the rest of the phrase trailing behind it. Rewritten before anything was made, and the proof is a picture of it counting to the right number."
+    },
+    {
+      "text": "Nine of the twenty-one moments were drawn and reviewed today, at no cost, before a single recording exists. Whoever approves the look can approve most of it now instead of after the filming."
+    },
+    {
+      "text": "Those pictures also settled an argument nobody was having: the opening and closing brand marks came back as a plain ring. That is the honest signal it was built to give — nobody has supplied the logo file, and the tool is forbidden from inventing something that looks close enough."
+    },
+    {
+      "text": "The quality gate will not sign this one off, and that is right. A product tour names no social platform, so the layout checks cannot be asked at all — and this gate does not turn \"never asked\" into \"approved\". Four of its six checks apply and must pass; the other two get recorded as not applicable."
+    },
+    {
+      "text": "A second edit of the same campaign was invisible to the checker for one turn, because it routes files to a rulebook by their name and this one had a name nothing matched. It passed while never having looked. Renamed, and written down so the next person does not repeat it."
+    },
+    {
+      "text": "What is missing is named rather than worked around: twelve recordings, a ticket number, the reviewer's signature actually written down, the logo file, and music whose licence a person has confirmed. The one licensed track on file is a fifty-three-second rock cue written for a ten-second advert."
     }
   ],
   "milestones": [
@@ -402,6 +435,10 @@
     },
     {
       "title": "Make the first blocked option buildable: motion graphics, end to end, at no generation cost",
+      "state": "done"
+    },
+    {
+      "title": "Plan Open English's platform tour before anything is filmed: the running order, the shot list, and both edits",
       "state": "done"
     },
     {
