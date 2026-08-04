@@ -358,6 +358,42 @@
     },
     {
       "text": "What is missing is named rather than worked around: twelve recordings, a ticket number, the reviewer's signature actually written down, the logo file, and music whose licence a person has confirmed. The one licensed track on file is a fifty-three-second rock cue written for a ten-second advert."
+    },
+    {
+      "text": "The first real brief came in through the published link and became a finished video. Everything up to now was the pipeline proving itself on old material; this is the first time a request arrived from outside and money was spent on it."
+    },
+    {
+      "text": "The brief did not describe the video it pointed at. It asked for a full-body arm dance in a busy office; the reference clip is a man sitting at a laptop at night moving his hands, followed by a branded end card. Three sketches had already been drawn from the words before anyone noticed."
+    },
+    {
+      "text": "A cheap draft caught it. Before committing to the expensive version, one low-resolution pass was run purely to test whether the motion could be copied at all — it could, and it also showed what the reference actually was. That draft cost a quarter of what the wrong finished video would have."
+    },
+    {
+      "text": "The framing was then taken from the reference itself rather than described to a model: a frame was lifted out of the original clip and only the person in it was changed. Matching the camera stopped being something a sentence had to achieve and became a property of the input."
+    },
+    {
+      "text": "The end card was not rebuilt. It is the brand's own finished card, already aired, cut from the reference and re-used as a stored asset — so the campaign introduces no new wording, and the question of who reviews new copy does not arise."
+    },
+    {
+      "text": "One sketch was thrown out because both of the character's hands read as an obscene gesture. It was technically perfect and passed every automated layout check. That is the case for keeping a person at that gate."
+    },
+    {
+      "text": "Quoting the price of what is actually being sent, rather than the cheapest version of the same model, made the estimate match the invoice exactly for the first time. The brief's own estimate had been four and a half times too low."
+    },
+    {
+      "text": "The budget ceiling could finally be checked at all. The limit is in dollars, the spending is in credits, and nothing anywhere converted between them — the rate had to be read from the live account."
+    },
+    {
+      "text": "Asking for the character to look like he was enjoying himself cost more than the ceiling allowed. It was not quietly absorbed: the two options were priced, put to a person, and the higher one only ran after they raised the limit for this one job. The standing limit was left where it was."
+    },
+    {
+      "text": "The finished master was clipping — loud enough to distort — and the quality gate passed it. The gate asks for a ceiling on peaks and then reads only the loudness number back, leaving the answer to its own question unread in the same response."
+    },
+    {
+      "text": "It was caught by measuring the file instead of trusting the report, then reproduced on a second, independent mix — the same numbers to the decimal. That rules out a one-off and points at the mixing step itself, which still has the fault."
+    },
+    {
+      "text": "Three faults in the agent were found by using it on this one job, each written down with the exact commands that reproduce it. Two of them are gates that report success without ever asking their question."
     }
   ],
   "milestones": [
@@ -442,7 +478,15 @@
       "state": "done"
     },
     {
-      "title": "Run a real OE campaign as the acceptance — real AI generation, both languages, a native speaker reviewing",
+      "title": "Take a real brief from the published form all the way to a finished video, with paid AI generation",
+      "state": "done"
+    },
+    {
+      "title": "Close the three faults this run exposed — a mix that can clip, a gate that ignores its own ceiling, and a language that can render without its review",
+      "state": "next"
+    },
+    {
+      "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     }
   ]
