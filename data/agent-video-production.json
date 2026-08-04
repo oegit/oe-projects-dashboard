@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-01",
+  "last_updated": "2026-08-04",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -283,6 +283,48 @@
     },
     {
       "text": "What remains unproven is exactly one thing: generating new footage with paid AI. That is the next milestone — a real brief, a spending cap, and a person saying go."
+    },
+    {
+      "text": "One of the four things the form offered but could not make is now made. Motion graphics — animated text, numbers, logo stings, branded transitions, no filmed or generated footage — runs on the editing tool the agent already had. No new supplier, no new bill."
+    },
+    {
+      "text": "The plan for it was built on a belief that turned out to be false, and checking first is what caught it. The job was written as \"let people pick this tool for that kind of video\". They already could. Nothing had ever been linked to anything."
+    },
+    {
+      "text": "What was actually broken was the shape of the question. The form asks two things — what kind of video, and which tool — and the agent checked them separately. So one kind was refused whichever tool you paired it with, and the pairing that works could never be reached."
+    },
+    {
+      "text": "It now checks the pair. Two combinations run today and the other ten are refused by name, so a brief asking for one buildable thing and one unbuildable thing is told which is which. Before, it named a single word and left you guessing whether the rest was fine."
+    },
+    {
+      "text": "Turning one thing on must not quietly turn on another. Every one of the twelve combinations is now tested individually, and one test deliberately removes the new permission at run time to confirm the refusal comes back — otherwise the tests only describe the code instead of holding it to anything."
+    },
+    {
+      "text": "Six animation pieces were built, and none of them may contain a colour, a typeface or a name belonging to any brand — those all arrive from the brand's own folder. The check that enforces this used to cover two files and now covers the whole set."
+    },
+    {
+      "text": "It failed on its first real run, on two comments written minutes earlier that mentioned a client by name. That is the check working: the sentence had been in the rules for a year with nothing behind it."
+    },
+    {
+      "text": "Two of the pieces were unreadable and only rendering them showed it. Emphasising a number by painting it in the brand's accent colour puts it on whatever contrast that colour happens to have. The text is plain now and the accent underlines it instead."
+    },
+    {
+      "text": "A campaign made this way costs nothing to generate, and that is measured rather than assumed — no supplier is contacted at any point. The electricity and the machine time are real and nobody meters them, so they are recorded as unknown instead of as zero."
+    },
+    {
+      "text": "The sketch stage got stronger rather than weaker. For generated footage a sketch is a cheap stand-in for something expensive. Here the sketch is drawn by the same code as the finished video, from the same settings — there is nothing to preview, it is the thing."
+    },
+    {
+      "text": "The test run found a hole in the one rule this agent will not bend. A video like this has no voice-over, and the agent read the list of languages off the voice-over — so it would have made an ad with Spanish on screen that no Spanish speaker had ever been asked to read, and reported nothing wrong."
+    },
+    {
+      "text": "A campaign is now in every language it speaks or writes, defined once and read by both the part that renders and the part that demands the sign-off. If those two ever disagreed, the difference would be exactly one language going out unreviewed."
+    },
+    {
+      "text": "The cost record quietly reported a campaign as free. Entries written with the wrong field names were accepted, counted as nothing, and totalled as a confident zero — the one thing the rule about unknown costs exists to prevent. Written down to fix, not fixed here."
+    },
+    {
+      "text": "The public form was rebuilt and republished with the new option live. The rebuild nearly shipped a page that could no longer send anything — the send address is not stored in the shared file and has to be passed in each time. Caught by comparing against what was already published."
     }
   ],
   "milestones": [
@@ -356,6 +398,10 @@
     },
     {
       "title": "Give Open English its first reusable template, from the campaign that already worked",
+      "state": "done"
+    },
+    {
+      "title": "Make the first blocked option buildable: motion graphics, end to end, at no generation cost",
       "state": "done"
     },
     {
