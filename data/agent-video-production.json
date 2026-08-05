@@ -487,6 +487,24 @@
     },
     {
       "text": "One campaign still claims it spent no dollars and nobody has opened the provider's account to check. Left open deliberately, with the exact time windows to look in — the likely answer is not the same as a verified one."
+    },
+    {
+      "text": "Eight faults from the second audit are closed. The estimate no longer quotes a scene at zero because of a suggestion nobody confirmed; subtitles and picture no longer drift apart; a review copy can no longer be delivered as the ad."
+    },
+    {
+      "text": "A missing clip used to render as a flat colour block and pass every check with a clean exit. The person running it now says which stage they are in, so \"not generated yet\" and \"the file is gone\" stop looking identical."
+    },
+    {
+      "text": "One campaign's claim that it spent no dollars was checked against both providers' accounts and is true. The method is written down: the account is shared, so usage has to be attributed by API key, not by date."
+    },
+    {
+      "text": "The dominant fault in this audit was not the wrong check — it was the check that never runs. Four of them: one that could not fail, one no test drove, a filter matching nothing, and two entries kept open by a note nobody re-read."
+    },
+    {
+      "text": "All four report exactly what a healthy system reports: green, silence, pass. Every one was found by running something rather than reading it — which is the part worth carrying to the next review."
+    },
+    {
+      "text": "The agent's own portability check looked at two files and said so; it looks at a hundred and fifty-three now. A person's name in a note is a record of who measured what; the same name in data is something a copy carries to the next client."
     }
   ],
   "milestones": [
@@ -592,7 +610,19 @@
     },
     {
       "title": "Make the cost estimate price the scene that will actually be generated, before anything is spent",
-      "state": "next"
+      "state": "done"
+    },
+    {
+      "title": "Open the two providers' dashboards and settle whether one campaign really spent no dollars — it did not",
+      "state": "done"
+    },
+    {
+      "title": "Fix everything the second audit found that was worth fixing now — eight faults, eight changes",
+      "state": "done"
+    },
+    {
+      "title": "Make the checks that guard this agent prove they can actually fail — every one of them",
+      "state": "done"
     },
     {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
@@ -603,7 +633,11 @@
       "state": "next"
     },
     {
-      "title": "Open the two providers' dashboards and settle whether one campaign really spent no dollars",
+      "title": "Decide what the request form should ask for: a brief, or everything the build needs",
+      "state": "next"
+    },
+    {
+      "title": "Make the checks run on their own, so a green report becomes a property of the work and not of who remembered to run it",
       "state": "next"
     }
   ]
