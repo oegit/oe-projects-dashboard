@@ -394,6 +394,24 @@
     },
     {
       "text": "Three faults in the agent were found by using it on this one job, each written down with the exact commands that reproduce it. Two of them are gates that report success without ever asking their question."
+    },
+    {
+      "text": "The one rule this agent will not bend was only reachable by campaigns that speak. A video made of animated text has no voice-over, so the check that a native speaker read the words never ran — and Spanish on screen was cleared to render unread. It now runs on every language spoken or written."
+    },
+    {
+      "text": "Worse than lenient, it was unreachable: the sign-off had nowhere to be written down. It lived inside the voice-over section, so a campaign with no voice had no field for the one thing the check closes on. It now has its own place, and one reader looks in both."
+    },
+    {
+      "text": "Two more had the same shape. The check that a closing card exists in every language was also hung off the voice, so a text-only campaign had nothing checked and reported what a fully covered one reports. A check that cannot run now says so, instead of passing."
+    },
+    {
+      "text": "And the builder demanded a spoken script for a language that only ever appears in writing, refusing work the checker had already cleared. Words are owed in every language; a script only in the ones somebody says out loud."
+    },
+    {
+      "text": "Tried against the real brief that came in this week rather than a test one, the fix turns out not to reach the people filling the form: the published page never asks for on-screen text, so the check still finds no language to demand a signature for."
+    },
+    {
+      "text": "That campaign shipped correct text because a person noticed and wrote the decision down. The next one gets the same silence, so it is recorded beside its twin — the same check is also blind to videos written by hand. Both routes are unguarded and must be fixed together."
     }
   ],
   "milestones": [
@@ -483,7 +501,7 @@
     },
     {
       "title": "Close the three faults this run exposed — a mix that can clip, a gate that ignores its own ceiling, and a language that can render without its review",
-      "state": "next"
+      "state": "in progress"
     },
     {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
