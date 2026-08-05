@@ -3,9 +3,9 @@
   "slug": "agent-video-production",
   "name": "Agent: Video Production",
   "type": "agent",
-  "status": "on track",
+  "status": "at risk",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -412,6 +412,36 @@
     },
     {
       "text": "That campaign shipped correct text because a person noticed and wrote the decision down. The next one gets the same silence, so it is recorded beside its twin — the same check is also blind to videos written by hand. Both routes are unguarded and must be fixed together."
+    },
+    {
+      "text": "The whole shared engine was audited a second time — every script and everything they read, in batches, with each claim run rather than reasoned. Twenty-one new faults. The audit itself changed nothing: not one file of the agent was edited."
+    },
+    {
+      "text": "The rule this agent will not bend is enforced on one of the four ways a job can get in. And nothing in the engine can write the answer down: the sign-off it waits for has no producer anywhere, so the only way to record one is a person editing the file by hand."
+    },
+    {
+      "text": "The oldest brief format has nowhere to put that sign-off at all — not skipped, impossible. That is a third unguarded route beside the two already written down, and it settles the argument about how seriously to take them."
+    },
+    {
+      "text": "The loudness check cannot tell silence from a measurement that never happened, and reports the second. Proved by taking the measuring tool away: it still returned all-clear, at full coverage, on a number that does not exist."
+    },
+    {
+      "text": "The music rule is one word wide. A track whose licence reads \"NO RIGHTS\" gets mixed — the check refuses only an empty field or the exact word \"unverified\". A person typing anything at all satisfies the strictest rule this agent has."
+    },
+    {
+      "text": "And when a video has no voice-over, the refusal is silent. That is exactly the shape of the newest thing the agent can do, so the kind of campaign most likely to run next is the one that cannot tell you its music was refused."
+    },
+    {
+      "text": "Five of the six animation pieces throw away footage the system fetched, paid for, and reported as used. The estimate quotes those shots at nothing, so the money is spent against a ceiling that cannot see it."
+    },
+    {
+      "text": "The subtitle file and the burned-in captions are timed by different arithmetic and drift a quarter of a second apart over a short video. Nothing compares them, because the quality gate never opens the subtitle file."
+    },
+    {
+      "text": "Four faults were pulled out of \"fix it when you are next in there\". That queue is for faults you can work around, and a fault nobody can see has none — a note you cannot know to look up is not a delay, it is an omission with a date on it."
+    },
+    {
+      "text": "Everything open is now one ordered plan: forty-five items, ten faults, fourteen changes, in three blocks. One earns its own session, three follow it immediately, the rest wait until somebody is in that file anyway."
     }
   ],
   "milestones": [
@@ -500,8 +530,20 @@
       "state": "done"
     },
     {
+      "title": "Audit the whole engine a second time and put every open fault into one ordered plan",
+      "state": "done"
+    },
+    {
       "title": "Close the three faults this run exposed — a mix that can clip, a gate that ignores its own ceiling, and a language that can render without its review",
       "state": "in progress"
+    },
+    {
+      "title": "Enforce the rule the agent will not bend on every route in, and give the sign-off somewhere to be written down",
+      "state": "next"
+    },
+    {
+      "title": "Fix the three that cannot wait behind a queue: a loudness check that reports a number it never took, a music licence test one word wide, and footage paid for and thrown away",
+      "state": "next"
     },
     {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
