@@ -3,7 +3,7 @@
   "slug": "agent-video-production",
   "name": "Agent: Video Production",
   "type": "agent",
-  "status": "at risk",
+  "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
   "last_updated": "2026-08-05",
   "objectives": [
@@ -448,6 +448,27 @@
     },
     {
       "text": "No approval was invented for work already delivered. Videos made before this cannot be re-rendered until someone actually signs them off, which is the point: a record nobody wrote is not a review."
+    },
+    {
+      "text": "The music rights check was one word wide: a track labelled \"NO RIGHTS\" would have been mixed into an ad, and so would \"pending\" or \"ask legal\". It only ever refused a blank field."
+    },
+    {
+      "text": "It now accepts a recorded clearance and refuses everything else — including a genuine clearance written as a sentence, because a sentence is not something a machine can check."
+    },
+    {
+      "text": "The loudness check could not tell a measurement it never took from a measurement of silence, and reported the second: with the audio tool missing, a file passed every check on a number that did not exist."
+    },
+    {
+      "text": "A rights note on a campaign that already shipped was deliberately left unconfirmed: it was signed the same day someone corrected which file it referred to, and nothing says which came first. That campaign re-renders without music until a person listens to the track."
+    },
+    {
+      "text": "Closing footage could be generated, paid for, filed and then never drawn in a single frame, while the run reported it as resolved. The kinds of scene that can show a clip are now written down and checked against the code that draws them."
+    },
+    {
+      "text": "Half of one fix had quietly landed a month earlier — but a real fault sat in the same place, where sound was flattened on the way to disk before anything measured it."
+    },
+    {
+      "text": "A test written to prove one of the new checks works was rejected by the tool that grades tests: the check could not fail on its own. It was deleted rather than propped up."
     }
   ],
   "milestones": [
@@ -544,15 +565,19 @@
       "state": "done"
     },
     {
-      "title": "Close the two faults still open from that run: a mix that can clip, and a cost gate that ignores its own ceiling",
-      "state": "in progress"
+      "title": "Fix the three that cannot wait behind a queue: a loudness check that reports a number it never took, a music licence test one word wide, and footage paid for and thrown away",
+      "state": "done"
     },
     {
-      "title": "Fix the three that cannot wait behind a queue: a loudness check that reports a number it never took, a music licence test one word wide, and footage paid for and thrown away",
+      "title": "Make the cost estimate price the scene that will actually be generated, before anything is spent",
       "state": "next"
     },
     {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
+      "state": "next"
+    },
+    {
+      "title": "Check by ear the one music track held back on a campaign that already shipped, and clear it or replace it",
       "state": "next"
     }
   ]
