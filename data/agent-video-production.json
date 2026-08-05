@@ -442,6 +442,12 @@
     },
     {
       "text": "Everything open is now one ordered plan: forty-five items, ten faults, fourteen changes, in three blocks. One earns its own session, three follow it immediately, the rest wait until somebody is in that file anyway."
+    },
+    {
+      "text": "The rule this agent will not bend — a native speaker approves every translated line before anything renders — was asked on only one of the four ways a video can start, and there was nowhere to write the approval down. Now every route asks, and approving is a command that records who and when."
+    },
+    {
+      "text": "No approval was invented for work already delivered. Videos made before this cannot be re-rendered until someone actually signs them off, which is the point: a record nobody wrote is not a review."
     }
   ],
   "milestones": [
@@ -534,12 +540,12 @@
       "state": "done"
     },
     {
-      "title": "Close the three faults this run exposed — a mix that can clip, a gate that ignores its own ceiling, and a language that can render without its review",
-      "state": "in progress"
+      "title": "Enforce the rule the agent will not bend on every route in, and give the sign-off somewhere to be written down",
+      "state": "done"
     },
     {
-      "title": "Enforce the rule the agent will not bend on every route in, and give the sign-off somewhere to be written down",
-      "state": "next"
+      "title": "Close the two faults still open from that run: a mix that can clip, and a cost gate that ignores its own ceiling",
+      "state": "in progress"
     },
     {
       "title": "Fix the three that cannot wait behind a queue: a loudness check that reports a number it never took, a music licence test one word wide, and footage paid for and thrown away",
