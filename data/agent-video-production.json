@@ -469,6 +469,24 @@
     },
     {
       "text": "A test written to prove one of the new checks works was rejected by the tool that grades tests: the check could not fail on its own. It was deleted rather than propped up."
+    },
+    {
+      "text": "The spending record wrote down whatever it was handed. An entry with the wrong field names counted as no spend at all, so two real charges became a confident \"this campaign cost nothing\". It now refuses an entry it cannot read."
+    },
+    {
+      "text": "A reconciliation survived new spending: the file said 40.5 credits had been checked against the invoice when only 3 ever had. Any new charge now cancels the claim until someone checks again."
+    },
+    {
+      "text": "Work could run on a model the catalogue deliberately refuses to use, and nothing between that decision and the bill noticed. The exclusion was a sentence in a comment; it is data a check can read now."
+    },
+    {
+      "text": "Nothing had ever read a written spending record against its own rules. The first run of that check found one invalid for weeks — and caught the project's own test writing the same kind of entry."
+    },
+    {
+      "text": "The reason this work was blocked turned out to be a comment describing a fault fixed six days earlier. Nobody had re-measured the file. A comment in the code is not evidence; only the measurement is."
+    },
+    {
+      "text": "One campaign still claims it spent no dollars and nobody has opened the provider's account to check. Left open deliberately, with the exact time windows to look in — the likely answer is not the same as a verified one."
     }
   ],
   "milestones": [
@@ -569,6 +587,10 @@
       "state": "done"
     },
     {
+      "title": "Make the spending record refuse what it cannot read, and stop it asserting checks nobody made",
+      "state": "done"
+    },
+    {
       "title": "Make the cost estimate price the scene that will actually be generated, before anything is spent",
       "state": "next"
     },
@@ -578,6 +600,10 @@
     },
     {
       "title": "Check by ear the one music track held back on a campaign that already shipped, and clear it or replace it",
+      "state": "next"
+    },
+    {
+      "title": "Open the two providers' dashboards and settle whether one campaign really spent no dollars",
       "state": "next"
     }
   ]
