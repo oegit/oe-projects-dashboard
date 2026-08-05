@@ -505,6 +505,15 @@
     },
     {
       "text": "The agent's own portability check looked at two files and said so; it looks at a hundred and fifty-three now. A person's name in a note is a record of who measured what; the same name in data is something a copy carries to the next client."
+    },
+    {
+      "text": "Every check this agent has now runs by itself. There were 165 of them and not one ran unless somebody typed the command, so 'it passed' meant 'a person said it passed'. They run on every change now and answer in five minutes without anyone asking."
+    },
+    {
+      "text": "Switching them on found two more checks that had been reporting a pass without doing the work — one decided by whether a program happened to be installed on that particular laptop, the other reporting a clean search of a list it had never managed to read. Both say so now."
+    },
+    {
+      "text": "One gap stayed open and is written down rather than papered over: the account's plan cannot stop a failing change from being merged, only show that it failed. That last step is still a person reading the result."
     }
   ],
   "milestones": [
@@ -625,6 +634,10 @@
       "state": "done"
     },
     {
+      "title": "Make the checks run on their own, so a green report becomes a property of the work and not of who remembered to run it",
+      "state": "done"
+    },
+    {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     },
@@ -634,10 +647,6 @@
     },
     {
       "title": "Decide what the request form should ask for: a brief, or everything the build needs",
-      "state": "next"
-    },
-    {
-      "title": "Make the checks run on their own, so a green report becomes a property of the work and not of who remembered to run it",
       "state": "next"
     }
   ]
