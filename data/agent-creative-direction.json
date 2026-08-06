@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Reads the brief like a creative director, then writes the copy — for any brand, any market, never translated word for word.",
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-08-06",
   "objectives": [
     "Turn a guided interview into channel-ready copy — for any brand, any market — instead of a blank page.",
     "Stop a copy claim that can't be backed before it ships — a check that fails closed, not one that hopes someone notices.",
@@ -69,10 +69,13 @@
       ]
     },
     {
-      "text": "One decision is still open: the agent proposed a KPI for each of its six channels — reach and saves for Instagram, sign-ups and cost per acquisition for paid, and so on — and every one is still marked as its own suggestion rather than the brand's choice."
+      "text": "The guesses are gone. The marketing team supplied what each channel is actually measured by, across eighteen of them — and the four still awaiting real figures are marked as provisional, so nobody can mistake a placeholder for a decision again."
     },
     {
-      "text": "Nothing is blocked by it. Those rows are strategy inputs and never reach the claims check. The cost is quieter: until someone confirms them, the agent keeps offering its own guesses as if they were decided, and nobody can tell the two apart."
+      "text": "Those measures no longer belong to this agent alone. They now sit in one shared file the whole workspace reads, so every agent, skill and project writing for the same channel is working from the same definition instead of its own copy."
+    },
+    {
+      "text": "One thing the work surfaced: the brand measures a channel that no agent has writing rules for. It is written down rather than left to chance — a request for it gets an honest answer instead of another platform's rules quietly reused."
     }
   ],
   "milestones": [
@@ -117,7 +120,15 @@
       "state": "done"
     },
     {
-      "title": "Confirm the six channel KPIs the agent suggested, so its defaults stop standing in for the brand's",
+      "title": "Confirm the channel KPIs the agent suggested, so its defaults stop standing in for the brand's",
+      "state": "done"
+    },
+    {
+      "title": "Replace the four measures still marked provisional once the team sends the real ones",
+      "state": "next"
+    },
+    {
+      "title": "Write the missing channel rules for the one platform the brand measures but no agent can write for",
       "state": "next"
     }
   ]
