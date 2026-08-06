@@ -526,6 +526,24 @@
     },
     {
       "text": "The budget limit turned out never to have been checked. Two documents had promised since the start that spending was compared against it before any money moved, and no code did the comparison. It does now."
+    },
+    {
+      "text": "The list of a brand's stored clips had been failing its own rules for two and a half weeks and nothing could say so. The checker routes each file to a rulebook by its name, and this kind of file was on no route — so it was skipped, silently, while the run reported all-clear."
+    },
+    {
+      "text": "It is on a route now, which is the half that mattered. The same lesson had already been written down once, after a cost record went unchecked in exactly this way: a kind of document nobody routes is a kind of document nothing checks."
+    },
+    {
+      "text": "The fault itself was fixed the way this project had already argued for the identical fault one file over — widen the rule to permit the note, rather than delete the notes. They record where each clip came from, and that is the part worth keeping."
+    },
+    {
+      "text": "Four fields were written down as dead and due for deletion. One was not. Running the form's output through every branch showed it produced in all of them, and in all three real requests on file — deleting it would have made live documents invalid. The record was wrong, not the field."
+    },
+    {
+      "text": "The other three are gone, and the difference between them is written down rather than left for the next reader. Two make a document invalid if it carries them, which is a real thing to undo the day those features exist. The third changes nothing and was only ever a promise on paper."
+    },
+    {
+      "text": "A fault recorded as settled still read \"open\" directly beneath its own closing note, and the agent's manual contradicted itself about it two paragraphs apart. Both corrected. A stale record is a confident wrong answer, which is the thing writing faults down exists to avoid."
     }
   ],
   "milestones": [
