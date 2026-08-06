@@ -553,6 +553,12 @@
     },
     {
       "text": "The project had no file for lessons from corrections, though the workspace has required one all along — it exists in one project of eight. Created, and deliberately not backfilled: invented entries would put false history in the one file whose worth is being true."
+    },
+    {
+      "text": "The confirmation you must type to skip the cheap-sketch approval was enforced only in the web page. Briefs arrive from a public form, so a request could arrive with that protection already removed and nothing would notice. It is checked now where the request is read."
+    },
+    {
+      "text": "The check that every reused clip and logo actually exists was called by nothing at all: a working function wired to no one, while the manual listed it in the run that happens before any money is spent. It runs there now, and a test fails if either check is unhooked again."
     }
   ],
   "milestones": [
@@ -681,15 +687,15 @@
       "state": "done"
     },
     {
+      "title": "Decide what the request form should ask for — a brief, and everything the build needs became a second document",
+      "state": "done"
+    },
+    {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     },
     {
       "title": "Check by ear the one music track held back on a campaign that already shipped, and clear it or replace it",
-      "state": "next"
-    },
-    {
-      "title": "Decide what the request form should ask for: a brief, or everything the build needs",
       "state": "next"
     }
   ]
