@@ -559,6 +559,15 @@
     },
     {
       "text": "The check that every reused clip and logo actually exists was called by nothing at all: a working function wired to no one, while the manual listed it in the run that happens before any money is spent. It runs there now, and a test fails if either check is unhooked again."
+    },
+    {
+      "text": "A music track had been held back on a campaign that already shipped: the rights were confirmed, but on the same day a mix-up over which file it was got corrected, so no document could say which track the confirmation described. Somebody listened to it. That was the only thing that could settle it."
+    },
+    {
+      "text": "Five entries in the project fault log described faults that had already been fixed, one for five days. A log that describes closed faults sends the next session to redo finished work, so each was checked against the code and closed with the date it had been wrong from."
+    },
+    {
+      "text": "The subtitle setting offered a mode the pipeline never delivered: choosing clean video plus a separate subtitle file quietly produced burned-in captions instead. The promise is withdrawn rather than the feature faked — and building it turned out to be four files of work, not one."
     }
   ],
   "milestones": [
@@ -691,11 +700,15 @@
       "state": "done"
     },
     {
+      "title": "Check by ear the music track held back on a campaign that already shipped — listened to, and cleared",
+      "state": "done"
+    },
+    {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     },
     {
-      "title": "Check by ear the one music track held back on a campaign that already shipped, and clear it or replace it",
+      "title": "Line up the video brief KPIs with the channel list marketing just delivered",
       "state": "next"
     }
   ]
