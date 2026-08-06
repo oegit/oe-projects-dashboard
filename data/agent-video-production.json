@@ -514,6 +514,18 @@
     },
     {
       "text": "One gap stayed open and is written down rather than papered over: the account's plan cannot stop a failing change from being merged, only show that it failed. That last step is still a person reading the result."
+    },
+    {
+      "text": "The form asked for a brief; the pipeline needed a build; nothing joined them. Every field the assembly step reads was one the form never asked for, so a request picking a template could not become a video at all."
+    },
+    {
+      "text": "It was found by comparing what the form sends against what the pipeline opens — not by a test. The tests were green throughout, because each half was checked against a made-up example of what the other was supposed to send."
+    },
+    {
+      "text": "The fix splits them. The form collects what the requester knows; a second step adds what the video needs — template, shot type per slot, the words on screen in each language. Without it a request is recorded and refused a render."
+    },
+    {
+      "text": "The budget limit turned out never to have been checked. Two documents had promised since the start that spending was compared against it before any money moved, and no code did the comparison. It does now."
     }
   ],
   "milestones": [
@@ -635,6 +647,10 @@
     },
     {
       "title": "Make the checks run on their own, so a green report becomes a property of the work and not of who remembered to run it",
+      "state": "done"
+    },
+    {
+      "title": "The brief and the build are two documents: a request can no longer reach the pipeline missing what it needs, and the budget limit is checked for the first time",
       "state": "done"
     },
     {
