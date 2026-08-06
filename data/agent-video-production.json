@@ -568,6 +568,15 @@
     },
     {
       "text": "The subtitle setting offered a mode the pipeline never delivered: choosing clean video plus a separate subtitle file quietly produced burned-in captions instead. The promise is withdrawn rather than the feature faked — and building it turned out to be four files of work, not one."
+    },
+    {
+      "text": "The brief offered a list of numbers the agent had invented — nobody at the brand had ever picked one. Marketing's real list arrived, organised by where a video is published. The form now asks that way, and falls back to the kind of video only for the ones that go nowhere public."
+    },
+    {
+      "text": "A product tour had no numbers, because it is not published anywhere. Three were written with the person who owns the goal — and marked unconfirmed until the product can actually count them."
+    },
+    {
+      "text": "One of those rules is worth keeping: leave 'no time' among the cancellation reasons as a check. A tour cannot fix that one, so if it falls too, the tour was not the cause."
     }
   ],
   "milestones": [
@@ -704,11 +713,11 @@
       "state": "done"
     },
     {
-      "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
-      "state": "next"
+      "title": "Line up the video brief KPIs with the channel list marketing just delivered",
+      "state": "done"
     },
     {
-      "title": "Line up the video brief KPIs with the channel list marketing just delivered",
+      "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     }
   ]
