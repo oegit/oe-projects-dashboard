@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-06",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -544,6 +544,15 @@
     },
     {
       "text": "A fault recorded as settled still read \"open\" directly beneath its own closing note, and the agent's manual contradicted itself about it two paragraphs apart. Both corrected. A stale record is a confident wrong answer, which is the thing writing faults down exists to avoid."
+    },
+    {
+      "text": "The same false claim sat in a third document, a sealed approval record, and was left unmarked because sealed records are not edited. Wrong call, made in the same commit that handled it correctly elsewhere. Sealed protects the text, not the reader."
+    },
+    {
+      "text": "The original sentence still stands word for word, with a dated note beneath it saying what is false, how it was measured, and what about the decision it records is still true. Nobody landing on that page now learns something untrue about today's code."
+    },
+    {
+      "text": "The project had no file for lessons from corrections, though the workspace has required one all along — it exists in one project of eight. Created, and deliberately not backfilled: invented entries would put false history in the one file whose worth is being true."
     }
   ],
   "milestones": [
