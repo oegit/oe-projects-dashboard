@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-06",
+  "last_updated": "2026-08-07",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -714,6 +714,10 @@
     },
     {
       "title": "Line up the video brief KPIs with the channel list marketing just delivered",
+      "state": "done"
+    },
+    {
+      "title": "Register the second way to reach the video service — the one that can run with nobody at the keyboard — and write down, model by model, that the four we rely on are not on it",
       "state": "done"
     },
     {
