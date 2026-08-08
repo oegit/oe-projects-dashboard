@@ -577,6 +577,9 @@
     },
     {
       "text": "One of those rules is worth keeping: leave 'no time' among the cancellation reasons as a check. A tour cannot fix that one, so if it falls too, the tour was not the cause."
+    },
+    {
+      "text": "The first brief sent from the real form started its run and stopped dead: it checked that the brand folder existed before downloading anything, so it was looking at an empty machine and could never have passed. Fixed the same day, with a test that reads the order of the steps."
     }
   ],
   "milestones": [
