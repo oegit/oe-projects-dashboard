@@ -580,6 +580,15 @@
     },
     {
       "text": "The first brief sent from the real form started its run and stopped dead: it checked that the brand folder existed before downloading anything, so it was looking at an empty machine and could never have passed. Fixed the same day, with a test that reads the order of the steps."
+    },
+    {
+      "text": "A run reported that it had filed the brief, then stopped because the brief was not there — both lines in the same log. It had been counting the files it read, not the ones it saved. A step that saved nothing now says so."
+    },
+    {
+      "text": "One switch controlled two things: writing the paperwork, which is free, and spending money. The automatic run must refuse it — so it refused the paperwork too, and could never reach its own check. Two switches now. Only one costs anything."
+    },
+    {
+      "text": "A run that stopped used to leave nothing behind. The note saying where it stopped was written only when the run finished cleanly — the one case nobody needs it. It is written every time now, and the failed run is the one that keeps it."
     }
   ],
   "milestones": [
