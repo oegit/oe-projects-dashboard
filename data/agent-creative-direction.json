@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Reads the brief like a creative director, then writes the copy — for any brand, any market, never translated word for word.",
-  "last_updated": "2026-08-06",
+  "last_updated": "2026-08-09",
   "objectives": [
     "Turn a guided interview into channel-ready copy — for any brand, any market — instead of a blank page.",
     "Stop a copy claim that can't be backed before it ships — a check that fails closed, not one that hopes someone notices.",
@@ -69,13 +69,19 @@
       ]
     },
     {
-      "text": "The guesses are gone. The marketing team supplied what each channel is actually measured by, across eighteen of them — and the four still awaiting real figures are marked as provisional, so nobody can mistake a placeholder for a decision again."
+      "text": "The guesses are gone. The marketing team supplied what each channel is actually measured by, across nineteen of them — and the five still awaiting real figures are marked as provisional, so nobody can mistake a placeholder for a decision again."
     },
     {
       "text": "Those measures live in exactly one place. The copy that had been put inside the agent was taken back out the same day it was made: they are the client's own data, so they stay with the client and the portable agent carries none of them. One file to change, and nothing left to keep in sync."
     },
     {
       "text": "One thing the work surfaced: the brand measures a channel that no agent has writing rules for. It is written down rather than left to chance — a request for it gets an honest answer instead of another platform's rules quietly reused."
+    },
+    {
+      "text": "Going stale is no longer discovered by accident. A change is refused unless its record moves too, the list of what to re-upload is posted where the change happens, and a daily note lands by email until it is done. The same files once sat out of date for thirteen days."
+    },
+    {
+      "text": "The rule travels past the one place it broke: the blank project form and the interview that fills it now offer “point at where your team already keeps these” as an answer, so the next brand cannot quietly re-create the copy just removed."
     }
   ],
   "milestones": [
@@ -124,7 +130,11 @@
       "state": "done"
     },
     {
-      "title": "Replace the four measures still marked provisional once the team sends the real ones",
+      "title": "Make going stale impossible to miss — refuse the change, name the files, and keep saying so until it is done",
+      "state": "done"
+    },
+    {
+      "title": "Replace the five measures still marked provisional once the team sends the real ones",
       "state": "next"
     },
     {
