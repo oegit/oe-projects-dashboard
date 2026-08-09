@@ -610,6 +610,12 @@
     },
     {
       "text": "Nothing had been withdrawn. The provider changed the shape of its answer, and every tool read the models it could no longer name as models that no longer existed — then reported that as fact. A list it cannot identify is now refused outright."
+    },
+    {
+      "text": "The provider's catalogue turned out to be intact: every model we rely on is still there, at the same price. What had moved was the shape of the answer, and the record now carries both shapes with the date each was seen."
+    },
+    {
+      "text": "Reading that catalogue no longer ends with a person retyping prices out of a log into the file that prices the work. The tool writes the reading; a person still decides what it means before anything is recorded."
     }
   ],
   "milestones": [
@@ -771,6 +777,10 @@
     },
     {
       "title": "Notice the provider withdrawing a model before someone authorises a spend, not after",
+      "state": "done"
+    },
+    {
+      "title": "Tell a provider changing the shape of its answer apart from a provider withdrawing a model",
       "state": "done"
     },
     {
