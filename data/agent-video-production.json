@@ -589,6 +589,12 @@
     },
     {
       "text": "A run that stopped used to leave nothing behind. The note saying where it stopped was written only when the run finished cleanly — the one case nobody needs it. It is written every time now, and the failed run is the one that keeps it."
+    },
+    {
+      "text": "The first unattended run stopped before spending anything, and the reason mattered more than the run: the campaign asked for no shot at all. It now asks for one, and the plan for the paid run says so out loud."
+    },
+    {
+      "text": "The spending limit is now checked in both units. Published in dollars, computed in credits, it quietly reported \"not applicable\" on the account with no dollar price. Converted at a real top-up price, it would already have caught one overspend."
     }
   ],
   "milestones": [
@@ -742,6 +748,10 @@
     },
     {
       "title": "Take the first form-submitted brief all the way to ready: on-screen copy written, and a native speaker signed it off — the campaign now passes every check standing between it and the cameras",
+      "state": "done"
+    },
+    {
+      "title": "Give the paid run something to make: the first generated shot a campaign actually asks for, and a spending limit that can be exceeded",
       "state": "done"
     },
     {
