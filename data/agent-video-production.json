@@ -597,7 +597,7 @@
       "text": "The spending limit is now checked in both units. Published in dollars, computed in credits, it quietly reported \"not applicable\" on the account with no dollar price. Converted at a real top-up price, it would already have caught one overspend."
     },
     {
-      "text": "The first authorised paid run stopped before spending: the model this project generates every frame with had been withdrawn from the provider's catalogue. The refusal was correct, but it arrived after a person had already authorised the spend."
+      "text": "The first authorised paid run stopped before spending, and the refusal was correct. The reason we first recorded for it was not: we said the provider had withdrawn a model, and it had not."
     },
     {
       "text": "That question can now be asked on its own, and is asked weekly: one command reads the provider's live catalogue and reports where our own record disagrees — what left, what appeared, what changed price. It never edits the record; a person does."
@@ -607,6 +607,9 @@
     },
     {
       "text": "An empty answer is now treated as a failed read rather than an empty catalogue, in the check and in the cost gate that stands in front of every payment — where the same flaw was blaming a missing model for a read that never worked."
+    },
+    {
+      "text": "Nothing had been withdrawn. The provider changed the shape of its answer, and every tool read the models it could no longer name as models that no longer existed — then reported that as fact. A list it cannot identify is now refused outright."
     }
   ],
   "milestones": [
