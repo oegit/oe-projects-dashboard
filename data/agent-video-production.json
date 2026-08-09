@@ -601,6 +601,12 @@
     },
     {
       "text": "That question can now be asked on its own, and is asked weekly: one command reads the provider's live catalogue and reports where our own record disagrees — what left, what appeared, what changed price. It never edits the record; a person does."
+    },
+    {
+      "text": "The new catalogue check produced a false alarm on its first real use: it read nothing back and reported every model as withdrawn. Acting on it would have deleted our whole record of what the provider offers."
+    },
+    {
+      "text": "An empty answer is now treated as a failed read rather than an empty catalogue, in the check and in the cost gate that stands in front of every payment — where the same flaw was blaming a missing model for a read that never worked."
     }
   ],
   "milestones": [
