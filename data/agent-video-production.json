@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-08",
+  "last_updated": "2026-08-09",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -741,7 +741,7 @@
       "state": "done"
     },
     {
-      "title": "Take the first form-submitted brief into the project properly: it now carries proposed on-screen copy and waits on one thing — a native speaker signing off the words",
+      "title": "Take the first form-submitted brief all the way to ready: on-screen copy written, and a native speaker signed it off — the campaign now passes every check standing between it and the cameras",
       "state": "done"
     },
     {
