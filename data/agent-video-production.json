@@ -616,6 +616,12 @@
     },
     {
       "text": "Reading that catalogue no longer ends with a person retyping prices out of a log into the file that prices the work. The tool writes the reading; a person still decides what it means before anything is recorded."
+    },
+    {
+      "text": "The first authorised paid run got further than any before it: every check between a brief and a payment passed, both shots were priced against the live catalogue, and the budget was compared in dollars before anything was sent."
+    },
+    {
+      "text": "It then failed on the first step nobody had ever measured — the call that actually submits work. That step was labelled a guess in every run's output long before it was tried, which is why the failure cost nothing but a message."
     }
   ],
   "milestones": [
