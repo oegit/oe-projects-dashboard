@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-09",
+  "last_updated": "2026-08-10",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -787,6 +787,10 @@
     },
     {
       "title": "Tell a provider changing the shape of its answer apart from a provider withdrawing a model",
+      "state": "done"
+    },
+    {
+      "title": "Find out why the first paid attempt was turned away: the address we were sending to did not exist, and the video service's own toolkit had said so all along",
       "state": "done"
     },
     {
