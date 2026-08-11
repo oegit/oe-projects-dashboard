@@ -622,6 +622,12 @@
     },
     {
       "text": "It then failed on the first step nobody had ever measured — the call that actually submits work. That step was labelled a guess in every run's output long before it was tried, which is why the failure cost nothing but a message."
+    },
+    {
+      "text": "A promise was checked instead of assumed: that a new company is added by adding a folder, without touching the agent. Four of the five properties it rests on already held, and the check enforcing them already ran on every change — including tests that plant a violation to prove it still catches one."
+    },
+    {
+      "text": "The same review found the blind spot. The checker learns the client's name from that client's own folder, then only ever looked for it in the two files it publishes — never in the reusable parts. Three of those had picked up the name, and the check still reported all-clear."
     }
   ],
   "milestones": [
@@ -807,6 +813,10 @@
     },
     {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
+      "state": "next"
+    },
+    {
+      "title": "Close the gap: have the check look for the client's name everywhere it is reused, not only in what gets published",
       "state": "next"
     }
   ]
