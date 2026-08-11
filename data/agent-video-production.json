@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-11",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -628,6 +628,21 @@
     },
     {
       "text": "The same review found the blind spot. The checker learns the client's name from that client's own folder, then only ever looked for it in the two files it publishes — never in the reusable parts. Three of those had picked up the name, and the check still reported all-clear."
+    },
+    {
+      "text": "The gap is closed. The check now looks for the client’s name across the whole reusable part, not just the two published files. It found six places — one the review itself had missed — and its report went from thirteen questions to fifteen, over 207 files instead of 175."
+    },
+    {
+      "text": "Two of the six were sentences, not data: a setup guide telling any reader that this client needs no voice service, and a note grading a supplier by one client’s history. Both decide something for whoever reads them next, so the two files whose prose gives instructions are now read in full."
+    },
+    {
+      "text": "The check also says out loud what it is choosing not to police: 34 mentions in written records, and 78 in tests. Silence would have read as absence."
+    },
+    {
+      "text": "Two things the live system depends on were written down for the first time: the form’s submission service runs on a personal account outside the client’s own, and the address it posts to exists in no file here. Whoever inherits this could not have known either. Both are now recoverable."
+    },
+    {
+      "text": "Six new tests were each proved to fail before being allowed to pass. One of them could not fail at all — the example it checked never mentioned the thing it checked for. That is written down rather than quietly repaired: a test that cannot fail is the fault this project keeps finding."
     }
   ],
   "milestones": [
@@ -812,11 +827,15 @@
       "state": "done"
     },
     {
+      "title": "Close the gap: have the check look for the client's name everywhere it is reused, not only in what gets published",
+      "state": "done"
+    },
+    {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     },
     {
-      "title": "Close the gap: have the check look for the client's name everywhere it is reused, not only in what gets published",
+      "title": "Untangle the reusable tests from the client folder they read their examples from — thirteen of them break if that client leaves, and two of those are checking the real thing on purpose",
       "state": "next"
     }
   ]
