@@ -15,6 +15,12 @@
   ],
   "outcomes": [
     {
+      "text": "The agent moved into a repository of its own, out of the shared workspace. It is the first of five to do so. Nothing about what it produces changed; what changed is that a copy of it now carries everything it needs, instead of quietly depending on files that lived one folder up."
+    },
+    {
+      "text": "The move found two faults that had been invisible: the agent named its own rulebook at an address outside itself, so any copy pointed at nothing, and fourteen self-checks found a file by counting folders upwards. Both fixed; the full check suite passes from the new home."
+    },
+    {
       "text": "It made a full campaign: one main video and three themed versions, each in two languages and three shapes, with captions burned in and a subtitle file per language. A person approved every step."
     },
     {
