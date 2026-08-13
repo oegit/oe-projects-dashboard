@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-12",
+  "last_updated": "2026-08-13",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -655,6 +655,30 @@
     },
     {
       "text": "Removing a limit and never having checked one now read differently. Deleting the number would have left a check that always passed while looking like one that had run — so an exemption has to be written down, by name, with its reason."
+    },
+    {
+      "text": "The rule keeping the engine separate from any one client's material had only been checked one way: that adding a client changes nothing shared. Nobody checked the other way — hand the engine to a second company and delete the first one's folder."
+    },
+    {
+      "text": "That other direction is where the problem was, and it had never been written down as something to check at all."
+    },
+    {
+      "text": "Eighty places in the reusable tests read one client's folder for their examples, so deleting it turned a third of the suite red. The worst case used that client's brand colours to check that text is readable — a question with nothing to do with that client."
+    },
+    {
+      "text": "Counting the problem was not the same as preventing it. The count had been printed on every run and could not fail — and within the same week it was written down, a new test added five more references and nothing went red. Adding one now fails the run unless somebody writes down why."
+    },
+    {
+      "text": "Counting the problem was not preventing it. The count printed on every run and could not fail — and within the same week it was written down, a new test added five more references and nothing went red. Adding one now fails the run unless somebody says why."
+    },
+    {
+      "text": "Deleting the client folder is now checked on every run, in a throwaway copy of the project. It also checks that exactly the six declared tests stepped aside — no more, no fewer — because 'nothing broke' is also what you get from a test that quietly stopped checking anything."
+    },
+    {
+      "text": "There is no name a stand-in voice can have. Any name typed into the shared layer is treated as a real person's, which is correct — so the stand-in has no name at all. A name means the performer, and a stand-in has no performer."
+    },
+    {
+      "text": "Two checks looked careful and behaved like an off switch: written so they skipped themselves whenever the data did not have the shape they expected, silently. Against the stand-in folder both had been passing without checking anything."
     }
   ],
   "milestones": [
@@ -843,11 +867,11 @@
       "state": "done"
     },
     {
-      "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
-      "state": "next"
+      "title": "Untangle the reusable tests from the client folder they read their examples from — done: eighty references down to sixteen, and the six that read the real thing on purpose now say so in writing",
+      "state": "done"
     },
     {
-      "title": "Untangle the reusable tests from the client folder they read their examples from — thirteen of them break if that client leaves, and two of those are checking the real thing on purpose",
+      "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     },
     {
