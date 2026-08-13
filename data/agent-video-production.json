@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-11",
+  "last_updated": "2026-08-12",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -649,6 +649,12 @@
     },
     {
       "text": "Six new tests were each proved to fail before being allowed to pass. One of them could not fail at all — the example it checked never mentioned the thing it checked for. That is written down rather than quietly repaired: a test that cannot fail is the fault this project keeps finding."
+    },
+    {
+      "text": "The budget limit stopped being one number for everything. It was named after social ads and quietly applied to every kind of video, including an internal product walkthrough that is not an ad and is not posted anywhere."
+    },
+    {
+      "text": "Removing a limit and never having checked one now read differently. Deleting the number would have left a check that always passed while looking like one that had run — so an exemption has to be written down, by name, with its reason."
     }
   ],
   "milestones": [
@@ -842,6 +848,10 @@
     },
     {
       "title": "Untangle the reusable tests from the client folder they read their examples from — thirteen of them break if that client leaves, and two of those are checking the real thing on purpose",
+      "state": "next"
+    },
+    {
+      "title": "Set the budget limit per channel rather than per kind of video — the question left open when this one was answered",
       "state": "next"
     }
   ]
