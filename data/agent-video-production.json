@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a brief into finished social video — the footage, the edit, the music, the voice-over, the captions — with a person approving before anything costs money.",
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-14",
   "objectives": [
     "Finished video straight from Claude: footage, edit, music, voice-over, captions and quality checks in one run.",
     "The best quality for the lowest cost.",
@@ -679,6 +679,36 @@
     },
     {
       "text": "Two checks looked careful and behaved like an off switch: written so they skipped themselves whenever the data did not have the shape they expected, silently. Against the stand-in folder both had been passing without checking anything."
+    },
+    {
+      "text": "The whole thing ran with nobody at the keyboard. Somebody filled in the form; a run nobody launched picked the brief up, generated a still and then a moving clip from it, and delivered the package — where it stopped, because approving it is a job for a person."
+    },
+    {
+      "text": "That was the last thing this agent had never done. Everything before it had been proved a piece at a time, or against stand-ins. Now it has been proved end to end, on a real brief, with real money."
+    },
+    {
+      "text": "The run cost 38 cents. Not an estimate: the price was checked before each call, recorded job by job, and compared against the spending limit in dollars — the unit the limit is actually written in."
+    },
+    {
+      "text": "The provider account we had switched off was reopened for exactly one run, by typing a second phrase. It is still switched off. The decision to switch it off stays in the code rather than being deleted, so nobody rediscovers it by accident."
+    },
+    {
+      "text": "Two phrases, not one, because they are two decisions: spend money, and use something we turned off. A run that answers only the first stops at the second, having spent nothing."
+    },
+    {
+      "text": "The first paid attempt failed and it was our fault. How long the run waits for a clip is governed by two limits; one was raised, and the two happened to be identical — so raising one raised neither. The clip had already been paid for when the run gave up on it."
+    },
+    {
+      "text": "That is now impossible to repeat: a check refuses any spending run where the second limit could run out first. The lesson cost 19 cents, which is the cheapest place this project has ever learned one."
+    },
+    {
+      "text": "The brief the form created lived only inside the machine that ran it, and the run that can spend needs it saved. So the request that arrived could not be handed to the run that would pay for it. Both documents now come back out with the results."
+    },
+    {
+      "text": "Recording the reviewer's approval reported that the campaign had no plan — over a plan sitting in the same folder. It failed toward blocking, which sounds like the safe direction and is not: the fix it recommends destroys the copy somebody just approved."
+    },
+    {
+      "text": "A quality gate announced a serious finding — that the engine no longer works without the client — about a test run that never finished. A test that does not answer is not evidence. It now says so, and still fails the run, because a check that could not run is not a check that passed."
     }
   ],
   "milestones": [
@@ -871,11 +901,19 @@
       "state": "done"
     },
     {
+      "title": "Prove the whole chain with nobody at the keyboard: form to delivered package, stopping where a person decides",
+      "state": "done"
+    },
+    {
       "title": "Run a campaign in two languages with a native speaker reviewing new copy — the part this run did not exercise",
       "state": "next"
     },
     {
       "title": "Set the budget limit per channel rather than per kind of video — the question left open when this one was answered",
+      "state": "next"
+    },
+    {
+      "title": "Find why one test finishes its work and then refuses to close — it passes, then hangs, but only sometimes",
       "state": "next"
     }
   ]
