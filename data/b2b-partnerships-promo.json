@@ -5,7 +5,7 @@
   "type": "system",
   "status": "on track",
   "summary": "A row in a spreadsheet comes out as a finished, personalized set of assets for a partner — flyer, messaging image and email — without anyone opening a design file.",
-  "last_updated": "2026-08-01",
+  "last_updated": "2026-08-18",
   "objectives": [
     "One personalized set of assets per partner, per campaign — without anyone rebuilding a file by hand.",
     "One partner list that campaigns are built from, instead of re-typing people into each one.",
@@ -33,6 +33,9 @@
     },
     {
       "text": "Each sales contact's WhatsApp code and photo now collect themselves from where they already live, named the way the pipeline expects, instead of one folder at a time. Which file is which is settled by reading the code, not by trusting a filename. Anyone whose folder isn't shared is named, not lost."
+    },
+    {
+      "text": "An email run failed before anything went out, and tracing it exposed a quieter fault: the publisher had shipped a weeks-old copy of the email code while reporting success. Both are fixed; a release now proves the exact code production runs — and that it arrived — before anything ships."
     }
   ],
   "milestones": [
