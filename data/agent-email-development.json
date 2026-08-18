@@ -5,7 +5,7 @@
   "type": "agent",
   "status": "on track",
   "summary": "Turns a Figma design into an email that looks right in every inbox — including the ones that break everything.",
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-08-18",
   "objectives": [
     "Turn a Figma design into an email that looks right in every inbox — including the ones that break everything.",
     "Stop a broken email before it sends, with a check that runs as code instead of a person squinting at it."
