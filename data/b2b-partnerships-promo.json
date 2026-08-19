@@ -36,18 +36,51 @@
     },
     {
       "text": "An email run failed before anything went out, and tracing it exposed a quieter fault: the publisher had shipped a weeks-old copy of the email code while reporting success. Both are fixed; a release now proves the exact code production runs — and that it arrived — before anything ships."
+    },
+    {
+      "text": "A partner that brings no logo of its own is now something the spreadsheet can say. An empty cell quietly reused the example partner's logo; the campaign owner now writes \"none\", and the flyer drops the client logo and its divider while the email falls back to Open English's own header."
     }
   ],
   "milestones": [
-    { "title": "Agree one spreadsheet layout, and one set of placeholders for every asset", "state": "done" },
-    { "title": "Make the partner list the thing campaigns are built from", "state": "done" },
-    { "title": "Ship the form partners use to register themselves", "state": "done" },
-    { "title": "Handle what real use breaks: two editors at once, bad input, lost rows", "state": "done" },
-    { "title": "Deploy the spreadsheet's code from version control instead of by hand", "state": "done" },
-    { "title": "One email pipeline, checked before anything goes out", "state": "done" },
-    { "title": "Run it on real campaigns and fix what that exposed", "state": "done" },
-    { "title": "Turn an independent review of the whole pipeline into shipped safeguards", "state": "done" },
-    { "title": "Assemble each sales contact's WhatsApp code and photo automatically, instead of folder by folder", "state": "done" },
-    { "title": "Decide if the form needs its own Spanish, Portuguese and Turkish versions, now that the team uses it", "state": "next" }
+    {
+      "title": "Agree one spreadsheet layout, and one set of placeholders for every asset",
+      "state": "done"
+    },
+    {
+      "title": "Make the partner list the thing campaigns are built from",
+      "state": "done"
+    },
+    {
+      "title": "Ship the form partners use to register themselves",
+      "state": "done"
+    },
+    {
+      "title": "Handle what real use breaks: two editors at once, bad input, lost rows",
+      "state": "done"
+    },
+    {
+      "title": "Deploy the spreadsheet's code from version control instead of by hand",
+      "state": "done"
+    },
+    {
+      "title": "One email pipeline, checked before anything goes out",
+      "state": "done"
+    },
+    {
+      "title": "Run it on real campaigns and fix what that exposed",
+      "state": "done"
+    },
+    {
+      "title": "Turn an independent review of the whole pipeline into shipped safeguards",
+      "state": "done"
+    },
+    {
+      "title": "Assemble each sales contact's WhatsApp code and photo automatically, instead of folder by folder",
+      "state": "done"
+    },
+    {
+      "title": "Decide if the form needs its own Spanish, Portuguese and Turkish versions, now that the team uses it",
+      "state": "next"
+    }
   ]
 }
